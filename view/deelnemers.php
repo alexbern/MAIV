@@ -8,7 +8,6 @@
 </head>
 <body>
   <h1>DEELNEMERS</h1>
-
   <script>
     window.app = window.app || {};
     window.app.basePath = '<?php echo $basepath; ?>'
