@@ -8,46 +8,14 @@
 </head>
 <body>
   <nav>
-     <ul>
+    <ul>
       <li><a href="<?php echo $basepath;?>/">Boek.be</a></li>
       <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
       <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
       <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
     </ul>
   </nav>
-  <header>
-    <h1>Be ware</h1>
-    <h1>The concurents</h1>
-    <h1>are there</h1>
-  </header>
-  <main>
-    <section>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-    </section>
-    <section>
-      <nav>
-        <ul>
-          <li><</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>></li>
-        </ul>
-      </nav>
-      <div>
-      </div>
-    </section>
-  </main>
+
   <footer>
     <nav>
       <ul>

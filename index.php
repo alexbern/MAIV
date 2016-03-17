@@ -36,6 +36,12 @@ $app->get('/', function ($request, $response, $args) {
   return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]   );
 });
 
+//ABOUT BOEK
+$app->get('/boek', function ($request, $response, $args) {
+  $view = new \Slim\Views\PhpRenderer('view/');
+  return $view->render($response, 'boek.php', ['basepath' => $request->getUri()->getBasePath()]   );
+});
+
 
 //404
 $app->get('/{anything:.*}', function ($request, $response, $args) {

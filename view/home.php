@@ -9,10 +9,10 @@
 <body>
   <nav>
     <ul>
-      <li><a href="http://www.boek.be/">Boek.be</a></li>
-      <li><a href="boek.php">Het Boek</a></li>
-      <li>Concurenten</li>
-      <li><a href="deelnemen.php">Deelnemen</a></li>
+      <li><a href="<?php echo $basepath;?>/">Boek.be</a></li>
+      <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
     </ul>
   </nav>
   <header>
@@ -78,9 +78,9 @@
   <footer>
     <nav>
       <ul>
-        <li><a href="">Het boek</a></li>
-        <li><a href="">Concurenten</a></li>
-        <li><a href="">Deelnemen</a></li>
+        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
       </ul>
       <ul>
         <li><a href="http://www.boek.be/">Boek.be</a></li>
