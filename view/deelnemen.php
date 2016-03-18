@@ -15,9 +15,13 @@
       echo '</pre>';
     }
 
+    if (!empty($_SESSION['error'])) {
+      print_r($_SESSION['error']);
+    }
 
-
-
+    if (!empty($_SESSION['info'])) {
+      print_r($_SESSION['info']);
+    }
 
    ?>
   <nav>
@@ -71,7 +75,7 @@
       <fieldset>
         <input type="text" placeholder="School" name="school" />
         <input type="text" placeholder="Klas" name="klas" />
-        <input type="password" placeholder="Gemeente" name="gemeente" />
+        <input type="text" placeholder="Gemeente" name="gemeente" />
         <label for="">Klas</label>
       </fieldset>
       <input type="submit" placeholder="Registreer >">
@@ -91,27 +95,6 @@
       </ul>
     </nav>
   </footer>
-
-
-<!--   <form name="register-form" action="<?php echo $basepath;?>/deelnemen
-  " method="post">
-    <h4>REGISTER FORM</h4>
-    <label for="name">name:<input type="text" name="name" id="name"></label>
-    <br />
-    <label for="email">E-mail:<input type="email" name="email" id="email"></label>
-    <br />
-    <label for="password">password:<input type="password" name="password" id="password"></label>
-    <br />
-    <label for="repeat-password">repeat password:<input type="password" name="repeat-password" id="repeat-password"></label>
-    <br />
-    <label for="school">school:<input type="text" name="school" id="school"></label>
-    <br />
-    <label for="klas">klas:<input type="text" name="klas" id="klas"></label>
-    <br />
-    <label for="gemeente">gemeente:<input type="text" name="gemeente" id="gemeente"></label>
-    <input type="submit" name="register" id="register-btn" value="register"/>
-  </form> -->
-
 
   <script>
     window.app = window.app || {};

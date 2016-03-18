@@ -26,6 +26,8 @@ $app->get('/deelnemers', function ($request, $response, $args) {
 $app->get('/deelnemen', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   $userDAO = new UserDAO();
+  unset($_SESSION['error']);
+  unset($_SESSION['info']);
   return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 

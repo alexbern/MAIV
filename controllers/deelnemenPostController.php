@@ -48,6 +48,7 @@ $view = new \Slim\Views\PhpRenderer('view/');
       }
 
       if (!empty($errors)) {
+        $_SESSION['error'] = 'Oops! Een foutje!';
         return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
         exit();
       }
@@ -63,13 +64,10 @@ $view = new \Slim\Views\PhpRenderer('view/');
           'gemeente' => $data['gemeente'],
           'is_admin' => $data['is_admin']
         ));
+        if (!empty($insertion)) {
+          $_SESSION['info'] = 'Registratie gelukt!';
+        }
       }
-
-
-
-
-
-
 
     }
 
