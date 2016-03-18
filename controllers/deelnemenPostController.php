@@ -8,6 +8,8 @@ $view = new \Slim\Views\PhpRenderer('view/');
     //STUFF VOOR REGISTER FORM
     if ($data['type-form'] == 'register') {
       $data['is_admin'] = 0;
+      unset($_SESSION['error']);
+      unset($_SESSION['info']);
       $errors = array();
 
       if (empty($data['name'])) {
@@ -73,6 +75,42 @@ $view = new \Slim\Views\PhpRenderer('view/');
 
     //STUFF VOOR LOGIN FORM
     if ($data['type-form'] == 'login') {
+
+      if (empty($data['email'])) {
+        $errors['login-email'] = 'Vergeet uw email niet.';
+      }
+
+      if (empty($data['password'])) {
+        $errors['login-password'] = 'Vergeet uw paswoord niet.';
+      }
+
+      if (!empty($errors)) {
+        $_SESSION['error'] = 'Oops! Een foutje!';
+        return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        exit();
+      }
+
+      $existingUser = $userDAO->selectByEmail($data['email']);
+
+      if (!empty($existingUser)) {
+        $hasher = new \Phpass\Hash;
+
+        if($hasher->checkPassword($data['password'], $existingUser['0']['password'])){
+          if (!empty($_SESSION['user'])) {
+            unset($_SESSION['user']);
+          }
+          $_SESSION['user'] = $existingUser;
+        }else{
+          $_SESSION['error'] = 'Paswoord of email is incorrect.';
+        }
+      }else{
+        $_SESSION['error'] = 'Paswoord of email is incorrect.';
+      }
+
+      if (empty($_SESSION['error'])) {
+        $_SESSION['info'] = 'Succesvol ingelogd!';
+        return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]);
+      }
 
     }
 

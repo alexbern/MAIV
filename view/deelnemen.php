@@ -44,8 +44,8 @@
     </header>
     <form name="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <input type="hidden" name="type-form" value="login">
-      <input type="text" placeholder="Naam">
-      <input type="Password" placeholder="Paswoord">
+      <input type="email" name="email" placeholder="Email">
+      <input type="Password" name="password" placeholder="Paswoord">
       <input type="submit" placeholder="login >">
     </form>
   </section>
