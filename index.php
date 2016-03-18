@@ -1,9 +1,12 @@
 <?php
+session_start();
 define('DS', DIRECTORY_SEPARATOR);
 define('WWW_ROOT', __DIR__ . DS);
 
 ini_set('display_errors', true);
 error_reporting(E_ALL);
+
+require_once WWW_ROOT . 'phpass' . DS . 'Phpass.php';
 
 require 'dao/UserDAO.php';
 
@@ -23,11 +26,12 @@ $app->get('/deelnemers', function ($request, $response, $args) {
 $app->get('/deelnemen', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   $userDAO = new UserDAO();
-  if ($_GET) {
-    $params = $request->getQueryParams();
-    print_r($params);
-  }
   return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath()]);
+});
+
+//DEELNEMEN POST
+$app->post('/deelnemen', function ($request, $response, $args) {
+  require 'controllers/deelnemenPostController.php';
 });
 
 //HOME

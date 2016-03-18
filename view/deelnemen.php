@@ -7,6 +7,19 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $basepath;?>/css/style.css"/>
 </head>
 <body>
+  <?php
+
+    if (!empty($errors)) {
+      echo '<pre>';
+      print_r($errors);
+      echo '</pre>';
+    }
+
+
+
+
+
+   ?>
   <nav>
      <ul>
       <li><a href="<?php echo $basepath;?>/">Boek.be</a></li>
@@ -25,7 +38,8 @@
       <h2>Login</h2>
       <h3>en upload</h3>
     </header>
-    <form action="">
+    <form name="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
+      <input type="hidden" name="type-form" value="login">
       <input type="text" placeholder="Naam">
       <input type="Password" placeholder="Paswoord">
       <input type="submit" placeholder="login >">
@@ -39,24 +53,25 @@
       <h2>Registreer</h2>
       <h3>en neem deel</h3>
     </header>
-    <form action="">
+    <form name="register-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <section>
         <p>
           Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een boekverslag over animal farm en een orginele klasfoto. Plezier verzekerd in de klas!
         </p>
         <div></div>
       </section>
+      <input type="hidden" name="type-form" value="register">
       <fieldset>
-        <input type="text" placeholder="Naam">
-        <input type="text" placeholder="Email">
-        <input type="password" placeholder="Paswoord">
-        <input type="password" placeholder="Herhaal paswoord">
-        <label for="">Leerkracht</label>
+        <input type="text" placeholder="Naam" name="name" />
+        <input type="email" placeholder="Email" name="email" />
+        <input type="password" placeholder="Paswoord" name="password" />
+        <input type="password" placeholder="Herhaal paswoord" name="repeat-password" />
+        <label>Leerkracht</label>
       </fieldset>
       <fieldset>
-        <input type="text" placeholder="School">
-        <input type="text" placeholder="Klas">
-        <input type="password" placeholder="Gemeente">
+        <input type="text" placeholder="School" name="school" />
+        <input type="text" placeholder="Klas" name="klas" />
+        <input type="password" placeholder="Gemeente" name="gemeente" />
         <label for="">Klas</label>
       </fieldset>
       <input type="submit" placeholder="Registreer >">
@@ -79,7 +94,7 @@
 
 
 <!--   <form name="register-form" action="<?php echo $basepath;?>/deelnemen
-  " method="get">
+  " method="post">
     <h4>REGISTER FORM</h4>
     <label for="name">name:<input type="text" name="name" id="name"></label>
     <br />
