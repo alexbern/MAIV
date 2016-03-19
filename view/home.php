@@ -100,25 +100,26 @@
   <div class="quote">
     <section class="quote-wrapper">
       <p class="the-quote">
-        Foor legs good two, two legs better! All animals are eual. But some animals are more uqual than others"
+        Foor legs good two, two legs better! All animals are equal. <br/>But some animals are more uqual than others"
       </p>
       <p class="quote-author">
         - George Orwell
       </p>
-      <a href="<?php echo $basepath;?>/boek" class="boek-button">OVER HET BOEK</a>
+      <p class="boek-button"><a href="<?php echo $basepath;?>/boek">OVER HET BOEK</a></p>
     </section>
   </div>
 
     <section class="concurenten">
-      <h4>Nieuwste concurenten</h4>
-      <ul>
+      <h4>NIEUWSTE CONCURENTEN</h4>
+      <ul class="concurenten-wrapper">
         <li><img src="" alt=""></li>
         <li><img src="" alt=""></li>
         <li><img src="" alt=""></li>
       </ul>
     </section>
+
   <footer>
-    <nav>
+    <nav class="footer-nav">
       <ul>
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
       <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
@@ -131,6 +132,7 @@
       </ul>
     </nav>
   </footer>
+
   <script>
     window.app = window.app || {};
     window.app.basePath = '<?php echo $basepath; ?>'

@@ -73,7 +73,7 @@
       <input type="hidden" name="type-form" value="login">
       <input type="email" name="email" placeholder="EMAIL">
       <input type="Password" name="password" placeholder="PASWOORD">
-      <input type="submit" placeholder="login >">
+
     </form>
   </section>
 
