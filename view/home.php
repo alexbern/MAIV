@@ -32,19 +32,27 @@
       </ul>
     </div>
   </nav>
-  </nav>
-  <header>
-    <h1>We Want You</h1>
-    <h1>To Spread</h1>
-    <h1>Animalism</h1>
+
+<div class='header-wrapper home-wrapper'>
+  <header class="header-home">
+    <div class="header-titles">
+      <h1>We Want You</h1>
+      <h1>To Spread</h1>
+      <h1>Animalism</h1>
+    </div>
+
     <side>
-      <p>Win Lots Of Books</p>
+      <div class="win-lots">
+
+      </div>
     </side>
-    <p>
+  </header>
+</div>
+
+   <p>
       Boek.be organiseert een wedstrijd rond het boek Animal Farm.
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
-  </header>
   <main>
     <section class="stappen">
       <section class="stap1">
