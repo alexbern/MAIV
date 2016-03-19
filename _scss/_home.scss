@@ -1,7 +1,10 @@
+$geel: #E8C51E;
+$groen: #21261B;
+$wit: #FEFEFE;
+
 .home-wrapper{
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background-color: blue;
 }
 
 .header-home{
@@ -10,17 +13,145 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   font-size: 4.5em;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header-titles{
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 20rem;
+  margin-top: 20.5rem;
+  z-index: 40;
 }
 
+.wewantyou, .tospread, .animalism{
+  background-color: $groen;
+  padding: 10px 0px 8px 0px;
+  color: $wit;
+  margin: 0 auto;
+}
 
+.wewantyou{
+  width: 70%;
+  transform: rotate(-1deg);
+}
 
+.tospread{
+  width: 60%;
+}
+
+.animalism{
+  width: 85%;
+  font-size: 7rem;
+  color: $geel;
+  transform: rotate(-0.7deg);
+}
+
+.pig-foto{
+  width: 60%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  background-color: blue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.introtext{
+  width: 50%;
+  line-height: 150%;
+  font-family: Gothic, helvetica, arial;
+  color: $geel;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.diagonalbottom{
+  margin-top: -4rem;
+  height: 100px;
+}
+
+.stappen{
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .stap{
+    width: 60%;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    article{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    p{
+      background-color: black;
+      font-family: Gothic, helvetica, arial;
+      color: $wit;
+      width: 70%;
+      font-size: 1.2rem;
+      padding: 1.5rem;
+      line-height: 150%;
+      strong{
+        color: $geel;
+      }
+    }
+  }
+  .article-stap-title, .article-sub-title{
+        color: $geel;
+        background-color: black;
+        line-height: 150%;
+        padding: 10px 5px 8px 5px;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Lietz, helvetica, arial;
+    }
+    .article-stap-title{
+      width: 90%;
+      transform: rotate(-1.5deg);
+      color: $wit;
+    }
+}
+
+.quote{
+  background-color: blue;
+  width: 100%;
+  margin-top: 2rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .quote-wrapper{
+    width: 60%;
+    background-color: yellow;
+    margin: 0 auto;
+    .the-quote, .quote-author{
+      text-align: center;
+      font-family: Gothic, helvetica, arial;
+      font-size: 1.6rem;
+      line-height: 150%;
+      transform: rotate(-1.5deg);
+    }
+    .quote-author{
+      font-size: 1.2rem;
+      transform: rotate(-1.5deg);
+    }
+    .boek-button{
+      background-color: black;
+      color: $geel;
+      text-decoration: none;
+      padding: 10px 5px 8px 5px;
+      margin: 0 auto;
+      width: 20%;
+      font-family: Lietz, helvetica, arial;
+    }
+  }
+}
