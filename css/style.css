@@ -109,7 +109,7 @@ body {
 
 .header-wrapper {
   width: 100%;
-  height: 280px;
+  height: 300px;
   background: url("/assets/img/paper-background.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -134,7 +134,7 @@ body {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 6.6rem;
 }
 
 .header-wrapper .header .texts h1 {
@@ -164,8 +164,8 @@ body {
 
 .header-wrapper .header .stapelsboeken {
   width: 82%;
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+  -webkit-transform: rotate(0.7deg);
+          transform: rotate(0.7deg);
 }
 
 .diagonal {
@@ -179,6 +179,9 @@ body {
 .title {
   font-family: Lietz;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
   font-size: 2rem;
 }
 
@@ -190,12 +193,58 @@ body {
 }
 
 .main-container .login-section {
-  background-color: yellow;
   width: 1024px;
   margin: 0 auto;
 }
 
-.main-container .login-title {
+.main-container .login-section header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-container .login-section header .login-title {
   color: #E8C51E;
   background-color: black;
+  width: 12%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  margin-left: 2rem;
+}
+
+.main-container .login-section header .upload-title {
+  color: #FEFEFE;
+  font-size: 1.2rem;
+  background-color: black;
+  width: 14%;
+}
+
+.main-container .login-section .login-form {
+  width: 65%;
+  margin: 0 auto;
+  background-color: black;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+}
+
+.main-container .login-section .login-form input[type="email"], .main-container .login-section .login-form input[type="password"] {
+  background-color: transparent;
+  margin-bottom: 3rem;
+  padding-bottom: 2px;
+  color: #FEFEFE;
+  font-family: Gothic;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: #FEFEFE 2px solid;
+  width: 100%;
 }

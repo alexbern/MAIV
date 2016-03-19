@@ -63,15 +63,16 @@
 
 <div class="diagonal"></div>
 <main class="main-container">
+
   <section class="login-section">
     <header>
       <h2 class="login-title title">Login</h2>
       <h3 class="upload-title title">en upload</h3>
     </header>
-    <form name="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
+    <form name="login-form" class="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <input type="hidden" name="type-form" value="login">
-      <input type="email" name="email" placeholder="Email">
-      <input type="Password" name="password" placeholder="Paswoord">
+      <input type="email" name="email" placeholder="EMAIL">
+      <input type="Password" name="password" placeholder="PASWOORD">
       <input type="submit" placeholder="login >">
     </form>
   </section>
