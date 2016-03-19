@@ -34,73 +34,89 @@
   </nav>
 
 <div class='header-wrapper home-wrapper'>
+
   <header class="header-home">
-    <div class="header-titles">
-      <h1>We Want You</h1>
-      <h1>To Spread</h1>
-      <h1>Animalism</h1>
+    <div class="pig-foto">
+
     </div>
+    <div class="header-titles">
+      <h1 class="wewantyou">We Want You</h1>
+      <h1 class="tospread">To Spread</h1>
+      <h1 class="animalism">Animalism</h1>
+    </div>
+    <div class="win-lots">
 
-    <side>
-      <div class="win-lots">
-
-      </div>
-    </side>
+    </div>
   </header>
 </div>
 
-   <p>
-      Boek.be organiseert een wedstrijd rond het boek Animal Farm.
+  <div class="diagonal"></div>
+  <main class="main-container">
+
+    <p class="introtext">
+      Boek.be organiseert een wedstrijd rond het boek Animal Farm. <br/>
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
-  <main>
+
     <section class="stappen">
-      <section class="stap1">
+      <section class="stap1 stap">
         <div></div>
         <article>
-          <h2>Stap 1</h2>
-          <h3>Registreer</h3>
+          <div class="article-titles">
+            <h2 class="article-stap-title">STAP 1</h2>
+            <h3 class="article-sub-title">REGISTREER</h3>
+          </div>
           <p>
             Registreer je nu voor <strong> de opdracht van jou leven! </strong> Wij roepen jou op om de waarde en normen van het animalisme door te geven aan jouw leerlingen door hen het boek “Animal Farm” in de les voor te schotelen.
           </p>
         </article>
       </section>
-      <section class="stap2">
+
+      <section class="stap2 stap">
         <div></div>
         <article>
           <p>Ga vervolgens <strong> samen met jouw leerlingen </strong> aan de slag in de klas. Leer ze de kneepjes van het vak, en stel ze voor aan het beste boek van de eeuw: “Animal Farm”. Maak de beste <strong> klassikale boekbespreking </strong> van het boek en maak een animalistische <strong>klasfoto.</strong></p>
-          <h2>Stap 2</h2>
-          <h3>Registreer</h3>
+          <div class="article-titles">
+            <h2 class="article-stap-title">STAP 2</h2>
+            <h3 class="article-sub-title">AAN DE SLAG</h3>
+          </div>
+
         </article>
       </section>
-      <section class="stap3">
+      <section class="stap3 stap">
         <div></div>
         <article>
-          <h2>Stap 3</h2>
-          <h3>Registreer</h3>
+        <div class="article-titles">
+          <h2 class="article-stap-title">STAP 3</h2>
+          <h3 class="article-sub-title">VERSTUUR &amp; WIN</h3>
+        </div>
           <p>Om jouw en je klas te belonen mag je natuurlijk jouw prachtwerk natuurlijk ten toon gesteld worden. Als laatste stuur je ons <strong>jouw bespreking samen met de klasfoto.</strong> Een jury van animalisten zullen deze dan beoordelen. Het beste verslag maakt kans op <strong>100 nieuwe boeken</strong> in de klas!</p>
         </article>
       </section>
     </section>
-    <section class="quote">
-      <p>
+  </main>
+  <div class="diagonal diagonalbottom"></div>
+
+  <div class="quote">
+    <section class="quote-wrapper">
+      <p class="the-quote">
         Foor legs good two, two legs better! All animals are eual. But some animals are more uqual than others"
       </p>
-      <p>
-        George Orwell
+      <p class="quote-author">
+        - George Orwell
       </p>
-      <a href="">over het boek ></a>
+      <a href="<?php echo $basepath;?>/boek" class="boek-button">OVER HET BOEK</a>
     </section>
+  </div>
+
     <section class="concurenten">
       <h4>Nieuwste concurenten</h4>
       <ul>
         <li><img src="" alt=""></li>
         <li><img src="" alt=""></li>
         <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
       </ul>
     </section>
-  </main>
   <footer>
     <nav>
       <ul>

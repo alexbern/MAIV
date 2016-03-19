@@ -251,9 +251,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .home-wrapper {
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background-color: blue;
 }
 
 .header-home {
@@ -266,14 +265,181 @@ nav .navigation-wrapper .boek-nav {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   font-size: 4.5em;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header-titles {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 20rem;
+  margin-top: 20.5rem;
+  z-index: 40;
+}
+
+.wewantyou, .tospread, .animalism {
+  background-color: #21261B;
+  padding: 10px 0px 8px 0px;
+  color: #FEFEFE;
+  margin: 0 auto;
+}
+
+.wewantyou {
+  width: 70%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.tospread {
+  width: 60%;
+}
+
+.animalism {
+  width: 85%;
+  font-size: 7rem;
+  color: #E8C51E;
+  -webkit-transform: rotate(-0.7deg);
+          transform: rotate(-0.7deg);
+}
+
+.pig-foto {
+  width: 60%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.introtext {
+  width: 50%;
+  line-height: 150%;
+  font-family: Gothic, helvetica, arial;
+  color: #E8C51E;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.diagonalbottom {
+  margin-top: -4rem;
+  height: 100px;
+}
+
+.stappen {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stappen .stap {
+  width: 60%;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+}
+
+.stappen .stap article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.stappen .stap p {
+  background-color: black;
+  font-family: Gothic, helvetica, arial;
+  color: #FEFEFE;
+  width: 70%;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  line-height: 150%;
+}
+
+.stappen .stap p strong {
+  color: #E8C51E;
+}
+
+.stappen .article-stap-title, .stappen .article-sub-title {
+  color: #E8C51E;
+  background-color: black;
+  line-height: 150%;
+  padding: 10px 5px 8px 5px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Lietz, helvetica, arial;
+}
+
+.stappen .article-stap-title {
+  width: 90%;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  color: #FEFEFE;
+}
+
+.quote {
+  background-color: blue;
+  width: 100%;
+  margin-top: 2rem;
+  height: 200px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quote .quote-wrapper {
+  width: 60%;
+  background-color: yellow;
+  margin: 0 auto;
+}
+
+.quote .quote-wrapper .the-quote, .quote .quote-wrapper .quote-author {
+  text-align: center;
+  font-family: Gothic, helvetica, arial;
+  font-size: 1.6rem;
+  line-height: 150%;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+.quote .quote-wrapper .quote-author {
+  font-size: 1.2rem;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+.quote .quote-wrapper .boek-button {
+  background-color: black;
+  color: #E8C51E;
+  text-decoration: none;
+  padding: 10px 5px 8px 5px;
+  margin: 0 auto;
+  width: 20%;
+  font-family: Lietz, helvetica, arial;
 }
