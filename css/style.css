@@ -61,7 +61,141 @@ main {
   display: block;
 }
 
+nav {
+  width: 100%;
+  position: fixed;
+}
+
+nav .navigation-wrapper {
+  margin: 0 auto;
+  width: 1024px;
+  height: 50px;
+  font-family: Lietz;
+  font-style: 14px;
+  text-transform: uppercase;
+}
+
+nav .navigation-wrapper ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navigation-wrapper li {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+nav .navigation-wrapper li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .navigation-wrapper .deelnemen-nav {
+  margin-left: 50%;
+}
+
+nav .navigation-wrapper .boek-nav {
+  width: 10%;
+}
+
 body {
-  background-color: red;
-  font-family: gothic;
+  background: url("/assets/img/pattern.jpg");
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 280px;
+  background: url("/assets/img/paper-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+
+.header-wrapper .header {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lietz;
+  font-size: 4.5em;
+}
+
+.header-wrapper .header .texts {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.header-wrapper .header .texts h1 {
+  margin: 0 auto;
+}
+
+.header-wrapper .header .neemdeel {
+  color: #E8C51E;
+  width: 55%;
+  padding: 10px 0px 8px 0px;
+  background-color: #21261B;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.header-wrapper .header .kansop, .header-wrapper .header .stapelsboeken {
+  color: #FEFEFE;
+  padding: 10px 0px 8px 0px;
+  background-color: #21261B;
+  width: 90%;
+}
+
+.header-wrapper .header .kansop {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.header-wrapper .header .stapelsboeken {
+  width: 82%;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.diagonal {
+  height: 40px;
+  width: 100%;
+  background-color: #21261B;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+}
+
+.title {
+  font-family: Lietz;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.main-container {
+  margin-top: -1rem;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: #21261B;
+}
+
+.main-container .login-section {
+  background-color: yellow;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.main-container .login-title {
+  color: #E8C51E;
+  background-color: black;
 }

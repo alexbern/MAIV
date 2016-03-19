@@ -5,15 +5,32 @@
   <title>MAIV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" type="text/css" href="<?php echo $basepath;?>/css/style.css"/>
+  <script type="text/javascript">
+    WebFontConfig = {
+      custom: { families: ['Lietz', 'Gothic'],
+                urls: ['/assets/fonts/lietz.css', '/assets/fonts/gothic.css'] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="<?php echo $basepath;?>/">Boek.be</a></li>
-      <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-    </ul>
+    <div class="navigation-wrapper">
+       <ul>
+        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
+        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+      </ul>
+    </div>
   </nav>
 
   <footer>

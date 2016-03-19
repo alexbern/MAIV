@@ -40,22 +40,33 @@
 
    ?>
   <nav>
-     <ul>
-      <li><a href="<?php echo $basepath;?>/">Boek.be</a></li>
-      <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-    </ul>
+    <div class="navigation-wrapper">
+       <ul>
+        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
+        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+      </ul>
+    </div>
   </nav>
-  <header>
-    <h1>Submit</h1>
-    <h1>And win lots and</h1>
-    <h1>lots of books</h1>
-  </header>
-  <section>
+
+  <div class='header-wrapper'>
+    <header class="header">
+      <div class="texts">
+        <h1 class="neemdeel">NEEM DEEL</h1>
+        <h1 class="kansop">EN MAAK KANS OP</h1>
+        <h1 class="stapelsboeken">STAPELS BOEKEN</h1>
+      </div>
+    </header>
+  </div>
+
+
+<div class="diagonal"></div>
+<main class="main-container">
+  <section class="login-section">
     <header>
-      <h2>Login</h2>
-      <h3>en upload</h3>
+      <h2 class="login-title title">Login</h2>
+      <h3 class="upload-title title">en upload</h3>
     </header>
     <form name="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <input type="hidden" name="type-form" value="login">
@@ -64,6 +75,7 @@
       <input type="submit" placeholder="login >">
     </form>
   </section>
+
   <section>
     <aside>
       <p>Nog niet langs geweest?</p>
@@ -96,6 +108,7 @@
       <input type="submit" placeholder="Registreer >">
     </form>
   </section>
+</main>
   <footer>
     <nav>
       <ul>

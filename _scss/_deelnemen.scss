@@ -1,4 +1,87 @@
+$geel: #E8C51E;
+$groen: #21261B;
+$wit: #FEFEFE;
+
 body{
-  background-color: red;
-  font-family: gothic;
+  background: url('/assets/img/pattern.jpg');
 }
+
+.header-wrapper{
+  width: 100%;
+  height: 280px;
+  background: url('/assets/img/paper-background.png');
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: 45%;
+  .header{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: Lietz;
+    font-size: 4.5em;
+    .texts{
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      h1{
+        margin: 0 auto;
+      }
+    }
+    .neemdeel{
+      color: $geel;
+      width: 55%;
+      padding: 10px 0px 8px 0px;
+      background-color: $groen;
+      transform: rotate(-3deg);
+    }
+    .kansop, .stapelsboeken{
+      color: $wit;
+      padding: 10px 0px 8px 0px;
+      background-color: $groen;
+      width: 90%;
+    }
+    .kansop{
+      transform: rotate(-1deg);
+    }
+    .stapelsboeken{
+      width: 82%;
+      transform: rotate(1deg);
+    }
+  }
+}//END HEADER
+
+.diagonal{
+  height: 40px;
+  width: 100%;
+  background-color: $groen;
+  transform: rotate(-1deg);
+}
+
+.title{
+  font-family: Lietz;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.main-container{
+  margin-top: -1rem;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: $groen;
+  .login-section{
+    background-color: yellow;
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .login-title{
+    color: $geel;
+    background-color: black;
+  }
+}
+
+
+
+
