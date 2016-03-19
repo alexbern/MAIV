@@ -53,9 +53,9 @@
   <div class='header-wrapper'>
     <header class="header">
       <div class="texts">
-        <h1 class="neemdeel">NEEM DEEL</h1>
-        <h1 class="kansop">EN MAAK KANS OP</h1>
-        <h1 class="stapelsboeken">STAPELS BOEKEN</h1>
+        <h1 class="neemdeel">Neem deelL</h1>
+        <h1 class="kansop">En maak kans op</h1>
+        <h1 class="stapelsboeken">stapels boeken</h1>
       </div>
     </header>
   </div>
@@ -63,7 +63,6 @@
 
 <div class="diagonal"></div>
 <main class="main-container">
-
   <section class="login-section">
     <header>
       <h2 class="login-title title">Login</h2>
