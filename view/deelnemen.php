@@ -6,6 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" type="text/css" href="<?php echo $basepath;?>/css/style.css"/>
 </head>
+<script type="text/javascript">
+    WebFontConfig = {
+      custom: { families: ['Lietz', 'Gothic'],
+                urls: ['/assets/fonts/lietz.css', '/assets/fonts/gothic.css'] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 <body>
   <?php
 
