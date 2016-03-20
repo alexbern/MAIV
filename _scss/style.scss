@@ -1,8 +1,45 @@
 @import 'reset';
+@import 'helpers/kleuren';
+@import 'animations';
+
 
 body{
   background: url('/assets/img/pattern.jpg');
 }
+
+
+//////////
+//ALGEMEEN
+//////////
+
+strong{
+  color: $geel;
+}
+
+p{
+  font-family: Gothic, helvetica, arial;
+  font-size: 1.2rem;
+  padding:20px;
+  line-height: 150%;
+  color:$wit;
+  background-color:#000;
+  margin-bottom:2rem;
+}
+
+h3{
+  margin-bottom: 2rem;
+  padding:1rem;
+  color:#E8C51E;
+  font-family: Lietz, helvetica, arial;
+  font-size:2rem;
+  text-transform: uppercase;
+  background-color: #000;
+}
+
+
+/////
+//NAV
+/////
 
 nav{
   width: 100%;
@@ -35,7 +72,7 @@ nav{
       width: 10%;
     }
   }
-} //NAVIGATION END
+}
 
 .header-wrapper{
   width: 100%;
@@ -46,5 +83,48 @@ nav{
   background-size: 45%;
 }
 
+///////////////
+//NOTIFICATIONS
+///////////////
+
+.error, .info{
+  position: fixed;
+  left: 50%;
+  border-radius: 5px;
+  top: 10%;
+  z-index: 99999;
+  padding: 10px;
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  font-family: Helvetica neue, helvetica, arial, sans-serif;
+  font-weight: bold;
+  color: #CC0200;
+  border-bottom: 5px solid #CC0200;
+  align-items: center;
+  background-color: #F15958;
+  transform: translate(-50%, -50%);
+  animation: fade-away 5s forwards;
+  img{
+    width: 8%;
+    margin-right: 10px;
+
+  }
+  span{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.info{
+  color: #85AA00;
+  border-bottom: 5px solid #85AA00;
+  background-color: #B9DE46;
+}
+
+
+
 @import 'deelnemen';
 @import 'home';
+@import 'boek';

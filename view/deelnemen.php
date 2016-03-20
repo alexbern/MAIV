@@ -22,20 +22,29 @@
     })();
   </script>
 <body>
+
   <?php
 
-    if (!empty($errors)) {
-      echo '<pre>';
-      print_r($errors);
-      echo '</pre>';
-    }
-
     if (!empty($_SESSION['error'])) {
-      print_r($_SESSION['error']);
+      ?>
+
+    <div class="error">
+      <img src="/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
+    </div>
+
+
+  <?php
     }
 
     if (!empty($_SESSION['info'])) {
-      print_r($_SESSION['info']);
+      ?>
+
+      <div class="info">
+        <img src="/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
+      </div>
+
+
+  <?php
     }
 
    ?>
@@ -53,9 +62,9 @@
   <div class='header-wrapper'>
     <header class="header">
       <div class="texts">
-        <h1 class="neemdeel">NEEM DEEL</h1>
-        <h1 class="kansop">EN MAAK KANS OP</h1>
-        <h1 class="stapelsboeken">STAPELS BOEKEN</h1>
+        <h1 class="neemdeel">Neem deel</h1>
+        <h1 class="kansop">En maak kans op</h1>
+        <h1 class="stapelsboeken">stapels boeken</h1>
       </div>
     </header>
   </div>
@@ -63,7 +72,6 @@
 
 <div class="diagonal"></div>
 <main class="main-container">
-
   <section class="login-section">
     <header>
       <h2 class="login-title title">Login</h2>
@@ -71,8 +79,20 @@
     </header>
     <form name="login-form" class="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <input type="hidden" name="type-form" value="login">
-      <input type="email" class="inputfield" name="email" placeholder="EMAIL">
-      <input type="Password" class="inputfield" name="password" placeholder="PASWOORD">
+      <?php
+        if (!empty($errors['login-email'])) {
+          echo '<input type="email" class="inputfield badinput" name="email" placeholder="'. $errors['login-email'] .'">';
+        }else{
+          echo '<input type="email" class="inputfield" name="email" placeholder="EMAIL">';
+        }
+
+        if (!empty($errors['login-password'])) {
+          echo '<input type="Password" class="inputfield badinput" name="password" placeholder="'. $errors['login-password'].'">';
+        }else{
+          echo '<input type="Password" class="inputfield" name="password" placeholder="PASWOORD">';
+        }
+
+       ?>
       <input type="submit" class="login-submit" value="LOGIN"></input>
     </form>
   </section>
@@ -93,16 +113,62 @@
       <input type="hidden" name="type-form" value="register">
       <div class="fieldsets">
         <fieldset>
-          <input type="text" class="inputfield" placeholder="Naam" name="name" />
-          <input type="email" class="inputfield" placeholder="Email" name="email" />
-          <input type="password" class="inputfield" placeholder="Paswoord" name="password" />
-          <input type="password" class="inputfield" placeholder="Herhaal paswoord" name="repeat-password" />
+        <?php
+          if (!empty($errors['name'])) {
+            echo '<input type="text" class="inputfield badinput" placeholder="'.$errors['name'].'" name="name" />';
+          }else{
+            echo '<input type="text" class="inputfield" placeholder="NAAM" name="name" />';
+          }
+
+          if (!empty($errors['email'])) {
+            echo '<input type="email" class="inputfield badinput" placeholder="'.$errors['email'].'" name="email" />';
+          }else{
+            echo '<input type="email" class="inputfield" placeholder="EMAIL" name="email" />';
+          }
+
+          if (!empty($errors['password'])) {
+            echo '<input type="password" class="inputfield badinput" placeholder="'.$errors['password'].'" name="password" />';
+          }else{
+            echo '<input type="password" class="inputfield" placeholder="PASWOORD" name="password" />';
+          }
+
+          if (!empty($errors['repeat-password'])) {
+            echo '<input type="password" class="inputfield badinput" placeholder="'.$errors['repeat-password'].'" name="repeat-password" />';
+          }else{
+            echo '<input type="password" class="inputfield" placeholder="HERHAAL PASWOORD" name="repeat-password" />';
+          }
+
+         ?>
+
           <label>LEERKRACHT</label>
         </fieldset>
         <fieldset>
-          <input type="text" class="inputfield" placeholder="School" name="school" />
-          <input type="text" class="inputfield" placeholder="Klas" name="klas" />
-          <input type="text" class="inputfield" placeholder="Gemeente" name="gemeente" />
+          <?php
+            if (!empty($errors['school'])) {
+              echo '<input type="text" class="inputfield badinput" placeholder="'.$errors['school'].'" name="school" />';
+            }else{
+              echo '<input type="text" class="inputfield" placeholder="SCHOOL" name="school" />';
+            }
+
+            if (!empty($errors['klas'])) {
+              echo '<input type="text" class="inputfield badinput" placeholder="'.$errors['klas'].'" name="klas" />';
+            }else{
+              echo '<input type="text" class="inputfield" placeholder="KLAS" name="klas" />';
+            }
+
+            if (!empty($errors['gemeente'])) {
+              echo '<input type="text" class="inputfield badinput" placeholder="'.$errors['gemeente'].'" name="gemeente" />';
+            }else{
+              echo '<input type="text" class="inputfield" placeholder="GEMEENTE" name="gemeente" />';
+            }
+
+
+
+           ?>
+
+
+
+
           <label>KLAS</label>
         </fieldset>
       </div>

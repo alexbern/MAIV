@@ -1,7 +1,3 @@
-$geel: #E8C51E;
-$groen: #21261B;
-$wit: #FEFEFE;
-
 .home-wrapper{
   height: 500px;
   width: 100%;
@@ -14,7 +10,7 @@ $wit: #FEFEFE;
   display: flex;
   justify-content: center;
   font-family: Lietz, helvetica, arial;
-  font-size: 4.5em;
+  font-size: 3.5em;
   text-transform: uppercase;
   position: relative;
 }
@@ -23,7 +19,7 @@ $wit: #FEFEFE;
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 20.5rem;
+  margin-top: 26.5rem;
   z-index: 40;
 }
 
@@ -51,23 +47,21 @@ $wit: #FEFEFE;
 }
 
 .pig-foto{
-  width: 60%;
-  height: 80%;
-  left: 50%;
-  top: 50%;
-  background-color: blue;
+  width: 100%;
+  height: 100%;
+  left: 62%;
+  top: 52%;
+  background: url('/assets/img/homeheader.png') no-repeat;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
 .introtext{
   width: 50%;
-  line-height: 150%;
-  font-family: Gothic, helvetica, arial;
   color: $geel;
-  font-size: 1.2rem;
   margin: 0 auto;
   text-align: center;
+  background-color: $groen;
 }
 
 .diagonalbottom{
@@ -84,25 +78,14 @@ $wit: #FEFEFE;
   display: flex;
   flex-direction: column;
   .stap{
-    width: 60%;
-    margin-bottom: 8rem;
-    margin-top: 8rem;
+    width: 80%;
     article{
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
     }
     p{
-      background-color: black;
-      font-family: Gothic, helvetica, arial;
-      color: $wit;
-      width: 70%;
-      font-size: 1.2rem;
-      padding: 1.5rem;
-      line-height: 150%;
-      strong{
-        color: $geel;
-      }
+      width: 60%;
+      padding: 2.5rem;
     }
   }
   .article-stap-title, .article-sub-title{
@@ -115,11 +98,55 @@ $wit: #FEFEFE;
         font-family: Lietz, helvetica, arial;
     }
     .article-stap-title{
-      width: 90%;
+      width: 70%;
       transform: rotate(-1.5deg);
       color: $wit;
     }
 }
+
+.stap1{
+  margin-top: 8rem;
+  background: url('/assets/img/stap1.png') no-repeat;
+  background-position:top-left;
+  width:800px;
+
+  article{
+    margin-top:25rem;
+  }
+}
+
+.stap2{
+  margin-top:-9rem;
+  background: url('/assets/img/stap2.png') no-repeat;
+  background-position:top-left;
+  width:800px;
+  article{
+    margin-top:25rem;
+  }
+  .article-titles{
+    margin-top:4rem;
+  }
+}
+
+.stap3{
+  background: url('/assets/img/stap3.1.png') no-repeat;
+  background-position:top-left;
+  width:800px;
+  article{
+    margin-top:19rem;
+    margin-bottom:5rem;
+  }
+  .varkenbg{
+    background: url('/assets/img/stap3.2.png') no-repeat;
+    width:1000px;
+    height:300px;
+    position:absolute;
+  }
+  .verstuur{
+    margin-bottom:3px;
+  }
+}
+
 
 .quote{
   width: 100%;
@@ -139,8 +166,10 @@ $wit: #FEFEFE;
       transform: rotate(-1.5deg);
     }
     .quote-author{
+      margin: 0 auto;
       font-size: 1.2rem;
       transform: rotate(-1.5deg);
+      width:20%;
     }
     .boek-button{
       background-color: black;
