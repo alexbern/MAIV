@@ -41,6 +41,7 @@
       </div>
     </header>
   </div>
+  <div class="schuinboven"></div>
   <main>
     <div class="main-container">
       <div class="container">
@@ -61,6 +62,7 @@
         </section>
         </div>
       </div>
+      <div class="schuinonder"></div>
       <div class="container">
         <section class="schrijver">
           <section class="qoute">
@@ -72,7 +74,7 @@
               <h3>George Orwell</h3>
               <p><strong>George Orwell</strong> was een Brits schrijver, journalist en literair criticus. Rond de 20e eeuw en zelfs nu nog is hij een van de meest bewonderde auteurs. Door zijn werken <strong>Animal Farm </strong>en de dystopische roman heeft hij vooral naambekendheid verworven. Vele van zijn werken zijn satirisch getint met een scherpe argumenten tegen het <strong>stalinisme en totalitarisme</strong>.</p>
             </div>
-            <div>
+            <div class="awards">
               <h3>Awards</h3>
               <p>Prometheus hall of fame</p>
               <p>Retro Hugo Award</p>
@@ -81,23 +83,25 @@
           </section>
         </section>
       </div>
+      <div class="schuinwrapperlinks">
       <div class="main-container">
         <div class="container">
-          <section class="reviews">
-            <h3>Reviews</h3>
-            <section class="items">
-              <div>
-                <p>“Animal Farm is the most thought-provoking
-                piece of literature I have ever read.”</p>
-                <p class="reviewer">- The Guardian</p>
-              </div>
-              <div>
-                <p>“Animal Farm is moving, bitter and a warning
-                from history. A score of 9.5/10!”</p>
-                <p class="reviewer">- Fantasy Book Reviews</p>
-              </div>
+            <section class="reviews">
+              <h3>Reviews</h3>
+              <section class="items">
+                <div>
+                  <p>“Animal Farm is the most thought-provoking
+                  piece of literature I have ever read.”</p>
+                  <p class="reviewer">- The Guardian</p>
+                </div>
+                <div>
+                  <p>“Animal Farm is moving, bitter and a warning
+                  from history. A score of 9.5/10!”</p>
+                  <p class="reviewer">- Fantasy Book Reviews</p>
+                </div>
+              </section>
             </section>
-          </section>
+          </div>
           </div>
         </div>
     </div>

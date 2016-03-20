@@ -35,28 +35,22 @@
 
 <div class='header-wrapper home-wrapper'>
   <header class="header-home">
-    <div class="pig-foto">
-
-    </div>
+    <div class="pig-foto"></div>
     <div class="header-titles">
       <h1 class="wewantyou">We Want You</h1>
       <h1 class="tospread">To Spread</h1>
       <h1 class="animalism">Animalism</h1>
     </div>
     <div class="win-lots">
-
     </div>
   </header>
 </div>
-
-  <div class="diagonal"></div>
+<div class="schuinboven"></div>
   <main class="main-container">
-
     <p class="introtext">
-      Boek.be organiseert een wedstrijd rond het boek Animal Farm. <br/>
+      Boek.be organiseert een wedstrijd rond het boek Animal Farm.
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
-
     <section class="stappen">
       <section class="stap1 stap">
         <div class="fotostap1"></div>
@@ -97,12 +91,13 @@
       </section>
     </section>
   </main>
-  <div class="diagonal diagonalbottom"></div>
+</div>
+<div class="schuinonder"></div>
 
   <div class="quote">
     <section class="quote-wrapper">
       <p class="the-quote">
-        Foor legs good two, two legs better! All animals are equal. <br/>But some animals are more uqual than others"
+        Foor legs good two, two legs better! All animals are equal. But some animals are more uqual than others"
       </p>
       <p class="quote-author">
         - George Orwell
@@ -113,7 +108,7 @@
 
     </section>
   </div>
-
+  <div class="schuinwrapperlinks">
     <section class="concurenten">
       <h4>NIEUWSTE CONCURENTEN</h4>
       <ul class="concurenten-wrapper">
@@ -122,6 +117,7 @@
         <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
       </ul>
     </section>
+  </div>
 
   <footer>
     <nav class="bottomnav">

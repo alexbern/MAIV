@@ -60,7 +60,7 @@
     </div>
   </header>
 </div>
-<div class="diagonal"></div>
+<div class="schuinboven"></div>
 <main class="main-container">
   <section class="login-section">
     <header>

@@ -41,6 +41,7 @@
       </div>
     </header>
   </div>
+  <div class="schuinboven"></div>
   <main>
     <div class="main-container">
       <section class="deelnemerfotos">

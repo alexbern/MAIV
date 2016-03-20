@@ -108,6 +108,36 @@ p, h1, h2, h3, h4, h5, li {
   visibility: visible;
 }
 
+.main-container {
+  width: 100%;
+  background: url("/assets/img/groenebg.png") repeat;
+}
+
+.schuinboven {
+  height: 100px;
+  -webkit-transform: skewY(-1deg);
+          transform: skewY(-1deg);
+  background: url("/assets/img/groenebg.png") repeat;
+}
+
+.schuinonder {
+  height: 200px;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+  background: url("/assets/img/groenebg.png") repeat;
+  margin-top: -100px;
+}
+
+.schuinwrapperlinks {
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
 strong {
   color: #E8C51E;
 }
@@ -155,6 +185,7 @@ h3 {
   width: 100%;
   position: fixed;
   z-index: 9999;
+  background: url("/assets/img/pattern.jpg");
 }
 
 .topnav .navigation-wrapper {
@@ -628,12 +659,8 @@ h3 {
   width: 50%;
   color: #E8C51E;
   text-align: center;
-  background-color: #21261B;
-}
-
-.diagonalbottom {
-  margin-top: -4rem;
-  height: 100px;
+  background: url("/assets/img/groenebg.png") repeat;
+  font-size: 1.5rem;
 }
 
 .stappen {
@@ -655,7 +682,7 @@ h3 {
 }
 
 .stappen .stap {
-  width: 80%;
+  width: 70%;
 }
 
 .stappen .stap article {
@@ -729,23 +756,18 @@ h3 {
 }
 
 .quote {
-  width: 100%;
   margin-top: 2rem;
-  height: 350px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 700px;
+  margin-top: -150px;
+  background: url("/assets/img/orwellbg.png") no-repeat;
+  background-size: cover;
 }
 
 .quote .quote-wrapper {
   margin: 0 auto;
   width: 1024px;
+  width: 70%;
+  padding-top: 280px;
 }
 
 .quote .quote-wrapper .the-quote, .quote .quote-wrapper .quote-author {
@@ -766,7 +788,6 @@ h3 {
 }
 
 .quote .quote-wrapper .boek-button {
-  background-color: black;
   text-decoration: none;
   padding: 12px 5px 12px 5px;
   margin: 0 auto;
@@ -784,15 +805,14 @@ h3 {
 
 .concurenten {
   width: 100%;
-  background-color: #252227;
-  -webkit-transform: rotate(-1.5deg);
-          transform: rotate(-1.5deg);
+  background: url("/assets/img/groenebg.png") repeat;
   padding-bottom: 3rem;
+  margin-top: -100px;
 }
 
 .concurenten h4 {
-  -webkit-transform: rotate(1.5deg);
-          transform: rotate(1.5deg);
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
   margin: 0 auto;
   background-color: black;
   font-size: 2rem;
@@ -801,6 +821,11 @@ h3 {
   font-family: Lietz, helvetica, arial;
   color: #E8C51E;
   width: 400px;
+}
+
+.concurenten ul {
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
 }
 
 .concurenten .concurenten-wrapper {
@@ -813,8 +838,6 @@ h3 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-transform: rotate(1.5deg);
-          transform: rotate(1.5deg);
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -837,7 +860,6 @@ h3 {
 .boek {
   margin-top: -1rem;
   padding-top: 3rem;
-  width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -858,7 +880,7 @@ h3 {
 .boek ul li {
   font-family: Lietz, helvetica, arial;
   margin-right: 2rem;
-  padding: 0.5rem;
+  padding: 1rem;
   color: #FEFEFE;
   background-color: #000;
   margin-bottom: 2rem;
@@ -866,6 +888,10 @@ h3 {
 
 .boek p {
   width: 100%;
+}
+
+.boek h3 {
+  width: 40%;
 }
 
 .schrijver .qoute {
@@ -891,10 +917,20 @@ h3 {
 .schrijver h3 {
   margin-bottom: 2rem;
   padding: 1rem;
+  width: 55%;
 }
 
 .schrijver p {
-  width: 60%;
+  width: 90%;
+}
+
+.awards h3 {
+  width: 100%;
+}
+
+.reviews {
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
 }
 
 .reviews .items {
@@ -915,6 +951,11 @@ h3 {
   font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
   text-align: right;
+  width: 38%;
+}
+
+.reviews h3 {
+  width: 15%;
 }
 
 .deelnemerfotos {

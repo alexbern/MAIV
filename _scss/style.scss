@@ -25,6 +25,35 @@ p, h1, h2, h3, h4, h5, li{
 
 
 //////////
+//WRAPPERS
+//////////
+.main-container{
+  width: 100%;
+  background: url('/assets/img/groenebg.png') repeat;
+}
+
+//SCHUIN
+.schuinboven{
+  height:100px;
+  transform: skewY(-1deg);
+  background: url('/assets/img/groenebg.png') repeat;
+}
+.schuinonder{
+  height:200px;
+  transform: skewY(3deg);
+  background: url('/assets/img/groenebg.png') repeat;
+  margin-top:-100px;
+}
+.schuinwrapperlinks{
+  transform: skewY(-2deg);
+}
+
+.container{
+  @include centerdesktop;
+}
+
+
+//////////
 //ALGEMEEN
 //////////
 
@@ -80,6 +109,7 @@ h3{
   width: 100%;
   position: fixed;
   z-index: 9999;
+  background: url('/assets/img/pattern.jpg');
   .navigation-wrapper{
     @include centerdesktop;
     height: 50px;
