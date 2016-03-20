@@ -1,0 +1,33 @@
+.cms-list{
+  width: 1024px;
+  padding-top: 100px;
+  margin: 0 auto;
+  height: 500px;
+  table{
+    width: 100%;
+    thead tr th{
+      background-color: #21261A;
+      font-family: Gothic, arial, sans-serif;
+      text-transform: uppercase;
+      color: $wit;
+      margin-right: 1px;
+      padding: 20px;
+    }
+    .foto{
+      width: 15%;
+    }
+    .foto-img{
+      width: 100%;
+    }
+    tbody tr td{
+      border-bottom: 2px solid #212619;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-size: 1rem;
+      font-family: Gothic, arial, sans-serif;
+      flex-direction: row;
+      vertical-align: center;
+      text-align: center;
+    }
+  }
+}

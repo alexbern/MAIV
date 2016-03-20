@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 require_once WWW_ROOT . 'phpass' . DS . 'Phpass.php';
 
 require 'dao/UserDAO.php';
+require 'dao/DeelnemersDAO.php';
 
 require 'vendor/autoload.php';
 
@@ -46,6 +47,12 @@ $app->get('/', function ($request, $response, $args) {
 $app->get('/boek', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   return $view->render($response, 'boek.php', ['basepath' => $request->getUri()->getBasePath()]   );
+});
+
+//CMS
+//ABOUT BOEK
+$app->get('/cms', function ($request, $response, $args) {
+  require 'controllers/cmsController.php';
 });
 
 
