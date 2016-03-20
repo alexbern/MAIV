@@ -1,11 +1,9 @@
 .boekpicture{
-      width:2300px;
-      height:420px;
-      background: url('/assets/img/boek.png') no-repeat;
-    }
-
-.container{
-  @include centerdesktop;
+  width:2600px;
+  height:500px;
+  background: url('/assets/img/boek2.png') no-repeat;
+  position: relative;
+  z-index: 100;
 }
 
 .boek{
@@ -28,6 +26,7 @@
   }
   p{
     width:100%;
+    background-color:black;
   }
   h3{
     width:40%;
@@ -42,6 +41,7 @@
 
   p{
     width:100%;
+    background-color:black;
   }
 }
 
@@ -57,6 +57,7 @@
   }
   p{
     width:90%;
+    background-color:black;
   }
 }
 

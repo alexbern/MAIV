@@ -148,7 +148,6 @@ p {
   padding: 20px;
   line-height: 150%;
   color: #FEFEFE;
-  background-color: #000;
   margin-bottom: 2rem;
 }
 
@@ -697,6 +696,7 @@ h3 {
 .stappen .stap p {
   width: 60%;
   padding: 2.5rem;
+  background-color: black;
 }
 
 .stappen .article-stap-title, .stappen .article-sub-title {
@@ -768,26 +768,26 @@ h3 {
   width: 1024px;
   width: 70%;
   padding-top: 280px;
-}
-
-.quote .quote-wrapper .the-quote, .quote .quote-wrapper .quote-author {
   text-align: center;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+.quote .the-quote {
   font-family: Gothic, helvetica, arial;
-  font-size: 1.6rem;
-  line-height: 150%;
-  -webkit-transform: rotate(-1.5deg);
-          transform: rotate(-1.5deg);
+  font-size: 1.8rem;
+  line-height: 200%;
 }
 
-.quote .quote-wrapper .quote-author {
+.quote .quote-author {
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   -webkit-transform: rotate(-1.5deg);
           transform: rotate(-1.5deg);
-  width: 20%;
+  width: 30%;
 }
 
-.quote .quote-wrapper .boek-button {
+.button {
   text-decoration: none;
   padding: 12px 5px 12px 5px;
   margin: 0 auto;
@@ -796,9 +796,6 @@ h3 {
   text-align: center;
   width: 200px;
   font-family: Lietz, helvetica, arial;
-}
-
-.quote .quote-wrapper .boek-button a {
   color: #E8C51E;
   text-decoration: none;
 }
@@ -826,6 +823,7 @@ h3 {
 .concurenten ul {
   -webkit-transform: skewY(2deg);
           transform: skewY(2deg);
+  padding-bottom: 50px;
 }
 
 .concurenten .concurenten-wrapper {
@@ -847,14 +845,11 @@ h3 {
 }
 
 .boekpicture {
-  width: 2300px;
-  height: 420px;
-  background: url("/assets/img/boek.png") no-repeat;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1024px;
+  width: 2600px;
+  height: 500px;
+  background: url("/assets/img/boek2.png") no-repeat;
+  position: relative;
+  z-index: 100;
 }
 
 .boek {
@@ -888,6 +883,7 @@ h3 {
 
 .boek p {
   width: 100%;
+  background-color: black;
 }
 
 .boek h3 {
@@ -902,6 +898,7 @@ h3 {
 
 .schrijver .qoute p {
   width: 100%;
+  background-color: black;
 }
 
 .schrijver .orwell {
@@ -922,6 +919,7 @@ h3 {
 
 .schrijver p {
   width: 90%;
+  background-color: black;
 }
 
 .awards h3 {
