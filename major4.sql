@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Mar 19, 2016 at 07:08 PM
+-- Generation Time: Mar 20, 2016 at 11:44 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.5.18
 
@@ -30,8 +30,17 @@ CREATE TABLE `deelnemers` (
 `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `foto` varchar(255) NOT NULL,
-  `review` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `review` varchar(255) NOT NULL,
+  `status` varchar(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `deelnemers`
+--
+
+INSERT INTO `deelnemers` (`id`, `user_id`, `foto`, `review`, `status`) VALUES
+(1, 1, 'test', 'derpdrp', '0'),
+(2, 3, 'deee', 'de', '1');
 
 -- --------------------------------------------------------
 
@@ -48,7 +57,7 @@ CREATE TABLE `users` (
   `klas` varchar(255) NOT NULL,
   `gemeente` varchar(255) NOT NULL,
   `is_admin` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
@@ -56,7 +65,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `password`, `naam`, `school`, `klas`, `gemeente`, `is_admin`) VALUES
 (1, 'itsalexbernard@gmail.com', '$2y$12$zQbvAH4EG7WGSfQUOyJ9kuw4Qv4sgRET0zGIo5xXw0GHFjC0q1FL2', 'Alex', 'Howest', '2DEV2', 'Kortrijk', 0),
-(2, 'test@test.be', '$2y$12$eceKse26Mmj4RmU/vBN0KOwitbikm4ihNA1Umj0o3/O8.euMnL8wa', 'test', 'test', 'test', 'test', 0);
+(2, 'test@test.be', '$2y$12$eceKse26Mmj4RmU/vBN0KOwitbikm4ihNA1Umj0o3/O8.euMnL8wa', 'test', 'test', 'test', 'test', 0),
+(3, 'd@d', '$2y$12$Q2dkbmGag2LNDXWP/RBhGuJRGkrF/cmp1HE.EoKJA9kVU1LgLbfy2', 'd', 'd', 'd', 'd', 0),
+(4, 'dd@d', '$2y$12$9F61e9pK/Rnxvj4.EqnqsOh80e8nbAT3TVQD18UYEtnIaR97AFuMS', 'swagger', 'd', 'd', 'd', 0);
 
 --
 -- Indexes for dumped tables
@@ -82,12 +93,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `deelnemers`
 --
 ALTER TABLE `deelnemers`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
