@@ -1,24 +1,27 @@
+//////////
+//HEADER
+/////////
+
+
 .home-wrapper{
   height: 500px;
   width: 100%;
 }
 
 .header-home{
-  width: 1024px;
+  @include centerdesktop;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-family: Lietz, helvetica, arial;
+  font-family: $titel;
   font-size: 3.5em;
   text-transform: uppercase;
   position: relative;
 }
 
 .header-titles{
+  @include centerdesktop;
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
   margin-top: 26.5rem;
   z-index: 40;
 }
@@ -57,28 +60,30 @@
 }
 
 .introtext{
+  @include centerdesktop;
   width: 50%;
   color: $geel;
-  margin: 0 auto;
   text-align: center;
-  background-color: $groen;
+  background: url('/assets/img/groenebg.png') repeat;
+  font-size:1.5rem;
+
 }
 
-.diagonalbottom{
-  margin-top: -4rem;
-  height: 100px;
-}
+
+/////////
+//STAPPEN
+/////////
+
 
 .stappen{
-  width: 1024px;
-  margin: 0 auto;
+  @include centerdesktop;
   margin-top: 3rem;
   justify-content: space-between;
   align-items: center;
   display: flex;
   flex-direction: column;
   .stap{
-    width: 80%;
+    width: 70%;
     article{
       display: flex;
       flex-direction: row;
@@ -86,22 +91,15 @@
     p{
       width: 60%;
       padding: 2.5rem;
+      background-color:black;
     }
   }
   .article-stap-title, .article-sub-title{
-        color: $geel;
-        background-color: black;
-        line-height: 150%;
-        padding: 10px 5px 8px 5px;
-        font-size: 2rem;
-        text-align: center;
-        font-family: Lietz, helvetica, arial;
-    }
-    .article-stap-title{
-      width: 70%;
-      transform: rotate(-1.5deg);
-      color: $wit;
-    }
+    font-size: 2rem;
+  }
+  .article-stap-title{
+    width: 70%;
+  }
 }
 
 .stap1{
@@ -148,76 +146,80 @@
 }
 
 
+////////
+//QUOTE
+///////
+
+
 .quote{
-  width: 100%;
   margin-top: 2rem;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 700px;
+  margin-top:-150px;
+  background: url('/assets/img/orwellbg.png') no-repeat;
+  background-size:cover;
   .quote-wrapper{
-    width: 60%;
+    @include centerdesktop;
+    width:70%;
+    padding-top:280px;
+    text-align: center;
+    transform: rotate(-1.5deg);
+  }
+  .the-quote{
+    font-family: $tekst;
+    font-size: 1.8rem;
+    line-height: 200%;
+  }
+  .quote-author{
     margin: 0 auto;
-    .the-quote, .quote-author{
-      text-align: center;
-      font-family: Gothic, helvetica, arial;
-      font-size: 1.6rem;
-      line-height: 150%;
-      transform: rotate(-1.5deg);
-    }
-    .quote-author{
-      margin: 0 auto;
-      font-size: 1.2rem;
-      transform: rotate(-1.5deg);
-      width:20%;
-    }
-    .boek-button{
-      background-color: black;
-      text-decoration: none;
-      padding: 12px 5px 12px 5px;
-      margin: 0 auto;
-      margin-top: 2rem;
-      font-size: 1.5rem;
-      text-align: center;
-      width: 200px;
-      font-family: Lietz, helvetica, arial;
-      a{
-        color: $geel;
-        text-decoration: none;
-      }
-    }
+    font-size: 1.4rem;
+    transform: rotate(-1.5deg);
+    width:30%;
   }
 }
+.button{
+  text-decoration: none;
+  padding: 12px 5px 12px 5px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 200px;
+  font-family: $titel;
+  color: $geel;
+  text-decoration: none;
+}
+
+/////////////
+//CONCURENTEN
+/////////////
+
 
 .concurenten{
     width: 100%;
-    background-color: #252227;
-    transform: rotate(-1.5deg);
+    background: url('/assets/img/groenebg.png') repeat;
     padding-bottom: 3rem;
+    margin-top:-100px;
     h4{
-      transform: rotate(1.5deg);
+      transform: skewY(2deg);
       margin: 0 auto;
       background-color: black;
       font-size: 2rem;
       text-align: center;
       padding: 20px 5px 20px 5px;
-      font-family: Lietz, helvetica, arial;
+      font-family: $titel;
       color: $geel;
       width: 400px;
     }
+    ul{
+      transform: skewY(2deg);
+      padding-bottom: 50px;
+    }
     .concurenten-wrapper{
-      width: 1024px;
-      margin: 0 auto;
+      @include centerdesktop;
       margin-top: 3rem;
       display: flex;
       flex-direction: row;
-      transform: rotate(1.5deg);
       justify-content: space-around;
       align-items: center;
-      li{
-        width: 30%;
-        height: 200px;
-        background-color: red;
-      }
     }
   }

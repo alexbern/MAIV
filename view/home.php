@@ -22,10 +22,10 @@
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="topnav">
     <div class="navigation-wrapper">
-       <ul>
-        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
+      <ul>
+        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
         <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
         <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
@@ -34,30 +34,23 @@
   </nav>
 
 <div class='header-wrapper home-wrapper'>
-
   <header class="header-home">
-    <div class="pig-foto">
-
-    </div>
+    <div class="pig-foto"></div>
     <div class="header-titles">
       <h1 class="wewantyou">We Want You</h1>
       <h1 class="tospread">To Spread</h1>
       <h1 class="animalism">Animalism</h1>
     </div>
     <div class="win-lots">
-
     </div>
   </header>
 </div>
-
-  <div class="diagonal"></div>
+<div class="schuinboven"></div>
   <main class="main-container">
-
     <p class="introtext">
-      Boek.be organiseert een wedstrijd rond het boek Animal Farm. <br/>
+      Boek.be organiseert een wedstrijd rond het boek Animal Farm.
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
-
     <section class="stappen">
       <section class="stap1 stap">
         <div class="fotostap1"></div>
@@ -98,45 +91,45 @@
       </section>
     </section>
   </main>
-  <div class="diagonal diagonalbottom"></div>
+</div>
+<div class="schuinonder"></div>
 
   <div class="quote">
     <section class="quote-wrapper">
       <p class="the-quote">
-        Foor legs good two, two legs better! All animals are equal. <br/>But some animals are more uqual than others"
+        Foor legs good two, two legs better! All animals are equal. But some animals are more uqual than others"
       </p>
       <p class="quote-author">
         - George Orwell
       </p>
-
-      <p class="boek-button"><a href="<?php echo $basepath;?>/boek">OVER HET BOEK</a></p>
-
-
+      <a href="<?php echo $basepath;?>/boek" class="button">OVER HET BOEK</a>
     </section>
   </div>
-
+  <div class="schuinwrapperlinks">
     <section class="concurenten">
       <h4>NIEUWSTE CONCURENTEN</h4>
       <ul class="concurenten-wrapper">
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+        <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
+        <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
+        <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
       </ul>
+      <a href="<?php echo $basepath;?>/boek" class="button">MEER CONCURENTEN</a>
     </section>
+  </div>
 
   <footer>
-    <nav class="footer-nav">
-      <ul>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-      <ul>
-        <li><a href="http://www.boek.be/">Boek.be</a></li>
-        <li><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts">facebook</a></li>
-        <li><a href="https://twitter.com/boekbe">twitter</a></li>
-      </ul>
-    </nav>
+    <nav class="bottomnav">
+        <ul class="seccondnav">
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        </ul>
+        <ul>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+          <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
+          <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
+        </ul>
+      </div>
   </footer>
 
   <script>

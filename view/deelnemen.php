@@ -27,50 +27,40 @@
 
     if (!empty($_SESSION['error'])) {
       ?>
-
     <div class="error">
       <img src="/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
     </div>
-
-
   <?php
     }
-
     if (!empty($_SESSION['info'])) {
       ?>
-
       <div class="info">
         <img src="/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
       </div>
-
-
   <?php
     }
 
    ?>
-  <nav>
-    <div class="navigation-wrapper">
-       <ul>
-        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class='header-wrapper'>
-    <header class="header">
-      <div class="texts">
-        <h1 class="neemdeel">Neem deel</h1>
-        <h1 class="kansop">En maak kans op</h1>
-        <h1 class="stapelsboeken">stapels boeken</h1>
-      </div>
-    </header>
+<nav class="topnav">
+  <div class="navigation-wrapper">
+     <ul>
+      <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+      <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+      <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+    </ul>
   </div>
-
-
-<div class="diagonal"></div>
+</nav>
+<div class='header-wrapper'>
+  <header class="header">
+    <div class="texts">
+      <h1 class="neemdeel">Neem deel</h1>
+      <h1 class="kansop">En maak kans op</h1>
+      <h1 class="stapelsboeken">stapels boeken</h1>
+    </div>
+  </header>
+</div>
+<div class="schuinboven"></div>
 <main class="main-container">
   <section class="login-section">
     <header>
@@ -177,26 +167,24 @@
   </section>
 </main>
 <div class="diagonal deelnemendiagonal"></div>
-
-  <footer>
-    <nav>
-      <ul>
+<footer>
+  <nav class="bottomnav">
+      <ul class="seccondnav">
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
       </ul>
       <ul>
-        <li><a href="http://www.boek.be/">Boek.be</a></li>
-        <li><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts">facebook</a></li>
-        <li><a href="https://twitter.com/boekbe">twitter</a></li>
+        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+        <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
+        <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
       </ul>
-    </nav>
-  </footer>
-
-  <script>
-    window.app = window.app || {};
-    window.app.basePath = '<?php echo $basepath; ?>'
-  </script>
-  <script src="<?php echo $basepath;?>/js/script.js"></script>
+    </div>
+</footer>
+<script>
+  window.app = window.app || {};
+  window.app.basePath = '<?php echo $basepath; ?>'
+</script>
+<script src="<?php echo $basepath;?>/js/script.js"></script>
 </body>
 </html>

@@ -22,10 +22,10 @@
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="topnav">
     <div class="navigation-wrapper">
-       <ul>
-        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
+      <ul>
+        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
         <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
         <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
@@ -41,6 +41,7 @@
       </div>
     </header>
   </div>
+  <div class="schuinboven"></div>
   <main>
     <div class="main-container">
       <div class="container">
@@ -61,6 +62,7 @@
         </section>
         </div>
       </div>
+      <div class="schuinonder"></div>
       <div class="container">
         <section class="schrijver">
           <section class="qoute">
@@ -72,7 +74,7 @@
               <h3>George Orwell</h3>
               <p><strong>George Orwell</strong> was een Brits schrijver, journalist en literair criticus. Rond de 20e eeuw en zelfs nu nog is hij een van de meest bewonderde auteurs. Door zijn werken <strong>Animal Farm </strong>en de dystopische roman heeft hij vooral naambekendheid verworven. Vele van zijn werken zijn satirisch getint met een scherpe argumenten tegen het <strong>stalinisme en totalitarisme</strong>.</p>
             </div>
-            <div>
+            <div class="awards">
               <h3>Awards</h3>
               <p>Prometheus hall of fame</p>
               <p>Retro Hugo Award</p>
@@ -81,40 +83,42 @@
           </section>
         </section>
       </div>
+      <div class="schuinwrapperlinks">
       <div class="main-container">
         <div class="container">
-          <section class="reviews">
-            <h3>Reviews</h3>
-            <section class="items">
-              <div>
-                <p>“Animal Farm is the most thought-provoking
-                piece of literature I have ever read.”</p>
-                <p class="reviewer">- The Guardian</p>
-              </div>
-              <div>
-                <p>“Animal Farm is moving, bitter and a warning
-                from history. A score of 9.5/10!”</p>
-                <p class="reviewer">- Fantasy Book Reviews</p>
-              </div>
+            <section class="reviews">
+              <h3>Reviews</h3>
+              <section class="items">
+                <div>
+                  <p>“Animal Farm is the most thought-provoking
+                  piece of literature I have ever read.”</p>
+                  <p class="reviewer">- The Guardian</p>
+                </div>
+                <div>
+                  <p>“Animal Farm is moving, bitter and a warning
+                  from history. A score of 9.5/10!”</p>
+                  <p class="reviewer">- Fantasy Book Reviews</p>
+                </div>
+              </section>
             </section>
-          </section>
+          </div>
           </div>
         </div>
     </div>
   </main>
   <footer>
-    <nav>
-      <ul>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-      <ul>
-        <li><a href="http://www.boek.be/">Boek.be</a></li>
-        <li><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts">facebook</a></li>
-        <li><a href="https://twitter.com/boekbe">twitter</a></li>
-      </ul>
-    </nav>
+    <nav class="bottomnav">
+        <ul class="seccondnav">
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        </ul>
+        <ul>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+          <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
+          <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
+        </ul>
+      </div>
   </footer>
   <script>
     window.app = window.app || {};

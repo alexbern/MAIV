@@ -1,18 +1,14 @@
 .boekpicture{
-      width:2300px;
-      height:420px;
-      background: url('/assets/img/boek.png') no-repeat;
-    }
-
-.container{
-  width: 1024px;
-  margin: 0 auto;
+  width:2600px;
+  height:500px;
+  background: url('/assets/img/boek2.png') no-repeat;
+  position: relative;
+  z-index: 100;
 }
 
 .boek{
   margin-top: -1rem;
   padding-top: 3rem;
-  width: 100%;
   display:flex;
   flex-direction:row;
 
@@ -21,15 +17,19 @@
     flex-direction:row;
   }
   ul li{
-    font-family: Lietz;
+    font-family: $titel;
     margin-right:2rem;
-    padding:0.5rem;
+    padding:1rem;
     color:$wit;
     background-color: #000;
     margin-bottom:2rem;
   }
   p{
     width:100%;
+    background-color:black;
+  }
+  h3{
+    width:40%;
   }
 }
 
@@ -41,6 +41,7 @@
 
   p{
     width:100%;
+    background-color:black;
   }
 }
 
@@ -52,13 +53,22 @@
   h3{
     margin-bottom: 2rem;
     padding:1rem;
+    width:55%;
   }
   p{
-    width:60%;
+    width:90%;
+    background-color:black;
+  }
+}
+
+.awards{
+  h3{
+    width:100%;
   }
 }
 
 .reviews{
+  transform: skewY(2deg);
   .items{
     display:flex;
     flex-direction:row;
@@ -70,9 +80,14 @@
 
   .reviewer{
     color:#E9C600;
-    font-family: Lietz;
+    font-family: $titel;
     text-transform: uppercase;
     text-align:right;
+    width:38%;
+  }
+
+  h3{
+    width:15%;
   }
 
 }
