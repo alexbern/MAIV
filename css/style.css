@@ -65,6 +65,30 @@ body {
   background: url("/assets/img/pattern.jpg");
 }
 
+strong {
+  color: #E8C51E;
+}
+
+p {
+  font-family: Gothic, helvetica, arial;
+  font-size: 1.2rem;
+  padding: 20px;
+  line-height: 150%;
+  color: #FEFEFE;
+  background-color: #000;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: #E8C51E;
+  font-family: Lietz, helvetica, arial;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #000;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -267,7 +291,7 @@ nav .navigation-wrapper .boek-nav {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Lietz, helvetica, arial;
-  font-size: 4.5em;
+  font-size: 3.5em;
   text-transform: uppercase;
   position: relative;
 }
@@ -276,7 +300,7 @@ nav .navigation-wrapper .boek-nav {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 20.5rem;
+  margin-top: 26.5rem;
   z-index: 40;
 }
 
@@ -306,11 +330,11 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .pig-foto {
-  width: 60%;
-  height: 80%;
-  left: 50%;
-  top: 50%;
-  background-color: blue;
+  width: 100%;
+  height: 100%;
+  left: 62%;
+  top: 52%;
+  background: url("/assets/img/homeheader.png") no-repeat;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -318,12 +342,10 @@ nav .navigation-wrapper .boek-nav {
 
 .introtext {
   width: 50%;
-  line-height: 150%;
-  font-family: Gothic, helvetica, arial;
   color: #E8C51E;
-  font-size: 1.2rem;
   margin: 0 auto;
   text-align: center;
+  background-color: #21261B;
 }
 
 .diagonalbottom {
@@ -350,9 +372,7 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .stappen .stap {
-  width: 60%;
-  margin-bottom: 8rem;
-  margin-top: 8rem;
+  width: 80%;
 }
 
 .stappen .stap article {
@@ -362,23 +382,11 @@ nav .navigation-wrapper .boek-nav {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
 }
 
 .stappen .stap p {
-  background-color: black;
-  font-family: Gothic, helvetica, arial;
-  color: #FEFEFE;
-  width: 70%;
-  font-size: 1.2rem;
-  padding: 1.5rem;
-  line-height: 150%;
-}
-
-.stappen .stap p strong {
-  color: #E8C51E;
+  width: 60%;
+  padding: 2.5rem;
 }
 
 .stappen .article-stap-title, .stappen .article-sub-title {
@@ -392,10 +400,58 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .stappen .article-stap-title {
-  width: 90%;
+  width: 70%;
   -webkit-transform: rotate(-1.5deg);
           transform: rotate(-1.5deg);
   color: #FEFEFE;
+}
+
+.stap1 {
+  margin-top: 8rem;
+  background: url("/assets/img/stap1.png") no-repeat;
+  background-position: top-left;
+  width: 800px;
+}
+
+.stap1 article {
+  margin-top: 25rem;
+}
+
+.stap2 {
+  margin-top: -9rem;
+  background: url("/assets/img/stap2.png") no-repeat;
+  background-position: top-left;
+  width: 800px;
+}
+
+.stap2 article {
+  margin-top: 25rem;
+}
+
+.stap2 .article-titles {
+  margin-top: 4rem;
+}
+
+.stap3 {
+  background: url("/assets/img/stap3.1.png") no-repeat;
+  background-position: top-left;
+  width: 800px;
+}
+
+.stap3 article {
+  margin-top: 19rem;
+  margin-bottom: 5rem;
+}
+
+.stap3 .varkenbg {
+  background: url("/assets/img/stap3.2.png") no-repeat;
+  width: 1000px;
+  height: 300px;
+  position: absolute;
+}
+
+.stap3 .verstuur {
+  margin-bottom: 3px;
 }
 
 .quote {
@@ -430,9 +486,11 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .quote .quote-wrapper .quote-author {
+  margin: 0 auto;
   font-size: 1.2rem;
   -webkit-transform: rotate(-1.5deg);
           transform: rotate(-1.5deg);
+  width: 20%;
 }
 
 .quote .quote-wrapper .boek-button {
@@ -443,4 +501,98 @@ nav .navigation-wrapper .boek-nav {
   margin: 0 auto;
   width: 20%;
   font-family: Lietz, helvetica, arial;
+}
+
+.picture {
+  width: 800px;
+  height: 400px;
+  background: url("/assets/img/boek.png") repeat;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.boek {
+  margin-top: -1rem;
+  padding-top: 3rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.boek ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.boek ul li {
+  font-family: Lietz;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  color: #FEFEFE;
+  background-color: #000;
+  margin-bottom: 2rem;
+}
+
+.boek p {
+  width: 40%;
+}
+
+.schrijver .qoute {
+  margin: 5rem auto;
+  text-align: center;
+  width: 50%;
+}
+
+.schrijver .qoute p {
+  width: 100%;
+}
+
+.schrijver .orwell {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+}
+
+.schrijver h3 {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.schrijver p {
+  width: 60%;
+}
+
+.reviews .items {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.reviews .items div {
+  padding-right: 2rem;
+}
+
+.reviews .reviewer {
+  color: #E9C600;
+  font-family: Lietz;
+  text-transform: uppercase;
+  text-align: right;
 }
