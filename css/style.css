@@ -177,13 +177,38 @@ nav .navigation-wrapper .boek-nav {
           transform: rotate(-1deg);
 }
 
+.deelnemendiagonal {
+  margin-top: -2rem;
+  height: 100px;
+}
+
 .title {
   font-family: Lietz;
   text-transform: uppercase;
+  background-color: black;
+  color: #FEFEFE;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 5px;
   font-size: 2rem;
+}
+
+.inputfield {
+  background-color: transparent;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 3rem;
+  color: #FEFEFE;
+  font-family: Gothic;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: #FEFEFE 2px solid;
+  width: 100%;
+  outline: none;
+}
+
+.inputfield:focus {
+  border-bottom: #E8C51E 2px solid;
 }
 
 .main-container {
@@ -240,32 +265,117 @@ nav .navigation-wrapper .boek-nav {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   padding: 3rem;
 }
 
-.main-container .login-section .login-form input[type="email"], .main-container .login-section .login-form input[type="password"] {
-  background-color: transparent;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  color: #FEFEFE;
-  font-family: Gothic;
-  font-size: 1.6rem;
-  border: none;
-  border-bottom: #FEFEFE 2px solid;
-  width: 100%;
-}
-
-.main-container .login-section .login-form input[type="email"] {
-  margin-bottom: 3rem;
-}
-
-.main-container .login-section .login-form input[type="submit"] {
+.main-container .login-section .login-form .login-submit {
   background-color: #E8C51E;
   border: none;
   color: black;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-family: Lietz, helvetica, arial, sans-serif;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
+  position: absolute;
+  left: 90%;
+  bottom: 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.main-container .register-section {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 15rem;
+  padding-bottom: 6rem;
+}
+
+.main-container .register-section header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-container .register-section .registreer-title {
+  margin-left: 4rem;
+  width: 250px;
+  padding: 10px;
+  color: #E8C51E;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.main-container .register-section .neemdeel-title {
+  margin-left: 3rem;
+  width: 180px;
+  font-size: 1.4rem;
+}
+
+.main-container .register-section .register-form {
+  background-color: black;
+  position: relative;
+  padding: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-container .register-section .register-form section {
+  width: 60%;
+  color: #FEFEFE;
+  font-family: Gothic, helvetica, arial;
+  line-height: 150%;
+  font-size: 1.4rem;
+}
+
+.main-container .register-section .register-form section strong {
+  color: #E8C51E;
+}
+
+.main-container .register-section .register-form .fieldsets {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.main-container .register-section .register-form .fieldsets fieldset {
+  width: 45%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main-container .register-section .register-form .fieldsets label {
+  color: #FEFEFE;
+  opacity: 0.4;
+  font-family: Lietz, helvetica, arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  font-size: 3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-container .register-section .register-form input[type='submit'] {
+  background-color: #E8C51E;
+  border: none;
+  color: black;
+  font-size: 1.8rem;
+  font-family: Lietz, helvetica, arial, sans-serif;
+  padding: 10px;
+  position: absolute;
+  left: 90%;
+  bottom: 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 .home-wrapper {

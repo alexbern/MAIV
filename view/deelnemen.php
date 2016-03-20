@@ -71,45 +71,47 @@
     </header>
     <form name="login-form" class="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <input type="hidden" name="type-form" value="login">
-      <input type="email" name="email" placeholder="EMAIL">
-      <input type="Password" name="password" placeholder="PASWOORD">
-
+      <input type="email" class="inputfield" name="email" placeholder="EMAIL">
+      <input type="Password" class="inputfield" name="password" placeholder="PASWOORD">
+      <input type="submit" class="login-submit" value="LOGIN"></input>
     </form>
   </section>
 
-  <section>
-    <aside>
-      <p>Nog niet langs geweest?</p>
-    </aside>
+  <section class="register-section">
     <header>
-      <h2>Registreer</h2>
-      <h3>en neem deel</h3>
+      <h2 class="title registreer-title">OF REGISTREER</h2>
+      <h3 class="title neemdeel-title">EN NEEM DEEL</h3>
     </header>
-    <form name="register-form" action="<?php echo $basepath;?>/deelnemen" method="post">
+    <form name="register-form" class="register-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <section>
         <p>
-          Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een boekverslag over animal farm en een orginele klasfoto. Plezier verzekerd in de klas!
+          Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een <strong>boekverslag over animal farm </strong>en een <strong>orginele klasfoto</strong>. Plezier verzekerd in de klas!
         </p>
         <div></div>
       </section>
+
       <input type="hidden" name="type-form" value="register">
-      <fieldset>
-        <input type="text" placeholder="Naam" name="name" />
-        <input type="email" placeholder="Email" name="email" />
-        <input type="password" placeholder="Paswoord" name="password" />
-        <input type="password" placeholder="Herhaal paswoord" name="repeat-password" />
-        <label>Leerkracht</label>
-      </fieldset>
-      <fieldset>
-        <input type="text" placeholder="School" name="school" />
-        <input type="text" placeholder="Klas" name="klas" />
-        <input type="text" placeholder="Gemeente" name="gemeente" />
-        <label for="">Klas</label>
-      </fieldset>
-      <input type="submit" placeholder="Registreer >">
+      <div class="fieldsets">
+        <fieldset>
+          <input type="text" class="inputfield" placeholder="Naam" name="name" />
+          <input type="email" class="inputfield" placeholder="Email" name="email" />
+          <input type="password" class="inputfield" placeholder="Paswoord" name="password" />
+          <input type="password" class="inputfield" placeholder="Herhaal paswoord" name="repeat-password" />
+          <label>LEERKRACHT</label>
+        </fieldset>
+        <fieldset>
+          <input type="text" class="inputfield" placeholder="School" name="school" />
+          <input type="text" class="inputfield" placeholder="Klas" name="klas" />
+          <input type="text" class="inputfield" placeholder="Gemeente" name="gemeente" />
+          <label>KLAS</label>
+        </fieldset>
+      </div>
+      <input type="submit" value="REGISTREER">
     </form>
   </section>
 </main>
+<div class="diagonal deelnemendiagonal"></div>
+
   <footer>
     <nav>
       <ul>

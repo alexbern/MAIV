@@ -48,13 +48,37 @@ $wit: #FEFEFE;
   transform: rotate(-1deg);
 }
 
+.deelnemendiagonal{
+  margin-top: -2rem;
+  height: 100px;
+}
+
 .title{
   font-family: Lietz;
   text-transform: uppercase;
+  background-color: black;
+  color: $wit;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 5px;
   font-size: 2rem;
+}
+
+.inputfield{
+  background-color: transparent;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 3rem;
+  color: $wit;
+  font-family: Gothic;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: $wit 2px solid;
+  width: 100%;
+  outline: none;
+  &:focus{
+    border-bottom: $geel 2px solid;
+  }
 }
 
 .main-container{
@@ -94,31 +118,96 @@ $wit: #FEFEFE;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
       padding: 3rem;
-      input[type="email"], input[type="password"]{
-        background-color: transparent;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        color: $wit;
-        font-family: Gothic;
-        font-size: 1.6rem;
-        border: none;
-        border-bottom: $wit 2px solid;
-        width: 100%;
-      }
-      input[type="email"]{
-        margin-bottom: 3rem;
-      }
-      input[type="submit"]{
+      .login-submit{
         background-color: $geel;
         border: none;
         color: black;
-        font-size: 3rem;
+        font-size: 1.8rem;
         font-family: Lietz, helvetica, arial, sans-serif;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
+        position: absolute;
+        left: 90%;
+        bottom: 0;
+        transform: rotate(-3deg);
       }
     }
   }
+  .register-section{
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    header{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .registreer-title{
+      margin-left: 4rem;
+      width: 250px;
+      padding: 10px;
+      color: $geel;
+      transform: rotate(-3deg);
+    }
+    .neemdeel-title{
+      margin-left: 3rem;
+      width: 180px;
+      font-size: 1.4rem;
+    }
+     .register-form{
+      background-color: black;
+      position: relative;
+      padding: 3rem;
+      width: 90%;
+      margin: 0 auto;
+      section{
+        width: 60%;
+        color: $wit;
+        font-family: Gothic, helvetica, arial;
+        line-height: 150%;
+        font-size: 1.4rem;
+        strong{
+          color: $geel;
+        }
+      }
+      .fieldsets{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        fieldset{
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        }
+        label{
+          color: $wit;
+          opacity: 0.4;
+          font-family: Lietz, helvetica, arial, sans-serif;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          text-align: center;
+          font-size: 3rem;
+          transform: translate(-50%,-50%);
+        }
+      }
+      input[type='submit']{
+        background-color: $geel;
+        border: none;
+        color: black;
+        font-size: 1.8rem;
+        font-family: Lietz, helvetica, arial, sans-serif;
+        padding: 10px;
+        position: absolute;
+        left: 90%;
+        bottom: 0;
+        transform: rotate(-3deg);
+      }
+    }
+  }
+
 
 }
 
