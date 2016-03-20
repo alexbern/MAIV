@@ -220,6 +220,47 @@ nav .navigation-wrapper .boek-nav {
   background-color: #B9DE46;
 }
 
+.cms-list {
+  width: 1024px;
+  padding-top: 100px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.cms-list table {
+  width: 100%;
+}
+
+.cms-list table thead tr th {
+  background-color: #21261A;
+  font-family: Gothic, arial, sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  margin-right: 1px;
+  padding: 20px;
+}
+
+.cms-list table .foto {
+  width: 15%;
+}
+
+.cms-list table .foto-img {
+  width: 100%;
+}
+
+.cms-list table tbody tr td {
+  border-bottom: 2px solid #212619;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+  font-family: Gothic, arial, sans-serif;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: center;
+  text-align: center;
+}
+
 .header {
   width: 1024px;
   height: 100%;
