@@ -1,7 +1,7 @@
-.picture{
-      width:800px;
-      height:400px;
-      background: url('/assets/img/boek.png') repeat;
+.boekpicture{
+      width:2300px;
+      height:420px;
+      background: url('/assets/img/boek.png') no-repeat;
     }
 
 .container{
@@ -29,7 +29,7 @@
     margin-bottom:2rem;
   }
   p{
-    width:40%;
+    width:100%;
   }
 }
 

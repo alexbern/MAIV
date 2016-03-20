@@ -32,38 +32,44 @@
       </ul>
     </div>
   </nav>
-  <header>
-    <h1>Be ware</h1>
-    <h1>The concurents</h1>
-    <h1>are there</h1>
-  </header>
-  <main>
-    <section>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-    </section>
-    <section>
-      <nav>
-        <ul>
-          <li><</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>></li>
-        </ul>
-      </nav>
-      <div>
+  <div class='header-wrapper'>
+    <header class="header">
+      <div class="texts">
+      <h1 class="neemdeel">Be ware</h1>
+      <h1 class="kansop">The concurents</h1>
+      <h1 class="stapelsboeken">are there</h1>
       </div>
-    </section>
+    </header>
+  </div>
+  <main>
+    <div class="main-container">
+      <section>
+        <ul>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+        </ul>
+      </section>
+      <section>
+        <nav>
+          <ul>
+            <li><</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>></li>
+          </ul>
+        </nav>
+        <div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <nav>

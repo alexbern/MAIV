@@ -45,7 +45,7 @@
     <div class="main-container">
       <div class="container">
         <section class="boek">
-          <div class="picture">
+          <div class="boekpicture">
           </div>
           <div>
              <h3>Animal Farm</h3>

@@ -215,7 +215,7 @@ nav .navigation-wrapper .boek-nav {
   margin-top: -1rem;
   padding-top: 3rem;
   width: 100%;
-  background-color: #21261B;
+  background: url("/assets/img/groenebg.png") repeat;
 }
 
 .main-container .login-section {
@@ -503,10 +503,10 @@ nav .navigation-wrapper .boek-nav {
   font-family: Lietz, helvetica, arial;
 }
 
-.picture {
-  width: 800px;
-  height: 400px;
-  background: url("/assets/img/boek.png") repeat;
+.boekpicture {
+  width: 2300px;
+  height: 420px;
+  background: url("/assets/img/boek.png") no-repeat;
 }
 
 .container {
@@ -545,7 +545,7 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .boek p {
-  width: 40%;
+  width: 100%;
 }
 
 .schrijver .qoute {

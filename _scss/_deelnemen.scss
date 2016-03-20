@@ -1,6 +1,3 @@
-$geel: #E8C51E;
-$groen: #21261B;
-$wit: #FEFEFE;
 
   .header{
     width: 1024px;
@@ -40,7 +37,8 @@ $wit: #FEFEFE;
       width: 82%;
       transform: rotate(0.7deg);
     }
-  } //END HEADER
+  }
+  //END HEADER
 
 .diagonal{
   height: 40px;
@@ -62,7 +60,7 @@ $wit: #FEFEFE;
   margin-top: -1rem;
   padding-top: 3rem;
   width: 100%;
-  background-color: $groen;
+  background: url('/assets/img/groenebg.png') repeat;
   .login-section{
     width: 1024px;
     margin: 0 auto;
