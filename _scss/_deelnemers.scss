@@ -1,5 +1,7 @@
 .deelnemerfotos{
-  @include centerdesktop;
+  width:900px;
+  margin: 0 auto;
+
   ul{
     display:flex;
     flex-wrap: wrap;
@@ -14,7 +16,9 @@
   }
   .article-stap-title, .article-sub-title{
     font-size: 1rem;
-    width: 70%;
+    width: 50%;
+    text-align: left;
+    padding-left:20px;
   }
   .article-stap-title{
     width: 40%;
@@ -23,16 +27,23 @@
 
 .deelnemersonderaan{
   @include centerdesktop;
-  height:200px;
+  position: relative;
+  z-index:10;
   ul{
+    margin-top:-100px;
+    height:200px;
     display:flex;
     justify-content:center;
+    background: url("/assets/img/fototoestel.png") no-repeat;
+    background-position: right;
   }
   li{
+    margin-top:100px;
     font-family: $titel;
     padding:20px;
     font-size: 2rem;
     color:#fff;
   }
+
 }
 
