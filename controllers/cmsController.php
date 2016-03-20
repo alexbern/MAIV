@@ -9,8 +9,8 @@ if (empty($selectAll)) {
   exit();
 }
 
-// echo '<pre>';
-// print_r($selectAll);
-// echo '</pre>';
+if (empty($_SESSION['user'])) {
+  $_SESSION['error'] = 'Geen gebruiker gevonden.';
+}
 
   return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath(), 'deelnemers'=>$selectAll]);
