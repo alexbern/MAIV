@@ -99,6 +99,15 @@ body {
   background: url("/assets/img/pattern.jpg");
 }
 
+p, h1, h2, h3, h4, h5, li {
+  visibility: hidden;
+}
+
+.wf-lietz-n4-active h1, .wf-lietz-n4-active h2, .wf-lietz-n4-active h3, .wf-lietz-n4-active h4, .wf-lietz-n4-active li,
+.wf-gothic-n4-active p {
+  visibility: visible;
+}
+
 strong {
   color: #E8C51E;
 }
@@ -123,22 +132,42 @@ h3 {
   background-color: #000;
 }
 
-nav {
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.article-stap-title, .article-sub-title {
+  color: #E8C51E;
+  background-color: black;
+  line-height: 150%;
+  padding: 10px 5px 8px 5px;
+  text-align: center;
+  font-family: Lietz, helvetica, arial;
+}
+
+.article-stap-title {
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  color: #FEFEFE;
+}
+
+.topnav {
   width: 100%;
   position: fixed;
   z-index: 9999;
 }
 
-nav .navigation-wrapper {
+.topnav .navigation-wrapper {
   margin: 0 auto;
   width: 1024px;
   height: 50px;
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   font-style: 14px;
   text-transform: uppercase;
 }
 
-nav .navigation-wrapper ul {
+.topnav .navigation-wrapper ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -148,21 +177,22 @@ nav .navigation-wrapper ul {
           align-items: center;
 }
 
-nav .navigation-wrapper li {
+.topnav .navigation-wrapper li {
+  margin-top: 20px;
   margin-right: 2.5%;
   margin-left: 2.5%;
 }
 
-nav .navigation-wrapper li a {
+.topnav .navigation-wrapper li a {
   text-decoration: none;
   color: black;
 }
 
-nav .navigation-wrapper .deelnemen-nav {
+.topnav .navigation-wrapper .deelnemen-nav {
   margin-left: 50%;
 }
 
-nav .navigation-wrapper .boek-nav {
+.topnav .navigation-wrapper .boek-nav {
   width: 10%;
 }
 
@@ -173,6 +203,45 @@ nav .navigation-wrapper .boek-nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 45%;
+}
+
+.bottomnav {
+  margin: 0 auto;
+  width: 1024px;
+  margin-top: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottomnav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bottomnav li {
+  margin-left: 20px;
+  font-family: Lietz, helvetica, arial;
+  font-style: 14px;
+  text-transform: uppercase;
+}
+
+.bottomnav a {
+  text-decoration: none;
+  color: black;
+}
+
+.bottomnav .seccondnav {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .error, .info {
@@ -190,7 +259,7 @@ nav .navigation-wrapper .boek-nav {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: Helvetica neue, helvetica, arial, sans-serif;
+  font-family: Gothic, helvetica, arial;
   font-weight: bold;
   color: #CC0200;
   border-bottom: 5px solid #CC0200;
@@ -221,16 +290,16 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .header {
+  margin: 0 auto;
   width: 1024px;
   height: 100%;
-  margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
   font-size: 4.5em;
 }
@@ -274,7 +343,7 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .diagonal {
-  height: 40px;
+  height: 100px;
   width: 100%;
   background-color: #21261B;
   -webkit-transform: rotate(-1deg);
@@ -287,7 +356,7 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .title {
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
   background-color: black;
   color: #FEFEFE;
@@ -303,7 +372,7 @@ nav .navigation-wrapper .boek-nav {
   padding-top: 5px;
   margin-bottom: 3rem;
   color: #FEFEFE;
-  font-family: Gothic;
+  font-family: Gothic, helvetica, arial;
   font-size: 1.6rem;
   border: none;
   border-bottom: #FEFEFE 2px solid;
@@ -327,8 +396,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .main-container .login-section {
-  width: 1024px;
   margin: 0 auto;
+  width: 1024px;
 }
 
 .main-container .login-section header {
@@ -358,8 +427,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .main-container .login-section .login-form {
-  width: 65%;
   margin: 0 auto;
+  width: 1024px;
   background-color: black;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -382,7 +451,7 @@ nav .navigation-wrapper .boek-nav {
   border: none;
   color: black;
   font-size: 1.8rem;
-  font-family: Lietz, helvetica, arial, sans-serif;
+  font-family: Lietz, helvetica, arial;
   padding: 10px;
   position: absolute;
   left: 90%;
@@ -392,8 +461,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .main-container .register-section {
-  width: 1024px;
   margin: 0 auto;
+  width: 1024px;
   padding-top: 15rem;
   padding-bottom: 6rem;
 }
@@ -465,7 +534,7 @@ nav .navigation-wrapper .boek-nav {
 .main-container .register-section .register-form .fieldsets label {
   color: #FEFEFE;
   opacity: 0.4;
-  font-family: Lietz, helvetica, arial, sans-serif;
+  font-family: Lietz, helvetica, arial;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -480,7 +549,7 @@ nav .navigation-wrapper .boek-nav {
   border: none;
   color: black;
   font-size: 1.8rem;
-  font-family: Lietz, helvetica, arial, sans-serif;
+  font-family: Lietz, helvetica, arial;
   padding: 10px;
   position: absolute;
   left: 90%;
@@ -495,9 +564,9 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .header-home {
+  margin: 0 auto;
   width: 1024px;
   height: 100%;
-  margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -511,9 +580,9 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .header-titles {
-  text-align: center;
-  width: 70%;
   margin: 0 auto;
+  width: 1024px;
+  text-align: center;
   margin-top: 26.5rem;
   z-index: 40;
 }
@@ -555,9 +624,10 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .introtext {
+  margin: 0 auto;
+  width: 1024px;
   width: 50%;
   color: #E8C51E;
-  margin: 0 auto;
   text-align: center;
   background-color: #21261B;
 }
@@ -568,8 +638,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .stappen {
-  width: 1024px;
   margin: 0 auto;
+  width: 1024px;
   margin-top: 3rem;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -604,20 +674,11 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .stappen .article-stap-title, .stappen .article-sub-title {
-  color: #E8C51E;
-  background-color: black;
-  line-height: 150%;
-  padding: 10px 5px 8px 5px;
   font-size: 2rem;
-  text-align: center;
-  font-family: Lietz, helvetica, arial;
 }
 
 .stappen .article-stap-title {
   width: 70%;
-  -webkit-transform: rotate(-1.5deg);
-          transform: rotate(-1.5deg);
-  color: #FEFEFE;
 }
 
 .stap1 {
@@ -684,8 +745,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .quote .quote-wrapper {
-  width: 60%;
   margin: 0 auto;
+  width: 1024px;
 }
 
 .quote .quote-wrapper .the-quote, .quote .quote-wrapper .quote-author {
@@ -744,8 +805,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .concurenten .concurenten-wrapper {
-  width: 1024px;
   margin: 0 auto;
+  width: 1024px;
   margin-top: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,12 +824,6 @@ nav .navigation-wrapper .boek-nav {
           align-items: center;
 }
 
-.concurenten .concurenten-wrapper li {
-  width: 30%;
-  height: 200px;
-  background-color: red;
-}
-
 .boekpicture {
   width: 2300px;
   height: 420px;
@@ -776,8 +831,8 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .container {
-  width: 1024px;
   margin: 0 auto;
+  width: 1024px;
 }
 
 .boek {
@@ -802,7 +857,7 @@ nav .navigation-wrapper .boek-nav {
 }
 
 .boek ul li {
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   margin-right: 2rem;
   padding: 0.5rem;
   color: #FEFEFE;
@@ -858,7 +913,64 @@ nav .navigation-wrapper .boek-nav {
 
 .reviews .reviewer {
   color: #E9C600;
-  font-family: Lietz;
+  font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
   text-align: right;
+}
+
+.deelnemerfotos {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+.deelnemerfotos ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deelnemerfotos li {
+  margin-top: 20px;
+}
+
+.deelnemerfotos .article-titles {
+  position: relative;
+  margin-top: -50px;
+}
+
+.deelnemerfotos .article-stap-title, .deelnemerfotos .article-sub-title {
+  font-size: 1rem;
+  width: 70%;
+}
+
+.deelnemerfotos .article-stap-title {
+  width: 40%;
+}
+
+.deelnemersonderaan {
+  margin: 0 auto;
+  width: 1024px;
+  height: 200px;
+}
+
+.deelnemersonderaan ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.deelnemersonderaan li {
+  font-family: Lietz, helvetica, arial;
+  padding: 20px;
+  font-size: 2rem;
+  color: #fff;
 }

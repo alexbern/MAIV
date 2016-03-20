@@ -1,11 +1,10 @@
 
   .header{
-    width: 1024px;
+    @include centerdesktop;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
-    font-family: Lietz;
+    font-family: $titel;
     text-transform: uppercase;
     font-size: 4.5em;
     .texts{
@@ -41,7 +40,7 @@
   //END HEADER
 
 .diagonal{
-  height: 40px;
+  height: 100px;
   width: 100%;
   background-color: $groen;
   transform: rotate(-1deg);
@@ -53,7 +52,7 @@
 }
 
 .title{
-  font-family: Lietz;
+  font-family: $titel;
   text-transform: uppercase;
   background-color: black;
   color: $wit;
@@ -69,7 +68,7 @@
   padding-top: 5px;
   margin-bottom: 3rem;
   color: $wit;
-  font-family: Gothic;
+  font-family: $tekst;
   font-size: 1.6rem;
   border: none;
   border-bottom: $wit 2px solid;
@@ -90,8 +89,7 @@
   width: 100%;
   background: url('/assets/img/groenebg.png') repeat;
   .login-section{
-    width: 1024px;
-    margin: 0 auto;
+    @include centerdesktop;
     header{
       width: 80%;
       margin: 0 auto;
@@ -114,8 +112,7 @@
       }
     }
     .login-form{
-      width: 65%;
-      margin: 0 auto;
+      @include centerdesktop;
       background-color: black;
       display: flex;
       flex-direction: column;
@@ -128,7 +125,7 @@
         border: none;
         color: black;
         font-size: 1.8rem;
-        font-family: Lietz, helvetica, arial, sans-serif;
+        font-family: $titel;
         padding: 10px;
         position: absolute;
         left: 90%;
@@ -138,8 +135,7 @@
     }
   }
   .register-section{
-    width: 1024px;
-    margin: 0 auto;
+    @include centerdesktop;
     padding-top: 15rem;
     padding-bottom: 6rem;
     header{
@@ -167,7 +163,7 @@
       section{
         width: 60%;
         color: $wit;
-        font-family: Gothic, helvetica, arial;
+        font-family: $tekst;
         line-height: 150%;
         font-size: 1.4rem;
         strong{
@@ -188,7 +184,7 @@
         label{
           color: $wit;
           opacity: 0.4;
-          font-family: Lietz, helvetica, arial, sans-serif;
+          font-family: $titel;
           position: absolute;
           bottom: 0;
           left: 50%;
@@ -202,7 +198,7 @@
         border: none;
         color: black;
         font-size: 1.8rem;
-        font-family: Lietz, helvetica, arial, sans-serif;
+        font-family: $titel;
         padding: 10px;
         position: absolute;
         left: 90%;

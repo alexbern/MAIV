@@ -4,21 +4,19 @@
 }
 
 .header-home{
-  width: 1024px;
+  @include centerdesktop;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-family: Lietz, helvetica, arial;
+  font-family: $titel;
   font-size: 3.5em;
   text-transform: uppercase;
   position: relative;
 }
 
 .header-titles{
+  @include centerdesktop;
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
   margin-top: 26.5rem;
   z-index: 40;
 }
@@ -57,9 +55,9 @@
 }
 
 .introtext{
+  @include centerdesktop;
   width: 50%;
   color: $geel;
-  margin: 0 auto;
   text-align: center;
   background-color: $groen;
 }
@@ -70,8 +68,7 @@
 }
 
 .stappen{
-  width: 1024px;
-  margin: 0 auto;
+  @include centerdesktop;
   margin-top: 3rem;
   justify-content: space-between;
   align-items: center;
@@ -89,19 +86,11 @@
     }
   }
   .article-stap-title, .article-sub-title{
-        color: $geel;
-        background-color: black;
-        line-height: 150%;
-        padding: 10px 5px 8px 5px;
-        font-size: 2rem;
-        text-align: center;
-        font-family: Lietz, helvetica, arial;
-    }
-    .article-stap-title{
-      width: 70%;
-      transform: rotate(-1.5deg);
-      color: $wit;
-    }
+    font-size: 2rem;
+  }
+  .article-stap-title{
+    width: 70%;
+  }
 }
 
 .stap1{
@@ -156,11 +145,10 @@
   justify-content: center;
   align-items: center;
   .quote-wrapper{
-    width: 60%;
-    margin: 0 auto;
+    @include centerdesktop;
     .the-quote, .quote-author{
       text-align: center;
-      font-family: Gothic, helvetica, arial;
+      font-family: $tekst;
       font-size: 1.6rem;
       line-height: 150%;
       transform: rotate(-1.5deg);
@@ -180,7 +168,7 @@
       font-size: 1.5rem;
       text-align: center;
       width: 200px;
-      font-family: Lietz, helvetica, arial;
+      font-family: $titel;
       a{
         color: $geel;
         text-decoration: none;
@@ -201,23 +189,17 @@
       font-size: 2rem;
       text-align: center;
       padding: 20px 5px 20px 5px;
-      font-family: Lietz, helvetica, arial;
+      font-family: $titel;
       color: $geel;
       width: 400px;
     }
     .concurenten-wrapper{
-      width: 1024px;
-      margin: 0 auto;
+      @include centerdesktop;
       margin-top: 3rem;
       display: flex;
       flex-direction: row;
       transform: rotate(1.5deg);
       justify-content: space-around;
       align-items: center;
-      li{
-        width: 30%;
-        height: 200px;
-        background-color: red;
-      }
     }
   }

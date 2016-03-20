@@ -5,8 +5,7 @@
     }
 
 .container{
-  width: 1024px;
-  margin: 0 auto;
+  @include centerdesktop;
 }
 
 .boek{
@@ -21,7 +20,7 @@
     flex-direction:row;
   }
   ul li{
-    font-family: Lietz;
+    font-family: $titel;
     margin-right:2rem;
     padding:0.5rem;
     color:$wit;
@@ -70,7 +69,7 @@
 
   .reviewer{
     color:#E9C600;
-    font-family: Lietz;
+    font-family: $titel;
     text-transform: uppercase;
     text-align:right;
   }

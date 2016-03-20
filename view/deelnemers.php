@@ -22,10 +22,10 @@
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="topnav">
     <div class="navigation-wrapper">
        <ul>
-        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
+        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
         <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
         <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
@@ -43,20 +43,74 @@
   </div>
   <main>
     <div class="main-container">
-      <section>
+      <section class="deelnemerfotos">
         <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">1MEc</h2>
+              <h3 class="article-sub-title">Gent</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/img/klasfoto.png" alt="klasfoto">
+            <div class="article-titles">
+              <h2 class="article-stap-title">2LATa</h2>
+              <h3 class="article-sub-title">Lommel</h3>
+            </div>
+          </li>
         </ul>
       </section>
-      <section>
+      <section class="deelnemersonderaan">
         <nav>
           <ul>
             <li><</li>
@@ -66,24 +120,24 @@
             <li>></li>
           </ul>
         </nav>
-        <div>
+        <div class="fototoestel">
         </div>
       </section>
     </div>
   </main>
   <footer>
-    <nav>
-      <ul>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-      <ul>
-        <li><a href="http://www.boek.be/">Boek.be</a></li>
-        <li><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts">facebook</a></li>
-        <li><a href="https://twitter.com/boekbe">twitter</a></li>
-      </ul>
-    </nav>
+    <nav class="bottomnav">
+        <ul class="seccondnav">
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        </ul>
+        <ul>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+          <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
+          <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
+        </ul>
+      </div>
   </footer>
   <script>
     window.app = window.app || {};
