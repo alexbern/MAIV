@@ -300,8 +300,6 @@ h3 {
   -webkit-animation: fade-away 5s forwards;
           animation: fade-away 5s forwards;
   letter-spacing: 1px;
-  -webkit-transform: rotate(-1.5deg);
-          transform: rotate(-1.5deg);
 }
 
 .error img, .info img {
@@ -934,18 +932,30 @@ h3 {
 }
 
 .boek h3 {
-  width: 40%;
+  width: 240px;
 }
 
-.schrijver .qoute {
+.schrijver .quote2 {
   margin: 5rem auto;
   text-align: center;
-  width: 50%;
+  width: 1024px;
 }
 
-.schrijver .qoute p {
-  width: 100%;
+.schrijver .quote2 p {
+  width: 65%;
+  margin: 0 auto;
   background-color: black;
+}
+
+.schrijver .quote2 .author2 {
+  width: 18%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.schrijver .orwell-block {
+  width: 65%;
 }
 
 .schrijver .orwell {
@@ -955,13 +965,15 @@ h3 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 70%;
+  width: 1024px;
 }
 
 .schrijver h3 {
   margin-bottom: 2rem;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
   padding: 1rem;
-  width: 55%;
+  display: inline-block;
 }
 
 .schrijver p {
@@ -969,8 +981,21 @@ h3 {
   background-color: black;
 }
 
+.awards {
+  width: 35%;
+  text-align: center;
+}
+
 .awards h3 {
-  width: 100%;
+  margin: 0 auto;
+}
+
+.awards p {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .reviews {
