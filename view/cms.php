@@ -22,16 +22,16 @@
   </script>
 </head>
 <body>
-  <nav>
-    <div class="navigation-wrapper">
-       <ul>
-        <li><a href="<?php echo $basepath;?>/">boek.be</a></li>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="topnav">
+  <div class="navigation-wrapper">
+     <ul>
+      <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+      <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+      <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+    </ul>
+  </div>
+</nav>
 
   <div class='cms-list'>
     <table>

@@ -39,8 +39,8 @@
       </div>
   <?php
     }
-
    ?>
+
 <nav class="topnav">
   <div class="navigation-wrapper">
      <ul>

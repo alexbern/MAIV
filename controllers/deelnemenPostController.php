@@ -87,7 +87,7 @@ $view = new \Slim\Views\PhpRenderer('view/');
       if (!empty($errors)) {
         $_SESSION['error'] = 'Oops! Een foutje!';
         return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
-        exit();
+        die();
       }
 
       $existingUser = $userDAO->selectByEmail($data['email']);
@@ -109,7 +109,6 @@ $view = new \Slim\Views\PhpRenderer('view/');
 
       if (empty($_SESSION['error'])) {
         $_SESSION['info'] = 'Succesvol ingelogd!';
-        return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]);
       }
 
     }
@@ -117,4 +116,3 @@ $view = new \Slim\Views\PhpRenderer('view/');
   }else{
 
   }
-  return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath()]);

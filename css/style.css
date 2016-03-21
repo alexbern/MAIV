@@ -184,15 +184,16 @@ h3 {
   width: 100%;
   position: fixed;
   z-index: 9999;
+  height: 50px;
   background: url("/assets/img/pattern.jpg");
 }
 
 .topnav .navigation-wrapper {
   margin: 0 auto;
   width: 1024px;
-  height: 50px;
+  height: 100%;
   font-family: Lietz, helvetica, arial;
-  font-style: 14px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -207,7 +208,6 @@ h3 {
 }
 
 .topnav .navigation-wrapper li {
-  margin-top: 20px;
   margin-right: 2.5%;
   margin-left: 2.5%;
 }
@@ -665,17 +665,17 @@ h3 {
 }
 
 .wewantyou {
-  width: 70%;
+  width: 400px;
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
 }
 
 .tospread {
-  width: 60%;
+  width: 350px;
 }
 
 .animalism {
-  width: 85%;
+  width: 610px;
   font-size: 7rem;
   color: #E8C51E;
   -webkit-transform: rotate(-0.7deg);
@@ -830,7 +830,8 @@ h3 {
 
 .button {
   text-decoration: none;
-  padding: 12px 5px 12px 5px;
+  padding: 12px;
+  background-color: black;
   margin: 0 auto;
   margin-top: 2rem;
   font-size: 1.5rem;
