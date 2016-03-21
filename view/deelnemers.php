@@ -35,9 +35,9 @@
   <div class='header-wrapper'>
     <header class="header">
       <div class="texts">
-      <h1 class="neemdeel">Be ware</h1>
-      <h1 class="kansop">The concurents</h1>
-      <h1 class="stapelsboeken">are there</h1>
+      <h1 class="neemdeel">Pas op</h1>
+      <h1 class="kansop">De concurenten</h1>
+      <h1 class="stapelsboeken">zijn op komst</h1>
       </div>
     </header>
   </div>
