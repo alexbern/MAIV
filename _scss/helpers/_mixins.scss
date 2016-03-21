@@ -2,3 +2,10 @@
   margin: 0 auto;
   width: 1024px;
 }
+
+@mixin titlepadding {
+  font-family: $titel;
+  text-transform: uppercase;
+  padding:1rem;
+  display: inline-block;
+}
