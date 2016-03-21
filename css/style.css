@@ -836,16 +836,14 @@ h3 {
 
 .button {
   text-decoration: none;
-  padding: 12px;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  color: #E8C51E;
   background-color: black;
   margin: 0 auto;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  width: 200px;
-  font-family: Lietz, helvetica, arial;
-  color: #E8C51E;
-  text-decoration: none;
 }
 
 .concurenten {
@@ -853,19 +851,31 @@ h3 {
   background: url("/assets/img/groenebg.png") repeat;
   padding-bottom: 3rem;
   margin-top: -100px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .concurenten h4 {
   -webkit-transform: skewY(2deg);
           transform: skewY(2deg);
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  align: center;
   margin: 0 auto;
   background-color: black;
   font-size: 2rem;
   text-align: center;
-  padding: 20px 5px 20px 5px;
   font-family: Lietz, helvetica, arial;
   color: #E8C51E;
-  width: 400px;
 }
 
 .concurenten ul {

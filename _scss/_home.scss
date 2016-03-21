@@ -181,16 +181,11 @@
 }
 .button{
   text-decoration: none;
-  padding: 12px;
+  @include titlepadding();
+  text-align: center;
+  color: $geel;
   background-color: black;
   margin: 0 auto;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  width: 200px;
-  font-family: $titel;
-  color: $geel;
-  text-decoration: none;
 }
 
 /////////////
@@ -203,16 +198,19 @@
     background: url('/assets/img/groenebg.png') repeat;
     padding-bottom: 3rem;
     margin-top:-100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h4{
       transform: skewY(2deg);
+      @include titlepadding();
+      align: center;
       margin: 0 auto;
       background-color: black;
       font-size: 2rem;
       text-align: center;
-      padding: 20px 5px 20px 5px;
       font-family: $titel;
       color: $geel;
-      width: 400px;
     }
     ul{
       transform: skewY(2deg);
@@ -226,4 +224,8 @@
       justify-content: space-around;
       align-items: center;
     }
-  }
+}
+
+.concurenten-button{
+}
+
