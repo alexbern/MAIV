@@ -3,14 +3,14 @@ $view = new \Slim\Views\PhpRenderer('view/');
 $deelnemersDAO = new DeelnemersDAO();
 
 if (empty($args['id'])) {
-  $_SESSION['error'] = 'Deelnemer niet gevonden.';
+  $_SESSION['error'] = 'Oops, jouw deelname is niet geregistreerd!';
   exit();
 }
 
 $deleteId = $deelnemersDAO->delete($args['id']);
 
 if (empty($deleteId)) {
-  $_SESSION['error'] = 'Deelnemer niet gevonden.';
+  $_SESSION['error'] = 'Oops, jouw deelname is niet geregistreerd!';
   exit();
 }
 

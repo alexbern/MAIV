@@ -37,7 +37,7 @@ $app->get('/deelnemen', function ($request, $response, $args) {
 $app->get('/logout', function ($request, $response, $args) {
   if (!empty($_SESSION['user'])) {
     unset($_SESSION['user']);
-    $_SESSION['info'] = 'U bent afgemeld.';
+    $_SESSION['info'] = 'Je bent afgemeld.';
   }
 
   return $response->withHeader('Location', '/');

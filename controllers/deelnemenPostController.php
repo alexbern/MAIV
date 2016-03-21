@@ -13,44 +13,44 @@ $view = new \Slim\Views\PhpRenderer('view/');
       $errors = array();
 
       if (empty($data['name'])) {
-        $errors['name'] = 'Vergeet uw naam niet.';
+        $errors['name'] = 'Je hebt toch een naam?';
       }
 
       if (empty($data['email'])) {
-        $errors['email'] = 'Vergeet uw email niet.';
+        $errors['email'] = 'Heb je een e-mail?';
       }
 
       if (empty($data['password'])) {
-        $errors['password'] = 'Vergeet uw paswoord niet.';
+        $errors['password'] = 'Vergeet je paswoord niet!';
       }
 
       if (empty($data['repeat-password'])) {
-        $errors['repeat-password'] = 'Herhaal uw passwoord.';
+        $errors['repeat-password'] = 'Herhaal je je paswoord nog eens?';
       }
 
       if ($data['repeat-password'] !== $data['password']) {
-        $errors['repeat-password'] = 'Uw paswoord matcht niet.';
+        $errors['repeat-password'] = 'Jouw paswoord matcht niet.';
       }
 
       if (empty($data['school'])) {
-        $errors['school'] = 'Vergeet uw school niet.';
+        $errors['school'] = 'Op welke school werk je?';
       }
 
       if (empty($data['klas'])) {
-        $errors['klas'] = 'Vergeet uw klas niet.';
+        $errors['klas'] = 'Vergeet je klas niet!';
       }
 
       if (empty($data['gemeente'])) {
-        $errors['gemeente'] = 'Vergeet uw gemeente niet.';
+        $errors['gemeente'] = 'Vergeet je je gemeente niet!';
       }
 
       $existing = $userDAO->selectByEmail($data['email']);
       if (!empty($existing)) {
-        $errors['email'] = 'Dat email is al in gebruik';
+        $errors['email'] = 'Deze email is al in gebruik';
       }
 
       if (!empty($errors)) {
-        $_SESSION['error'] = 'Oops! Een foutje!';
+        $_SESSION['error'] = 'Oops! Er is een foutje gebeurd!';
         return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
         exit();
       }
@@ -67,7 +67,7 @@ $view = new \Slim\Views\PhpRenderer('view/');
           'is_admin' => $data['is_admin']
         ));
         if (!empty($insertion)) {
-          $_SESSION['info'] = 'Registratie gelukt!';
+          $_SESSION['info'] = 'Je registratie is gelukt!';
         }
       }
 
@@ -77,11 +77,11 @@ $view = new \Slim\Views\PhpRenderer('view/');
     if ($data['type-form'] == 'login') {
 
       if (empty($data['email'])) {
-        $errors['login-email'] = 'Vergeet uw email niet.';
+        $errors['login-email'] = 'Vergeet je email niet!';
       }
 
       if (empty($data['password'])) {
-        $errors['login-password'] = 'Vergeet uw paswoord niet.';
+        $errors['login-password'] = 'Vergeet je je passwoord niet?';
       }
 
       if (!empty($errors)) {
@@ -101,14 +101,14 @@ $view = new \Slim\Views\PhpRenderer('view/');
           }
           $_SESSION['user'] = $existingUser;
         }else{
-          $_SESSION['error'] = 'Paswoord of email is incorrect.';
+          $_SESSION['error'] = 'Oh jee, jouw paswoord of email is incorrect. Geen paniek, probeer eens opnieuw?';
         }
       }else{
-        $_SESSION['error'] = 'Paswoord of email is incorrect.';
+        $_SESSION['error'] = 'Oh jee, jouw paswoord of email is incorrect. Geen paniek, probeer eens opnieuw?';
       }
 
       if (empty($_SESSION['error'])) {
-        $_SESSION['info'] = 'Succesvol ingelogd!';
+        $_SESSION['info'] = 'Je bent succesvol ingelogd!';
       }
 
     }
