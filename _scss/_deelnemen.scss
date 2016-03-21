@@ -138,6 +138,7 @@
     @include centerdesktop;
     padding-top: 15rem;
     padding-bottom: 6rem;
+    position:relavive;
     header{
       width: 80%;
       margin: 0 auto;
@@ -205,6 +206,11 @@
         bottom: 0;
         transform: rotate(-3deg);
       }
+    }
+    .clipboard{
+      position:absolute;
+      right:5%;
+      top:-30%;
     }
   }
 

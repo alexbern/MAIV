@@ -576,6 +576,7 @@ h3 {
   width: 1024px;
   padding-top: 15rem;
   padding-bottom: 6rem;
+  position: relavive;
 }
 
 .main-container .register-section header {
@@ -667,6 +668,12 @@ h3 {
   bottom: 0;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
+}
+
+.main-container .register-section .clipboard {
+  position: absolute;
+  right: 5%;
+  top: -30%;
 }
 
 .home-wrapper {
