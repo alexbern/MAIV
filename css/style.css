@@ -697,7 +697,6 @@ h3 {
 }
 
 .introtext {
-  letter-spacing: -2px;
   font-family: Gothicbold;
   margin: 0 auto;
   width: 1024px;
@@ -706,6 +705,12 @@ h3 {
   text-align: center;
   background: url("/assets/img/groenebg.png") repeat;
   font-size: 1.5rem;
+}
+
+.triggerhome {
+  position: absolute;
+  top: 200px;
+  left: 70%;
 }
 
 .stappen {
