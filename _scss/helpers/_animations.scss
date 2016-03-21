@@ -5,3 +5,11 @@
     75%  {}
     100% {top: 20%; opacity: 0;}
 }
+
+@keyframes floating {
+    0%   {transform:translate(0, 0px);}
+    25%  {}
+    50%  {transform:translate(0, 15px);}
+    75%  {}
+    100% {transform:translate(0, -0px);}
+}
