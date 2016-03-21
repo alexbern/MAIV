@@ -755,6 +755,7 @@ h3 {
 }
 
 .stappen .article-stap-title {
+  text-transform: uppercase;
   width: 70%;
 }
 
@@ -849,6 +850,10 @@ h3 {
   color: #E8C51E;
   background-color: black;
   margin: 0 auto;
+}
+
+.button .arrow {
+  width: 10px;
 }
 
 .concurenten {
@@ -1014,6 +1019,11 @@ h3 {
   padding: 1rem;
   display: inline-block;
   margin: 0 auto;
+}
+
+.medal {
+  position: relative;
+  z-index: 100;
 }
 
 .reviews {

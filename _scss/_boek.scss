@@ -1,3 +1,8 @@
+//////////
+//BOEK
+//////////
+
+
 .boekpicture{
   width:2600px;
   height:500px;
@@ -32,6 +37,11 @@
     width: 240px;
   }
 }
+
+
+//////////
+//SCHRIJVER
+//////////
 
 .schrijver{
   .quote2{
@@ -83,6 +93,15 @@
     margin: 0 auto;
   }
 }
+
+.medal{
+  position:relative;
+  z-index:100;
+}
+
+/////////
+//REVIEWS
+/////////
 
 .reviews{
   transform: skewY(2deg);

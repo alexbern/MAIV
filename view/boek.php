@@ -100,7 +100,7 @@
               <h3>Awards</h3>
               <p>Prometheus hall of fame</p>
               <p>Retro Hugo Award</p>
-              <img src="" alt="">
+              <img src="/assets/img/medal.png" alt="medal" class="medal">
             </div>
           </section>
 

@@ -104,6 +104,7 @@
     font-size: 2rem;
   }
   .article-stap-title{
+    text-transform: uppercase;
     width: 70%;
   }
 }
@@ -190,6 +191,10 @@
   color: $geel;
   background-color: black;
   margin: 0 auto;
+
+  .arrow{
+    width:10px;
+  }
 }
 
 /////////////
