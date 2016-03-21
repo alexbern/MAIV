@@ -62,12 +62,13 @@ strong{
 }
 
 p{
+  letter-spacing: -1px;
   font-family: $tekst;
+  color:$wit;
   font-size: 1.2rem;
   padding:20px;
   line-height: 150%;
   color:$wit;
-  //background-color:#000;
   margin-bottom:2rem;
 }
 
