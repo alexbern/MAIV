@@ -9,8 +9,7 @@
     font-size: 4.5em;
     .texts{
       text-align: center;
-      width: 70%;
-      margin: 0 auto;
+      z-index: 100;
       margin-top: 6.6rem;
       h1{
         margin: 0 auto;
@@ -18,22 +17,19 @@
     }
     .neemdeel{
       color: $geel;
-      width: 400px;
-      padding: 10px;
+      @include titlepadding();
       background-color: $groen;
       transform: rotate(-3deg);
     }
     .kansop, .stapelsboeken{
+      @include titlepadding();
       color: $wit;
-      padding: 10px 0px 8px 0px;
       background-color: $groen;
-      width: 640px;
     }
     .kansop{
       transform: rotate(-1deg);
     }
     .stapelsboeken{
-      width: 600px;
       transform: rotate(0.7deg);
     }
   }

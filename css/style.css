@@ -417,8 +417,7 @@ h3 {
 
 .header .texts {
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
+  z-index: 100;
   margin-top: 6.6rem;
 }
 
@@ -428,18 +427,22 @@ h3 {
 
 .header .neemdeel {
   color: #E8C51E;
-  width: 400px;
-  padding: 10px;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
   background-color: #21261B;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
 }
 
 .header .kansop, .header .stapelsboeken {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
   color: #FEFEFE;
-  padding: 10px 0px 8px 0px;
   background-color: #21261B;
-  width: 640px;
 }
 
 .header .kansop {
@@ -448,7 +451,6 @@ h3 {
 }
 
 .header .stapelsboeken {
-  width: 600px;
   -webkit-transform: rotate(0.7deg);
           transform: rotate(0.7deg);
 }
@@ -694,7 +696,7 @@ h3 {
   margin: 0 auto;
   width: 1024px;
   text-align: center;
-  margin-top: 26.5rem;
+  margin-top: 21rem;
   z-index: 40;
 }
 

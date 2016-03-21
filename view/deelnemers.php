@@ -70,7 +70,9 @@
     <header class="header">
       <div class="texts">
       <h1 class="neemdeel">Pas op</h1>
+      <br/>
       <h1 class="kansop">De concurenten</h1>
+      <br/>
       <h1 class="stapelsboeken">zijn op komst</h1>
       </div>
     </header>

@@ -71,7 +71,9 @@
   <header class="header">
     <div class="texts">
       <h1 class="neemdeel">Neem deel</h1>
+      <br/>
       <h1 class="kansop">En maak kans op</h1>
+      <br/>
       <h1 class="stapelsboeken">stapels boeken</h1>
     </div>
   </header>

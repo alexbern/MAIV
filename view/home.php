@@ -75,7 +75,9 @@
     <div class="pig-foto"></div>
     <div class="header-titles">
       <h1 class="wewantyou">We Want You</h1>
+      <br/>
       <h1 class="tospread">To Spread</h1>
+      <br/>
       <h1 class="animalism">Animalism</h1>
     </div>
     <div class="win-lots">

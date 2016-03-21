@@ -56,7 +56,9 @@
     <header class="header">
       <div class="texts">
         <h1 class="neemdeel">Meer over</h1>
+        <br/>
         <h1 class="kansop">Het beste </h1>
+        <br/>
         <h1 class="stapelsboeken">Klassieke boek</h1>
       </div>
     </header>
