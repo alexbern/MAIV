@@ -71,6 +71,7 @@
 
 <div class='header-wrapper home-wrapper'>
   <header class="header-home">
+    <div class="triggerhome"><img src="/assets/img/triggerhome.png" alt="win stapels boeken"></div>
     <div class="pig-foto"></div>
     <div class="header-titles">
       <h1 class="wewantyou">We Want You</h1>
