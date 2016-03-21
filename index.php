@@ -29,6 +29,8 @@ $app->get('/deelnemen', function ($request, $response, $args) {
   unset($_SESSION['error']);
   unset($_SESSION['info']);
   return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath()]);
+  unset($_SESSION['error']);
+  unset($_SESSION['info']);
 });
 
 //LOGOUT
@@ -51,6 +53,7 @@ $app->post('/deelnemen', function ($request, $response, $args) {
 $app->get('/', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]   );
+
 });
 
 //ABOUT BOEK
