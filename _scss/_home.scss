@@ -27,23 +27,20 @@
 }
 
 .wewantyou, .tospread, .animalism{
+  @include titlepadding();
   background-color: $groen;
-  padding: 10px 0px 8px 0px;
   color: $wit;
   margin: 0 auto;
 }
 
 .wewantyou{
-  width: 400px;
   transform: rotate(-1deg);
 }
 
 .tospread{
-  width: 350px;
 }
 
 .animalism{
-  width: 610px;
   font-size: 7rem;
   color: $geel;
   transform: rotate(-0.7deg);
@@ -71,6 +68,7 @@
 
 .triggerhome{
   position:absolute;
+  animation: floating 2s infinite;
   top:200px;
   left:70%;
 }
@@ -184,11 +182,12 @@
   }
 }
 .button{
+  transform: rotate(1.5deg);
   text-decoration: none;
   @include titlepadding();
   text-align: center;
   color: $geel;
-  background-color: black;
+  font-size: 1.2rem;
   margin: 0 auto;
 }
 
