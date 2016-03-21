@@ -141,7 +141,9 @@
       <p class="quote-author">
         - George Orwell
       </p>
-      <a href="<?php echo $basepath;?>/boek" class="button">OVER HET BOEK</a>
+      <a href="<?php echo $basepath;?>/boek" class="button">OVER HET BOEK
+      <img src="assets/svg/arrow.svg" alt="arrow" class="arrow">
+      </a>
     </section>
   </div>
   <div class="schuinwrapperlinks">
@@ -152,7 +154,9 @@
         <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
         <li><img src="./assets/img/klasfoto.png" alt="klasfoto"></li>
       </ul>
-      <a href="<?php echo $basepath;?>/boek" class="button concurenten-button">MEER CONCURENTEN</a>
+      <a href="<?php echo $basepath;?>/boek" class="button concurenten-button">MEER CONCURENTEN
+      <img src="assets/svg/arrow.svg" alt="arrow" class="arrow">
+      </a>
     </section>
   </div>
 
