@@ -184,6 +184,7 @@ h3{
 ///////////////
 
 .error, .info{
+  letter-spacing:1px;
   position: fixed;
   left: 50%;
   border-radius: 5px;
@@ -193,28 +194,32 @@ h3{
   height: 50px;
   display: flex;
   flex-direction: row;
-  font-family: $bold;
   font-weight: bold;
   color: #21271D;
-  border-bottom: 5px solid $wit;
+  font-family:$titel;
+  //border-bottom: 5px solid $wit;
   align-items: center;
   background-color: $geel;
   transform: translate(-50%, -50%);
   animation: fade-away 5s forwards;
   letter-spacing:1px;
+  transform: rotate(-1.5deg);
   img{
     width: 8%;
     margin-right: 10px;
   }
   span{
+    //transform: rotate(-1.5deg);
     font-size: 1.2rem;
     text-transform: uppercase;
   }
 }
 
 .info{
+  letter-spacing:1px;
+  font-family: $titel;
   color: #21271D;
-  border-bottom: 5px solid #20251D;
+  //border-bottom: 5px solid #20251D;
   background-color: $geel;
 }
 

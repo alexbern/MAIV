@@ -274,6 +274,7 @@ h3 {
 }
 
 .error, .info {
+  letter-spacing: 1px;
   position: fixed;
   left: 50%;
   border-radius: 5px;
@@ -287,10 +288,9 @@ h3 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: Gothicbold;
   font-weight: bold;
   color: #21271D;
-  border-bottom: 5px solid #FEFEFE;
+  font-family: Lietz, helvetica, arial;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -300,6 +300,8 @@ h3 {
   -webkit-animation: fade-away 5s forwards;
           animation: fade-away 5s forwards;
   letter-spacing: 1px;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
 }
 
 .error img, .info img {
@@ -313,8 +315,9 @@ h3 {
 }
 
 .info {
+  letter-spacing: 1px;
+  font-family: Lietz, helvetica, arial;
   color: #21271D;
-  border-bottom: 5px solid #20251D;
   background-color: #E8C51E;
 }
 
