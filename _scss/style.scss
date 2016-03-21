@@ -109,12 +109,13 @@ h3{
   width: 100%;
   position: fixed;
   z-index: 9999;
+  height: 50px;
   background: url('/assets/img/pattern.jpg');
   .navigation-wrapper{
     @include centerdesktop;
-    height: 50px;
+    height: 100%;
     font-family: $titel;
-    font-style: 14px;
+    font-size: 14px;
     text-transform: uppercase;
     ul{
       display: flex;
@@ -122,7 +123,6 @@ h3{
       align-items: center;
     }
     li{
-      margin-top:20px;
       margin-right: 2.5%;
       margin-left: 2.5%;
       a{

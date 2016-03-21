@@ -34,16 +34,16 @@
 }
 
 .wewantyou{
-  width: 70%;
+  width: 400px;
   transform: rotate(-1deg);
 }
 
 .tospread{
-  width: 60%;
+  width: 350px;
 }
 
 .animalism{
-  width: 85%;
+  width: 610px;
   font-size: 7rem;
   color: $geel;
   transform: rotate(-0.7deg);
@@ -159,8 +159,8 @@
   background-size:cover;
   .quote-wrapper{
     @include centerdesktop;
-    width:70%;
-    padding-top:280px;
+    width: 70%;
+    padding-top: 280px;
     text-align: center;
     transform: rotate(-1.5deg);
   }
@@ -178,7 +178,8 @@
 }
 .button{
   text-decoration: none;
-  padding: 12px 5px 12px 5px;
+  padding: 12px;
+  background-color: black;
   margin: 0 auto;
   margin-top: 2rem;
   font-size: 1.5rem;

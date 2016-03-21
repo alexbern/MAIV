@@ -11,4 +11,19 @@ class DeelnemersDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function selectById($id) {
+    $sql = "SELECT * FROM `deelnemers` WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  public function delete($id) {
+    $sql = "DELETE FROM `deelnemers` WHERE `id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    return $stmt->execute();
+  }
+
 }

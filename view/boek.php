@@ -22,6 +22,26 @@
   </script>
 </head>
 <body>
+  <?php
+
+    if (!empty($_SESSION['error'])) {
+      ?>
+    <div class="error">
+      <img src="/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
+    </div>
+  <?php
+    }
+    if (!empty($_SESSION['info'])) {
+      ?>
+      <div class="info">
+        <img src="/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
+      </div>
+  <?php
+    }
+    unset($_SESSION['error']);
+    unset($_SESSION['info']);
+   ?>
+
   <nav class="topnav">
     <div class="navigation-wrapper">
       <ul>

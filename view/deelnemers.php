@@ -22,13 +22,47 @@
   </script>
 </head>
 <body>
-  <nav class="topnav">
+  <?php
+
+    if (!empty($_SESSION['error'])) {
+      ?>
+    <div class="error">
+      <img src="/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
+    </div>
+  <?php
+    }
+    if (!empty($_SESSION['info'])) {
+      ?>
+      <div class="info">
+        <img src="/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
+      </div>
+  <?php
+    }
+    unset($_SESSION['error']);
+    unset($_SESSION['info']);
+   ?>
+
+   <nav class="topnav">
     <div class="navigation-wrapper">
-       <ul>
+      <ul>
         <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
         <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
         <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+
+        <?php
+          if (empty($_SESSION['user'])) {
+        ?>
+
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+
+        <?php
+          }else{
+        ?>
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
+        <?php
+          }
+         ?>
+
       </ul>
     </div>
   </nav>
