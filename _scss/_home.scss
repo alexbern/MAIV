@@ -60,6 +60,7 @@
 }
 
 .introtext{
+  font-family: $bold;
   @include centerdesktop;
   width: 50%;
   color: $geel;
@@ -165,11 +166,12 @@
     transform: rotate(-1.5deg);
   }
   .the-quote{
-    font-family: $tekst;
+    font-family: $bold;
     font-size: 1.8rem;
     line-height: 200%;
   }
   .quote-author{
+    padding-bottom:40px;
     margin: 0 auto;
     font-size: 1.4rem;
     transform: rotate(-1.5deg);

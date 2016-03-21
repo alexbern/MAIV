@@ -280,26 +280,26 @@ h3 {
   top: 10%;
   z-index: 99999;
   padding: 10px;
-  width: 350px;
-  height: 60px;
+  height: 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: Gothic, helvetica, arial;
+  font-family: Gothicbold;
   font-weight: bold;
-  color: #CC0200;
-  border-bottom: 5px solid #CC0200;
+  color: #21271D;
+  border-bottom: 5px solid #FEFEFE;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F15958;
+  background-color: #E8C51E;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-animation: fade-away 5s forwards;
           animation: fade-away 5s forwards;
+  letter-spacing: 1px;
 }
 
 .error img, .info img {
@@ -313,9 +313,9 @@ h3 {
 }
 
 .info {
-  color: #85AA00;
-  border-bottom: 5px solid #85AA00;
-  background-color: #B9DE46;
+  color: #21271D;
+  border-bottom: 5px solid #20251D;
+  background-color: #E8C51E;
 }
 
 .cms-list {
@@ -694,6 +694,7 @@ h3 {
 }
 
 .introtext {
+  font-family: Gothicbold;
   margin: 0 auto;
   width: 1024px;
   width: 50%;
@@ -815,12 +816,13 @@ h3 {
 }
 
 .quote .the-quote {
-  font-family: Gothic, helvetica, arial;
+  font-family: Gothicbold;
   font-size: 1.8rem;
   line-height: 200%;
 }
 
 .quote .quote-author {
+  padding-bottom: 40px;
   margin: 0 auto;
   font-size: 1.4rem;
   -webkit-transform: rotate(-1.5deg);

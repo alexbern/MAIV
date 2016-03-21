@@ -190,22 +190,21 @@ h3{
   top: 10%;
   z-index: 99999;
   padding: 10px;
-  width: 350px;
-  height: 60px;
+  height: 50px;
   display: flex;
   flex-direction: row;
-  font-family: $tekst;
+  font-family: $bold;
   font-weight: bold;
-  color: #CC0200;
-  border-bottom: 5px solid #CC0200;
+  color: #21271D;
+  border-bottom: 5px solid $wit;
   align-items: center;
-  background-color: #F15958;
+  background-color: $geel;
   transform: translate(-50%, -50%);
   animation: fade-away 5s forwards;
+  letter-spacing:1px;
   img{
     width: 8%;
     margin-right: 10px;
-
   }
   span{
     font-size: 1.2rem;
@@ -214,9 +213,9 @@ h3{
 }
 
 .info{
-  color: #85AA00;
-  border-bottom: 5px solid #85AA00;
-  background-color: #B9DE46;
+  color: #21271D;
+  border-bottom: 5px solid #20251D;
+  background-color: $geel;
 }
 
 

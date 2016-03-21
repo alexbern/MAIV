@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face{
+  font-family: 'Gothicbold';
+  src: url('LetterGothicStd-bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
