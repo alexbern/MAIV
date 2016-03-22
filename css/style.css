@@ -266,6 +266,51 @@ h3 {
   width: 10%;
 }
 
+.mobile-nav {
+  width: 100%;
+  height: 80px;
+  z-index: 99999;
+  background: url("/assets/img/pattern.jpg");
+  position: fixed;
+  display: none;
+}
+
+.mobile-nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav ul .logo {
+  margin-left: 2rem;
+}
+
+.mobile-nav .burger-menu {
+  width: 50px;
+  margin-right: 2rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav .burger-menu img {
+  width: 100%;
+}
+
 .header-wrapper {
   width: 100%;
   height: 300px;
@@ -1173,6 +1218,10 @@ h3 {
   .navigation-wrapper {
     width: 100%;
   }
+  .top-nav {
+    width: 100%;
+    background-color: red;
+  }
   .triggerhome {
     top: 180px;
     left: 70%;
@@ -1332,6 +1381,9 @@ h3 {
   }
   .topnav {
     display: none;
+  }
+  .mobile-nav {
+    display: inline;
   }
   .main-container .login-section .login-form {
     width: 85%;
