@@ -85,31 +85,31 @@
   width: 100%;
   background: url('/assets/img/groenebg.png') repeat;
   .login-section{
-    @include centerdesktop;
+    @include centerdesktop();
     header{
-      width: 80%;
+      width: 50rem;
       margin: 0 auto;
       .login-title{
         color: $geel;
         background-color: black;
-        width: 100px;
         transform: rotate(-1deg);
-        margin-left: 4rem;
-        padding: 10px 10px 10px 10px;
+        display: inline-block;
+        margin-left: 1rem;
+        padding: 10px;
       }
       .upload-title{
-        transform: rotate(1deg);
         color: $wit;
         font-size: 1.2rem;
-        margin-left: 3rem;
         background-color: black;
-        width: 120px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
+        display: inline-block;
       }
     }
     .login-form{
       @include centerdesktop;
+      width: 50rem;
       background-color: black;
+      margin-top: none;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -136,20 +136,20 @@
     padding-bottom: 6rem;
     position:relavive;
     header{
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
     }
     .registreer-title{
-      margin-left: 4rem;
-      width: 250px;
+      margin-left: 1rem;
+      display: inline-block;
       padding: 10px;
       color: $geel;
       transform: rotate(-3deg);
     }
     .neemdeel-title{
-      margin-left: 3rem;
-      width: 180px;
       font-size: 1.4rem;
+      padding: 10px;
+      display: inline-block;
     }
      .register-form{
       background-color: black;
@@ -210,9 +210,4 @@
     }
   }
 
-
 }
-
-
-
-

@@ -515,35 +515,34 @@ h3 {
 }
 
 .main-container .login-section header {
-  width: 80%;
+  width: 50rem;
   margin: 0 auto;
 }
 
 .main-container .login-section header .login-title {
   color: #E8C51E;
   background-color: black;
-  width: 100px;
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
-  margin-left: 4rem;
-  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 10px;
 }
 
 .main-container .login-section header .upload-title {
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
   color: #FEFEFE;
   font-size: 1.2rem;
-  margin-left: 3rem;
   background-color: black;
-  width: 120px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
+  display: inline-block;
 }
 
 .main-container .login-section .login-form {
   margin: 0 auto;
   width: 1024px;
+  width: 50rem;
   background-color: black;
+  margin-top: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -583,13 +582,13 @@ h3 {
 }
 
 .main-container .register-section header {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .main-container .register-section .registreer-title {
-  margin-left: 4rem;
-  width: 250px;
+  margin-left: 1rem;
+  display: inline-block;
   padding: 10px;
   color: #E8C51E;
   -webkit-transform: rotate(-3deg);
@@ -597,9 +596,9 @@ h3 {
 }
 
 .main-container .register-section .neemdeel-title {
-  margin-left: 3rem;
-  width: 180px;
   font-size: 1.4rem;
+  padding: 10px;
+  display: inline-block;
 }
 
 .main-container .register-section .register-form {
@@ -960,139 +959,6 @@ h3 {
           align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
-  .header-home {
-    width: 100%;
-  }
-  .navigation-wrapper {
-    width: 100%;
-  }
-  .triggerhome {
-    top: 180px;
-    left: 70%;
-  }
-  .introtext {
-    width: 80%;
-  }
-  .stappen {
-    width: 100%;
-  }
-  .stap {
-    margin: 0 auto;
-    width: 70%;
-  }
-  .quote {
-    width: 100%;
-  }
-  .quote-wrapper {
-    width: 100%;
-  }
-  .the-quote {
-    width: 100%;
-  }
-  .quote-author {
-    width: 100%;
-  }
-  .concurenten-wrapper li {
-    margin-top: 2rem;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .stappen {
-    width: 100%;
-  }
-  .stap {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .quote {
-    height: 800px;
-  }
-  .stap {
-    width: 100%;
-  }
-  .stap article {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .stap1, .stap2, .stap3 {
-    background-position: center;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  .home-wrapper {
-    height: 400px;
-  }
-  .pig-foto {
-    width: 100%;
-    background: url("/assets/img/headermobiel.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-top: 6.5rem;
-    background-size: 600px;
-  }
-  .header-titles {
-    font-size: 2.5rem;
-  }
-  .header-titles .animalism {
-    font-size: 4rem;
-  }
-  .introtext {
-    width: 100%;
-  }
-  .the-quote {
-    font-size: 2rem;
-  }
-  .button {
-    padding: 1.5rem;
-    color: black;
-    width: 85%;
-    background-color: #E8C51E;
-  }
-  .button .arrow {
-    display: none;
-  }
-  .bottomnav {
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    padding-bottom: 6rem;
-  }
-  .bottomnav .seccondnav {
-    display: none;
-  }
-  .topnav {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  .concurenten-wrapper li {
-    width: 100%;
-    margin-top: 0;
-  }
-  .concurenten-wrapper li img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .quote {
-    height: 1000px;
-  }
-  .concurenten-wrapper li {
-    width: 100%;
-  }
-}
-
 .boekpicture {
   width: 2600px;
   height: 500px;
@@ -1290,7 +1156,7 @@ h3 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("/assets/img/fototoestel.png") no-repeat;
+  background: url("/asse tts/img/fototoestel.png") no-repeat;
   background-position: right;
 }
 
@@ -1303,6 +1169,41 @@ h3 {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header-home {
+    width: 100%;
+  }
+  .navigation-wrapper {
+    width: 100%;
+  }
+  .triggerhome {
+    top: 180px;
+    left: 70%;
+  }
+  .introtext {
+    width: 80%;
+  }
+  .stappen {
+    width: 100%;
+  }
+  .stap {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .quote {
+    width: 100%;
+  }
+  .quote-wrapper {
+    width: 100%;
+  }
+  .the-quote {
+    width: 100%;
+  }
+  .quote-author {
+    width: 100%;
+  }
+  .concurenten-wrapper li {
+    margin-top: 2rem;
+  }
   .header {
     width: 100%;
   }
@@ -1317,11 +1218,147 @@ h3 {
   .deelnemersonderaan {
     width: 100%;
   }
+  .main-container .login-section, .main-container .register-section {
+    width: 100%;
+  }
+  .main-container .register-section .register-form input[type='submit'] {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .stappen {
+    width: 100%;
+  }
+  .stap {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 985px) {
   .deelnemersonderaan nav ul {
     background: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .quote {
+    height: 800px;
+  }
+  .stap {
+    width: 100%;
+  }
+  .stap article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stap1, .stap2, .stap3 {
+    background-position: center;
+  }
+  .clipboard {
+    display: none;
+  }
+  .main-container .register-section .register-form section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fieldsets {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .register-section .register-form .fieldsets fieldset {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .home-wrapper {
+    height: 400px;
+  }
+  .pig-foto {
+    width: 100%;
+    background: url("/assets/img/headermobiel.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 6.5rem;
+    background-size: 600px;
+  }
+  .header-titles {
+    font-size: 2.5rem;
+  }
+  .header-titles .animalism {
+    font-size: 4rem;
+  }
+  .introtext {
+    width: 100%;
+  }
+  .the-quote {
+    font-size: 2rem;
+  }
+  .button {
+    padding: 1.5rem;
+    color: black;
+    width: 85%;
+    background-color: #E8C51E;
+  }
+  .button .arrow {
+    display: none;
+  }
+  .bottomnav {
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 6rem;
+  }
+  .bottomnav .seccondnav {
+    display: none;
+  }
+  .topnav {
+    display: none;
+  }
+  .main-container .login-section .login-form {
+    width: 85%;
+  }
+  .main-container .login-section .login-form .login-submit {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: none;
+            transform: none;
+    padding: 2rem;
+    width: 100%;
+  }
+  .main-container .login-section header {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .deelnementexts {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .concurenten-wrapper li {
+    width: 100%;
+    margin-top: 0;
+  }
+  .concurenten-wrapper li img {
+    width: 100%;
   }
 }
 
@@ -1337,7 +1374,19 @@ h3 {
   }
   .texts {
     padding-top: 4rem;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
+  }
+  .header-wrapper {
+    background-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .quote {
+    height: 1000px;
+  }
+  .concurenten-wrapper li {
+    width: 100%;
   }
 }
 

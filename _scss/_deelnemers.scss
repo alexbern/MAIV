@@ -34,7 +34,7 @@
     height:200px;
     display:flex;
     justify-content:center;
-    background: url("/assets/img/fototoestel.png") no-repeat;
+    background: url("/asse tts/img/fototoestel.png") no-repeat;
     background-position: right;
   }
   li{
@@ -47,50 +47,5 @@
 
 }
 
-@media only screen and (max-width: 1024px){
-  .header{
-    width: 100%;
-  }
-  .deelnemerfotos{
-    width: 100%;
-    ul{
-      justify-content: space-around;
-    }
-  }
-  .deelnemersonderaan{
-    width: 100%;
-  }
-
-}
-
-@media only screen and (max-width: 985px){
-  .deelnemersonderaan nav ul{
-    background: none;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .deelnemerfotos ul li{
-    width: 80%;
-  }
-  .deelnemerfotos ul li img{
-    width: 100%;
-  }
-
-  .article-stap-title, .article-sub-title{
-    width: 0 auto;
-  }
-  .texts{
-    padding-top: 4rem;
-    font-size: 3.4rem;
-  }
-}
-
-@media only screen and (max-width: 460px){
-  .texts{
-    padding-top: 5.5rem;
-    font-size: 2.6rem;
-  }
-}
 
 

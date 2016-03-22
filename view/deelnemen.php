@@ -69,7 +69,7 @@
   </nav>
 <div class='header-wrapper'>
   <header class="header">
-    <div class="texts">
+    <div class="texts deelnementexts">
       <h1 class="neemdeel">Neem deel</h1>
       <br/>
       <h1 class="kansop">En maak kans op</h1>
@@ -83,6 +83,7 @@
   <section class="login-section">
     <header>
       <h2 class="login-title title">Login</h2>
+      <br/>
       <h3 class="upload-title title">en upload</h3>
     </header>
     <form name="login-form" class="login-form" action="<?php echo $basepath;?>/deelnemen" method="post">
@@ -108,6 +109,7 @@
   <section class="register-section">
     <header>
       <h2 class="title registreer-title">OF REGISTREER</h2>
+      <br/>
       <h3 class="title neemdeel-title">EN NEEM DEEL</h3>
     </header>
     <form name="register-form" class="register-form" action="<?php echo $basepath;?>/deelnemen" method="post">
@@ -148,7 +150,7 @@
 
          ?>
 
-          <label>LEERKRACHT</label>
+          <!-- <label>LEERKRACHT</label> -->
         </fieldset>
         <fieldset>
           <?php
@@ -177,7 +179,7 @@
 
 
 
-          <label>KLAS</label>
+          <!-- <label>KLAS</label> -->
         </fieldset>
       </div>
       <input type="submit" value="REGISTREER">
