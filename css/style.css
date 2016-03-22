@@ -241,6 +241,7 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   height: 100%;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -278,6 +279,7 @@ h3 {
   margin: 0 auto;
   width: 1024px;
   margin-top: 50px;
+  width: 100%;
   height: 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -732,12 +734,10 @@ h3 {
 .pig-foto {
   width: 100%;
   height: 100%;
-  left: 62%;
-  top: 52%;
   background: url("/assets/img/homeheader.png") no-repeat;
+  background-position: center center;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-top: 2rem;
 }
 
 .introtext {
@@ -763,9 +763,10 @@ h3 {
   margin: 0 auto;
   width: 1024px;
   margin-top: 3rem;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 2000px;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -775,10 +776,6 @@ h3 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.stappen .stap {
-  width: 70%;
 }
 
 .stappen .stap article {
@@ -820,7 +817,6 @@ h3 {
   margin-top: -9rem;
   background: url("/assets/img/stap2.png") no-repeat;
   background-position: top-left;
-  width: 800px;
 }
 
 .stap2 article {
@@ -834,7 +830,7 @@ h3 {
 .stap3 {
   background: url("/assets/img/stap3.1.png") no-repeat;
   background-position: top-left;
-  width: 800px;
+  position: relative;
 }
 
 .stap3 article {
@@ -844,8 +840,11 @@ h3 {
 
 .stap3 .varkenbg {
   background: url("/assets/img/stap3.2.png") no-repeat;
-  width: 1000px;
+  background-position: center center;
   height: 300px;
+  width: 60%;
+  top: 2px;
+  left: 30%;
   position: absolute;
 }
 
@@ -862,9 +861,8 @@ h3 {
 }
 
 .quote .quote-wrapper {
+  width: 80%;
   margin: 0 auto;
-  width: 1024px;
-  width: 70%;
   padding-top: 280px;
   text-align: center;
   -webkit-transform: rotate(-1.5deg);
@@ -883,7 +881,6 @@ h3 {
   font-size: 1.4rem;
   -webkit-transform: rotate(-1.5deg);
           transform: rotate(-1.5deg);
-  width: 30%;
 }
 
 .button {
@@ -945,6 +942,7 @@ h3 {
 .concurenten .concurenten-wrapper {
   margin: 0 auto;
   width: 1024px;
+  width: 100%;
   margin-top: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -952,12 +950,148 @@ h3 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-home {
+    width: 100%;
+  }
+  .navigation-wrapper {
+    width: 100%;
+  }
+  .triggerhome {
+    top: 180px;
+    left: 70%;
+  }
+  .introtext {
+    width: 80%;
+  }
+  .stappen {
+    width: 100%;
+  }
+  .stap {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .quote {
+    width: 100%;
+  }
+  .quote-wrapper {
+    width: 100%;
+  }
+  .the-quote {
+    width: 100%;
+  }
+  .quote-author {
+    width: 100%;
+  }
+  .concurenten-wrapper li {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .stappen {
+    width: 100%;
+  }
+  .stap {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .quote {
+    height: 800px;
+  }
+  .stap {
+    width: 100%;
+  }
+  .stap article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stap1, .stap2, .stap3 {
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .home-wrapper {
+    height: 400px;
+  }
+  .pig-foto {
+    width: 100%;
+    background: url("/assets/img/headermobiel.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 6.5rem;
+    background-size: 600px;
+  }
+  .header-titles {
+    font-size: 2.5rem;
+  }
+  .header-titles .animalism {
+    font-size: 4rem;
+  }
+  .introtext {
+    width: 100%;
+  }
+  .the-quote {
+    font-size: 2rem;
+  }
+  .button {
+    padding: 1.5rem;
+    color: black;
+    width: 85%;
+    background-color: #E8C51E;
+  }
+  .button .arrow {
+    display: none;
+  }
+  .bottomnav {
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 6rem;
+  }
+  .bottomnav .seccondnav {
+    display: none;
+  }
+  .topnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .concurenten-wrapper li {
+    width: 100%;
+    margin-top: 0;
+  }
+  .concurenten-wrapper li img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .quote {
+    height: 1000px;
+  }
+  .concurenten-wrapper li {
+    width: 100%;
+  }
 }
 
 .boekpicture {

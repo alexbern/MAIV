@@ -84,6 +84,7 @@
     </div>
   </header>
 </div>
+
 <div class="schuinboven"></div>
   <main class="main-container">
     <p class="introtext">
@@ -92,10 +93,9 @@
     </p>
     <section class="stappen">
       <section class="stap1 stap">
-        <div class="fotostap1"></div>
         <article>
           <div class="article-titles">
-            <h2 class="article-stap-title">Stap 1</h2>
+            <h2 class="article-stap-title">STAP 1</h2>
             <h3 class="article-sub-title">registreer</h3>
           </div>
           <p>
@@ -104,8 +104,7 @@
         </article>
       </section>
 
-      <section class="stap2 stap">
-        <div></div>
+       <section class="stap2 stap">
         <article>
           <p>Ga vervolgens <strong> samen met jouw leerlingen </strong> aan de slag in de klas. Leer ze de kneepjes van het vak, en stel ze voor aan het beste boek van de eeuw: “Animal Farm”. Maak de beste <strong> klassikale boekbespreking </strong> van het boek en maak een animalistische <strong>klasfoto.</strong></p>
           <div class="article-titles">
@@ -116,9 +115,7 @@
         </article>
       </section>
       <section class="stap3 stap">
-        <div class="varkenbg">
-
-        </div>
+        <div class="varkenbg"></div>
         <article>
         <div class="article-titles">
           <h2 class="article-stap-title">Stap 3</h2>
@@ -128,6 +125,8 @@
           <p>Om jouw en je klas te belonen mag je natuurlijk jouw prachtwerk natuurlijk ten toon gesteld worden. Als laatste stuur je ons <strong>jouw bespreking samen met de klasfoto.</strong> Een jury van animalisten zullen deze dan beoordelen. Het beste verslag maakt kans op <strong>100 nieuwe boeken</strong> in de klas!</p>
         </article>
       </section>
+
+
     </section>
   </main>
 </div>
@@ -136,7 +135,7 @@
   <div class="quote">
     <section class="quote-wrapper">
       <p class="the-quote">
-        Foor legs good two, two legs better! All animals are equal. But some animals are more uqual than others"
+        "Four legs good, two legs better! All animals are equal. But some animals are more uqual than others"
       </p>
       <p class="quote-author">
         - George Orwell
