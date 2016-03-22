@@ -22,6 +22,12 @@ $app->get('/deelnemers', function ($request, $response, $args) {
   return $view->render($response, 'deelnemers.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 
+//UPLOAD
+$app->get('/upload', function ($request, $response, $args) {
+  $view = new \Slim\Views\PhpRenderer('view/');
+  return $view->render($response, 'upload.php', ['basepath' => $request->getUri()->getBasePath()]);
+});
+
 //DEELNEMEN
 $app->get('/deelnemen', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
