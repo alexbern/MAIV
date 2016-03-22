@@ -677,6 +677,14 @@ h3 {
   top: -30%;
 }
 
+.main-container .register-section .triggerregistreer {
+  position: absolute;
+  right: 40%;
+  top: -30%;
+  -webkit-animation: floating 2s infinite;
+          animation: floating 2s infinite;
+}
+
 .home-wrapper {
   height: 500px;
   width: 100%;

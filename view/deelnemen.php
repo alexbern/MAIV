@@ -114,6 +114,7 @@
     </header>
     <form name="register-form" class="register-form" action="<?php echo $basepath;?>/deelnemen" method="post">
       <img src="/assets/img/clipboard.png" alt="clipboard" class="clipboard">
+      <img src="/assets/img/triggerregistreer.png" alt="nog niet langs geweest?" class="triggerregistreer">
       <section>
         <p>
           Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een <strong>boekverslag over animal farm </strong>en een <strong>orginele klasfoto</strong>. Plezier verzekerd in de klas!
