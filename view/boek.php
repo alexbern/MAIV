@@ -42,10 +42,33 @@
     unset($_SESSION['info']);
    ?>
 
+  <nav class="burger-nav">
+    <header>
+      <img src="/assets/svg/cross.svg" alt="exit" class="cross"/>
+      <ul class="burger-ul">
+        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <?php
+          if (empty($_SESSION['user'])) {
+        ?>
+
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+
+        <?php
+          }else{
+        ?>
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
+        <?php
+          }
+         ?>
+      </ul>
+    </header>
+  </nav>
+
   <nav class="mobile-nav">
     <ul>
       <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
-      <li class="burger-menu"><a href="#"><img src="/assets/svg/hamburger.svg" alt="hamburger"></a></li>
+      <li class="burger-menu"><img class="burger-img" src="/assets/svg/hamburger.svg" alt="hamburger"></li>
     </ul>
   </nav>
 

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Router from './routers/';
 
 let active = 0;
+let intoSwipe = "into-swipe 0.6s forwards";
+let outSwipe = "out-swipe 0.6s forwards";
 
 const init = () =>{
   // ReactDOM.render(
@@ -24,10 +26,10 @@ const getBurgerMenu = () =>{
 const flipBurger = () =>{
   let $burgerNav = document.querySelector('.burger-nav');
   if (active == 0){
-    $burgerNav.style.display="inline";
+    $burgerNav.style.animation = intoSwipe;
     active++;
   }else if (active == 1){
-    $burgerNav.style.display="none";
+    $burgerNav.style.animation = outSwipe;
     active--;
   }
 

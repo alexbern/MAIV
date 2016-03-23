@@ -133,6 +133,66 @@ main {
   }
 }
 
+@-webkit-keyframes into-swipe {
+  0% {
+    left: 100%;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+@keyframes into-swipe {
+  0% {
+    left: 100%;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+@-webkit-keyframes out-swipe {
+  0% {
+    left: 20%;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes out-swipe {
+  0% {
+    left: 20%;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 body {
   background: url("/assets/img/pattern.jpg");
 }
@@ -316,9 +376,8 @@ h3 {
   background: url("/assets/img/groenebg.png");
   z-index: 999999;
   width: 80%;
-  left: 20%;
+  left: 100%;
   height: 100vh;
-  display: none;
 }
 
 .burger-nav header {

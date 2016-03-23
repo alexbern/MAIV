@@ -13,3 +13,19 @@
     75%  {}
     100% {transform:translate(0, -0px);}
 }
+
+@keyframes into-swipe {
+    0%   {left: 100%;}
+    25%  {}
+    50%  {}
+    75%  {}
+    100% {left: 20%;}
+}
+
+@keyframes out-swipe {
+    0%   {left: 20%;}
+    25%  {}
+    50%  {}
+    75%  {}
+    100% {left: 100%;}
+}
