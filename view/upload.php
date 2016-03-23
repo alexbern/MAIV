@@ -65,21 +65,62 @@
       </ul>
     </div>
   </nav>
-
- <!--  <footer>
-    <nav>
-      <ul>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
-      <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-      </ul>
-      <ul>
-        <li><a href="http://www.boek.be/">Boek.be</a></li>
-        <li><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts">facebook</a></li>
-        <li><a href="https://twitter.com/boekbe">twitter</a></li>
-      </ul>
-    </nav>
-  </footer> -->
+  <div class='header-wrapper'>
+  <header class="header">
+    <div class="texts deelnementexts">
+      <h1 class="neemdeel">Upload</h1>
+      <br/>
+      <h1 class="kansop">En maak kans op</h1>
+      <br/>
+      <h1 class="stapelsboeken">stapels boeken</h1>
+    </div>
+  </header>
+</div>
+<div class="schuinboven"></div>
+<main class="main-container">
+  <section class="checkup">
+    <header>
+      <h2 class=".article-stap-title">checkup</h2>
+      <h3 class=".article-stap-title">gegevens</h3>
+    </header>
+    <ul>
+      <li>Naam: Voornaam Achternaam</li>
+      <li>Klas: klasnaam</li>
+      <li>School: schoolnaam</li>
+      <li>Gemeente: gemeentenaam</li>
+    </ul>
+  </section>
+  <section class="login-section">
+    <img src="/assets/img/polaroid.png" alt="fotovoorbeeld" class="pollaroid">
+    <header>
+      <h2 class="login-title title">Verstuur</h2>
+      <br/>
+      <h3 class="upload-title title">foto en boekbespreking</h3>
+    </header>
+    <form name="upload-form" class="login-form" action="<?php echo $basepath;?>/upload" method="post">
+    ?>
+      <label for="">Boekbespreking</label>
+      <input type="file" accept="image/*">
+      <label for="">Klasfoto</label>
+      <input type="file" name="pic" accept="*|media_type">
+      <input type="submit" class="login-submit" value="UPLOAD"></input>
+    </form>
+  </section>
+</main>
+<footer>
+    <nav class="bottomnav">
+        <ul class="seccondnav">
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        </ul>
+        <ul>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+          <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
+          <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
+        </ul>
+      </div>
+  </footer>
   <script>
     window.app = window.app || {};
     window.app.basePath = '<?php echo $basepath; ?>'
