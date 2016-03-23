@@ -2,9 +2,12 @@
   .header-home{
     width: 100%;
   }
-
   .navigation-wrapper{
     width: 100%;
+  }
+  .top-nav{
+    width: 100%;
+    background-color: red;
   }
   .triggerhome{
     top: 180px;
@@ -166,6 +169,9 @@
   }
   .topnav{
     display: none;
+  }
+  .mobile-nav{
+    display: inline;
   }
   .main-container .login-section .login-form{
     width: 85%;

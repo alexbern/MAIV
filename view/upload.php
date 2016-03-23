@@ -41,6 +41,14 @@
     unset($_SESSION['error']);
     unset($_SESSION['info']);
    ?>
+
+   <nav class="mobile-nav">
+    <ul>
+      <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+      <li class="burger-menu"><a href="#"><img src="/assets/svg/hamburger.svg" alt="hamburger"></a></li>
+    </ul>
+  </nav>
+
    <nav class="topnav">
     <div class="navigation-wrapper">
       <ul>
