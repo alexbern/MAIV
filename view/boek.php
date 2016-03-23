@@ -114,9 +114,8 @@
     <div class="main-container">
       <div class="container">
         <section class="boek">
-          <div class="boekpicture">
-          </div>
-          <div>
+          <img src="/assets/img/boek.png" alt="" class="boekimg">
+          <div class="tekst">
              <h3>Animal Farm</h3>
              <ul>
                <li>George Orwell</li>
@@ -130,7 +129,7 @@
         </section>
         </div>
       </div>
-      <div class="schuinonder"></div>
+      <div class="schuinonder schuinboek"></div>
       <div class="container">
         <section class="schrijver">
 
