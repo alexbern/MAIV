@@ -13,7 +13,8 @@ export default class Deelnemer extends React.Component {
     this.props.deleteDeelnemer(this.props.id);
   }
   updateClicked(e){
-   this.props.updateDeelnemer(this.props.id);
+    e.preventDefault();
+    this.props.updateDeelnemer(this.props.id);
   }
   render() {
     let {id, naam, klas, school, status, gemeente, email, foto} = this.props;
@@ -36,8 +37,8 @@ export default class Deelnemer extends React.Component {
         <td>{gemeente}</td>
         <td>{email}</td>
         <td className="status">{status}</td>
-        <td onClick={e=>this.updateClicked(e)}>Accept</td>
-        <td onClick={e=> this.deleteClicked(e)}>Remove</td>
+        <td onClick={e=>this.updateClicked(e)}><img src="/assets/svg/info.svg" alt="accept"/></td>
+        <td onClick={e=> this.deleteClicked(e)}><img src="/assets/svg/error.svg" alt="remove"/></td>
       </tr>
     );
   }

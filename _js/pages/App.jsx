@@ -29,8 +29,16 @@ export default class App extends React.Component{
       });
   }
   updateDeelnemer(id){
+    let deelnemers = this.state.deelnemers.concat();
+    console.log(id);
+    let existingDeelnemer = find(deelnemers, o => o.id === id);
+    if (!existingDeelnemer){
+      return;
+    }
     fetch(`${basename}/api/${id}`, {
-      method: 'PUT'
+      method: 'PUT',
+      body: JSON.stringify(existingDeelnemer),
+      headers: new Headers({'Content-Type': 'application/json'})
     })
       .then(checkStatus)
       .then(r => r.json())
@@ -41,6 +49,7 @@ export default class App extends React.Component{
       .catch(() => {
         console.error('failed to edit deelnemer');
       });
+    this.setState({deelnemers});
   }
   componentDidMount(){
     fetch(`${basename}/api`)

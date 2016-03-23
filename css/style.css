@@ -552,6 +552,10 @@ h3 {
   padding: 1rem;
 }
 
+.cms-container table tbody tr td img {
+  width: 20px;
+}
+
 .header {
   height: 100%;
   width: 100%;
