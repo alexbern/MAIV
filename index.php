@@ -70,13 +70,25 @@ $app->get('/boek', function ($request, $response, $args) {
 
 //CMS
 $app->get('/cms', function ($request, $response, $args) {
-  require 'controllers/cmsController.php';
+  $view = new \Slim\Views\PhpRenderer('view/');
+  return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 
-$app->get('/cms/{id}', function ($request, $response, $args) {
+$app->get('/api', function ($request, $response, $args) {
+  $deelnemersDAO = new DeelnemersDAO();
+  $deelnemers = $deelnemersDAO->selectAll();
+   $response = $response->write(json_encode($deelnemers))
+    ->withHeader('Content-Type','application/json');
+  if(empty($deelnemers)) {
+    $response = $response->withStatus(404);
+  }
+  return $response;
+});
+
+$app->get('/api/{id}', function ($request, $response, $args) {
   $deelnemersDAO = new DeelnemersDAO();
   $deelnemer = $deelnemersDAO->selectById($args['id']);
-  $response = $response->write(json_encode($deelnemer))
+   $response = $response->write(json_encode($deelnemer))
     ->withHeader('Content-Type','application/json');
   if(empty($deelnemer)) {
     $response = $response->withStatus(404);
@@ -84,11 +96,8 @@ $app->get('/cms/{id}', function ($request, $response, $args) {
   return $response;
 });
 
-$app->delete('/cms/{id}', function ($request, $response, $args) {
-  $deelnemersDAO = new DeelnemersDAO();
-  $deelnemersDAO->delete($args['id']);
-  return $response->write(true)
-    ->withHeader('Content-Type','application/json');
+$app->delete('/api/{id}', function ($request, $response, $args) {
+
 });
 
 //404

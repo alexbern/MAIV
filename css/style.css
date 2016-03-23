@@ -311,6 +311,48 @@ h3 {
   width: 100%;
 }
 
+.burger-nav {
+  position: fixed;
+  background: url("/assets/img/groenebg.png");
+  z-index: 999999;
+  width: 80%;
+  left: 20%;
+  height: 100vh;
+  display: none;
+}
+
+.burger-nav header {
+  width: 100%;
+  height: 50px;
+}
+
+.burger-nav header ul {
+  width: 100%;
+  font-family: Lietz, helvetica, arial;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.burger-nav header ul a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+
+.burger-nav header ul li {
+  width: 100%;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 4px solid black;
+}
+
+.burger-nav header .cross {
+  width: 50px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 .header-wrapper {
   width: 100%;
   height: 300px;
