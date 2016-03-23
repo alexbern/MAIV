@@ -1,10 +1,12 @@
 @media only screen and (max-width: 1024px){
+
   ////////
   //HEADER
   ////////
   .header-home{
     width: 100%;
   }
+
   ////////
   //NAV
   ////////
@@ -15,6 +17,9 @@
     }
   }
 
+  ////////
+  //HOME
+  ////////
   .triggerhome{
     top: 180px;
     left: 70%;
@@ -53,6 +58,10 @@
     margin-top: 2rem;
   }
 
+  ////////////
+  //DEELNEMERS
+  ////////////
+
   .header{
     width: 100%;
   }
@@ -67,6 +76,14 @@
   .deelnemersonderaan{
     width: 100%;
   }
+
+  .reviews{
+    width: 100%;
+  }
+
+  ////////
+  //LOGIN
+  ///////
 
   .main-container .login-section, .main-container .register-section{
     width: 100%;
@@ -87,6 +104,35 @@
 
   .concurenten .concurenten-wrapper{
     width: 100%;
+  }
+
+
+  //////
+  //BOEK
+  //////
+
+  .container{
+    width:100%;
+  }
+
+  .boek{
+    margin:0 2rem;
+    .boekimg{
+      width:40%;
+    }
+  }
+
+  .schrijver{
+    .quote2{
+      width:100%;
+    }
+  }
+
+  .orwell{
+    width: 100%;
+    //flex-direction:column;
+    background-color:red;
+    padding:40px;
   }
 
 }
@@ -140,6 +186,25 @@
   }
 }
 
+@media only screen and (max-width: 890px){
+  /////////
+  //BOEK
+  ////////
+
+  .boek{
+    flex-direction:column;
+
+    .tekst{
+      margin:0 10%;
+    }
+    .boekimg{
+      order:1;
+      display:none;
+    }
+  }
+
+}
+
 @media only screen and (max-width: 740px){
   //////////
   //HEADER
@@ -162,8 +227,15 @@
       font-size: 4rem;
     }
   }
+
+  //////////
+  //HOME
+  /////////
+
   .introtext{
     width: 100%;
+    margin-top:-50px;
+
   }
   .the-quote{
     font-size: 2rem;
@@ -177,6 +249,41 @@
       display: none;
     }
   }
+  .stappen{
+    .stap{
+      article{
+        display: flex;
+        flex-direction: column;
+
+        .article-titles{
+          margin-left:10%;
+        }
+
+        .tweetekst{
+          order:1;
+        }
+
+        p{
+          margin: 0 auto;
+          margin-top:-23px;
+        }
+      }
+      h2, h3{
+        @include titlepadding;
+      }
+    }
+  }
+  .stap3{
+    margin-top:100px;
+  }
+  .stappen .stap3 article .article-titles{
+    margin-top:-200px;
+  }
+
+  //////////
+  //NAV
+  /////////
+
   .bottomnav{
     flex-direction: row-reverse;
     padding-bottom: 6rem;
@@ -190,6 +297,11 @@
   .mobile-nav{
     display: inline;
   }
+
+  //////////
+  //DEELNEMER
+  /////////
+
   .main-container .login-section .login-form{
     width: 85%;
   }
@@ -209,6 +321,12 @@
 @media only screen and (max-width: 630px){
   .deelnementexts{
     font-size: 4rem;
+  }
+  .reviews{
+    .items{
+      display:flex;
+      flex-direction:column;
+    }
   }
 }
 

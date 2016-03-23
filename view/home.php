@@ -124,21 +124,22 @@
       <section class="stap1 stap">
         <article>
           <div class="article-titles">
-            <h2 class="article-stap-title">STAP 1</h2>
+            <h2 class="article-stap-title">STAP 1</h2></br>
             <h3 class="article-sub-title">registreer</h3>
           </div>
           <p>
-            Registreer je nu voor <strong> de opdracht van jou leven! </strong> Wij roepen jou op om de waarde en normen van het animalisme door te geven aan jouw leerlingen door hen het boek “Animal Farm” in de les voor te schotelen.
+            Registreer je nu voor <strong> de opdracht van jou leven! </strong> Wij roepen jou op om de waarde en normen van het animalisme door te geven aan jouw leerlingen door hen het boek <strong>“Animal Farm”</strong> in de les voor te schotelen.
           </p>
         </article>
       </section>
 
        <section class="stap2 stap">
         <article>
-          <p>Ga vervolgens <strong> samen met jouw leerlingen </strong> aan de slag in de klas. Leer ze de kneepjes van het vak, en stel ze voor aan het beste boek van de eeuw: “Animal Farm”. Maak de beste <strong> klassikale boekbespreking </strong> van het boek en maak een animalistische <strong>klasfoto.</strong></p>
-          <div class="article-titles">
-            <h2 class="article-stap-title">Stap 2</h2>
-            <h3 class="article-sub-title">Aan de slag</h3>
+          <p class="tweetekst">Ga vervolgens <strong> samen met jouw leerlingen </strong> aan de slag in de klas. Leer ze de kneepjes van het vak, en stel ze voor aan het beste boek van de eeuw: “Animal Farm”. Maak de beste <strong> klassikale boekbespreking </strong> van het boek en maak een animalistische <strong>klasfoto.</strong></p>
+          <div class="article-titles stap2title">
+            <h2 class="article-stap-title">Stap 2</h2></br>
+            <h3 class="article-sub-title" >Aan de slag</h3></br>
+            <h3 class="article-sub-title">in de klas</h3>
           </div>
 
         </article>
@@ -147,15 +148,13 @@
         <div class="varkenbg"></div>
         <article>
         <div class="article-titles">
-          <h2 class="article-stap-title">Stap 3</h2>
-          <h3 class="article-sub-title verstuur">Verstuur</h3>
+          <h2 class="article-stap-title">Stap 3</h2></br>
+          <h3 class="article-sub-title verstuur">Verstuur</h3></br>
           <h3 class="article-sub-title">&amp; Win</h3>
         </div>
           <p>Om jouw en je klas te belonen mag je natuurlijk jouw prachtwerk natuurlijk ten toon gesteld worden. Als laatste stuur je ons <strong>jouw bespreking samen met de klasfoto.</strong> Een jury van animalisten zullen deze dan beoordelen. Het beste verslag maakt kans op <strong>100 nieuwe boeken</strong> in de klas!</p>
         </article>
       </section>
-
-
     </section>
   </main>
 </div>

@@ -906,6 +906,9 @@ h3 {
   text-align: center;
   background: url("/assets/img/groenebg.png") repeat;
   font-size: 1.5rem;
+  margin-top: -100px;
+  position: relative;
+  z-index: 100;
 }
 
 .triggerhome {
@@ -956,13 +959,14 @@ h3 {
 
 .stappen .article-stap-title {
   text-transform: uppercase;
-  width: 70%;
 }
 
 .stap1 {
   background: url("/assets/img/stap1.png") no-repeat;
   background-position: top-left;
+  background-size: 100%;
   width: 800px;
+  height: 500px;
 }
 
 .stap1 article {
@@ -973,6 +977,7 @@ h3 {
   margin-top: -9rem;
   background: url("/assets/img/stap2.png") no-repeat;
   background-position: top-left;
+  background-size: 100%;
 }
 
 .stap2 article {
@@ -988,6 +993,7 @@ h3 {
   background: url("/assets/img/stap3.1.png") no-repeat;
   background-position: top-left;
   position: relative;
+  background-size: 100%;
   z-index: 100;
 }
 
@@ -1000,6 +1006,7 @@ h3 {
 .stap3 .varkenbg {
   background: url("/assets/img/stap3.2.png") no-repeat;
   background-position: center center;
+  background-size: 100%;
   height: 300px;
   width: 60%;
   top: 2px;
@@ -1009,11 +1016,6 @@ h3 {
 
 .stap3 .verstuur {
   margin-bottom: 3px;
-}
-
-.schuinhome {
-  margin-top: -100px;
-  z-index: 100;
 }
 
 .quote {
@@ -1124,23 +1126,23 @@ h3 {
           align-items: center;
 }
 
-.boekpicture {
-  width: 2600px;
-  height: 500px;
-  background: url("/assets/img/boek2.png") no-repeat;
-  position: relative;
-  z-index: 100;
+.boekimg {
+  position: absolute;
 }
 
 .boek {
-  margin-top: -1rem;
-  padding-top: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+  z-index: 10;
+}
+
+.boek .tekst {
+  margin-left: 40%;
 }
 
 .boek ul {
@@ -1159,6 +1161,8 @@ h3 {
   color: #FEFEFE;
   background-color: #000;
   margin-bottom: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
 }
 
 .boek p {
@@ -1167,26 +1171,38 @@ h3 {
 }
 
 .boek h3 {
-  width: 240px;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.schuinboek {
+  margin-top: -130px;
 }
 
 .schrijver .quote2 {
   margin: 5rem auto;
   text-align: center;
   width: 1024px;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
 }
 
 .schrijver .quote2 p {
   width: 65%;
   margin: 0 auto;
   background-color: black;
+  padding: 10px;
 }
 
 .schrijver .quote2 .author2 {
-  width: 18%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 25%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   margin-top: 1rem;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
 }
 
 .schrijver .orwell-block {
@@ -1253,19 +1269,30 @@ h3 {
 }
 
 .reviews .items div {
-  padding-right: 2rem;
+  padding: 2rem;
+}
+
+.reviews .items div p {
+  background-color: black;
 }
 
 .reviews .reviewer {
-  color: #E9C600;
   font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  color: #E9C600;
   text-align: right;
-  width: 38%;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
 }
 
 .reviews h3 {
-  width: 15%;
+  margin: 2rem;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
 }
 
 .deelnemerfotos {
@@ -1386,6 +1413,9 @@ h3 {
   .deelnemersonderaan {
     width: 100%;
   }
+  .reviews {
+    width: 100%;
+  }
   .main-container .login-section, .main-container .register-section {
     width: 100%;
   }
@@ -1403,6 +1433,26 @@ h3 {
   }
   .concurenten .concurenten-wrapper {
     width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .boek {
+    margin: 0 2rem;
+  }
+  .boek .boekimg {
+    width: 40%;
+  }
+  .schrijver .quote2 {
+    width: 100%;
+  }
+  .orwell {
+    width: 100%;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: red;
+    padding: 40px;
   }
 }
 
@@ -1458,6 +1508,23 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 890px) {
+  .boek {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boek .tekst {
+    margin: 0 10%;
+  }
+  .boek .boekimg {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 740px) {
   .home-wrapper {
     height: 400px;
@@ -1478,6 +1545,7 @@ h3 {
   }
   .introtext {
     width: 100%;
+    margin-top: -50px;
   }
   .the-quote {
     font-size: 2rem;
@@ -1490,6 +1558,38 @@ h3 {
   }
   .button .arrow {
     display: none;
+  }
+  .stappen .stap article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stappen .stap article .article-titles {
+    margin-left: 10%;
+  }
+  .stappen .stap article .tweetekst {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .stappen .stap article p {
+    margin: 0 auto;
+    margin-top: -23px;
+  }
+  .stappen .stap h2, .stappen .stap h3 {
+    font-family: Lietz, helvetica, arial;
+    text-transform: uppercase;
+    padding: 1rem;
+    display: inline-block;
+  }
+  .stap3 {
+    margin-top: 100px;
+  }
+  .stappen .stap3 article .article-titles {
+    margin-top: -200px;
   }
   .bottomnav {
     -webkit-flex-direction: row-reverse;
@@ -1526,6 +1626,14 @@ h3 {
 @media only screen and (max-width: 630px) {
   .deelnementexts {
     font-size: 4rem;
+  }
+  .reviews .items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

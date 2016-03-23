@@ -37,9 +37,6 @@
   transform: rotate(-1deg);
 }
 
-.tospread{
-}
-
 .animalism{
   font-size: 7rem;
   color: $geel;
@@ -63,6 +60,9 @@
   text-align: center;
   background: url('/assets/img/groenebg.png') repeat;
   font-size:1.5rem;
+  margin-top: -100px;
+  position:relative;
+  z-index:100;
 }
 
 .triggerhome{
@@ -102,15 +102,15 @@
   }
   .article-stap-title{
     text-transform: uppercase;
-    width: 70%;
   }
 }
 
 .stap1{
   background: url('/assets/img/stap1.png') no-repeat;
   background-position:top-left;
+  background-size:100%;
   width:800px;
-
+  height:500px;
   article{
     margin-top:25rem;
   }
@@ -120,9 +120,9 @@
   margin-top:-9rem;
   background: url('/assets/img/stap2.png') no-repeat;
   background-position:top-left;
+  background-size:100%;
   article{
     margin-top:25rem;
-    width:750px;
   }
   .article-titles{
     margin-top:4rem;
@@ -133,15 +133,16 @@
   background: url('/assets/img/stap3.1.png') no-repeat;
   background-position:top-left;
   position: relative;
+  background-size:100%;
   z-index:100;
   article{
     margin-top:19rem;
     margin-bottom:5rem;
-    width:750px;
   }
   .varkenbg{
     background: url('/assets/img/stap3.2.png') no-repeat;
     background-position: center center;
+    background-size:100%;
     height: 300px;
     width: 60%;
     top: 2px;
@@ -151,11 +152,6 @@
   .verstuur{
     margin-bottom:3px;
   }
-}
-
-.schuinhome{
-  margin-top:-100px;
-  z-index: 100;
 }
 
 ////////
