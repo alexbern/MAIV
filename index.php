@@ -52,7 +52,6 @@ $app->get('/logout', function ($request, $response, $args) {
 //DEELNEMEN POST
 $app->post('/deelnemen', function ($request, $response, $args) {
   require 'controllers/deelnemenPostController.php';
-  return $response->withHeader('Location', '/');
 });
 
 //HOME

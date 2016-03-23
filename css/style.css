@@ -389,6 +389,7 @@ h3 {
 
 .burger-nav header ul {
   width: 100%;
+  margin-top: 2rem;
   font-family: Lietz, helvetica, arial;
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -468,7 +469,7 @@ h3 {
   left: 50%;
   border-radius: 5px;
   top: 10%;
-  z-index: 99999;
+  z-index: 99999999;
   padding: 10px;
   height: 50px;
   display: -webkit-flex;
@@ -520,45 +521,36 @@ h3 {
   font-size: 1.2rem;
 }
 
-.cms-list {
-  width: 1024px;
-  padding-top: 100px;
+.cms-container p, .cms-container h1, .cms-container h2, .cms-container h3, .cms-container h4, .cms-container h5, .cms-container li {
+  visibility: visible;
+}
+
+.cms-container table {
+  width: 80%;
   margin: 0 auto;
-  height: 500px;
+  font-family: Helvetica neue, helvetica, arial, sans-serif;
 }
 
-.cms-list table {
-  width: 100%;
-}
-
-.cms-list table thead tr th {
+.cms-container table thead {
   background-color: black;
-  font-family: Gothic, arial, sans-serif;
-  text-transform: uppercase;
-  color: #FEFEFE;
-  margin-right: 1px;
-  padding: 20px;
+  color: white;
 }
 
-.cms-list table .foto {
-  width: 15%;
+.cms-container table thead tr th {
+  padding: 2rem;
 }
 
-.cms-list table .foto-img {
-  width: 100%;
+.cms-container table .status {
+  font-weight: bold;
 }
 
-.cms-list table tbody tr td {
-  border-bottom: 2px solid black;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-size: 1rem;
-  font-family: Gothic, arial, sans-serif;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  vertical-align: center;
+.cms-container table tbody tr {
+  background-color: #FEFEFE;
+}
+
+.cms-container table tbody tr td {
   text-align: center;
+  padding: 1rem;
 }
 
 .header {

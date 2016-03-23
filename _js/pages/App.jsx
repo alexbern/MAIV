@@ -3,6 +3,8 @@ import {Link} from 'react-router';
 import fetch from 'isomorphic-fetch';
 import {basename} from '../globals';
 import {checkStatus} from '../util';
+import {find, filter} from 'lodash';
+import {Deelnemer} from '../components';
 
 export default class App extends React.Component{
   constructor(props, context) {
@@ -13,40 +15,47 @@ export default class App extends React.Component{
       deelnemersFetched: false
     };
   }
-  // componentDidMount(){
-  //   fetch(`${basename}/api`)
-  //     .then(checkStatus)
-  //     .then(r => r.json())
-  //     .then(data => {
-  //       data.forEach(o => o.key = o.id);
-  //       this.setState({deelnemers: data, deelnemersFetched: true});
-  //     })
-  //     .catch(() => {
-  //       console.error('failed to get deelnemers');
-  //     });
-  // }
+  componentDidMount(){
+    fetch(`${basename}/api`)
+      .then(checkStatus)
+      .then(r => r.json())
+      .then(data => {
+        data.forEach(o => o.key = o.id);
+        this.setState({deelnemers: data, deelnemersFetched: true});
+      })
+      .catch(() => {
+        console.error('failed to get deelnemers');
+      });
+  }
+  renderDeelnemers(deelnemers){
+    return deelnemers.map(deelnemer=>{
+      return <Deelnemer {...deelnemer} />;
+    });
+  }
   render() {
-    // let {oneliners, onelinersFetched} = this.state;
+    let deelnemers = this.state.deelnemers.concat();
     return (
-      // <div className='site-container'>
-      //   <header><h1 className='site-header'><Link to={'/'}>Onelinr</Link></h1></header>
-      //   {this.props.children && React.cloneElement(this.props.children, {
-      //     oneliners: oneliners,
-      //     onelinersFetched: onelinersFetched,
-      //     addOneliner: o => this.addOneliner(o),
-      //     editOneliner: o => this.editOneliner(o),
-      //     deleteOneliner: o => this.deleteOneliner(o),
-      //     addComeback: o => this.addComeback(o),
-      //     deleteComeback: o => this.deleteComeback(o),
-      //     fetchComebacksForOneliner: o => this.fetchComebacksForOneliner(o)
-      //   })}
-      // </div>
+      <table className="site-container">
+        <thead>
+          <tr>
+            <th>#Id</th>
+            <th>Foto</th>
+            <th>Naam</th>
+            <th>School</th>
+            <th>Klas</th>
+            <th>Gemeente</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Accept</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            this.renderDeelnemers(deelnemers)
+          }
+        </tbody>
+      </table>
     );
   }
-
-
-
-
-
-
 }

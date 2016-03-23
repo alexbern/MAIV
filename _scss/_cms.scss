@@ -1,33 +1,29 @@
-.cms-list{
-  width: 1024px;
-  padding-top: 100px;
-  margin: 0 auto;
-  height: 500px;
+.cms-container{
+  p, h1, h2, h3, h4, h5, li{
+    visibility: visible;
+  }
   table{
-    width: 100%;
-    thead tr th{
+    width: 80%;
+    margin: 0 auto;
+    font-family: Helvetica neue, helvetica, arial, sans-serif;
+    thead{
       background-color: black;
-      font-family: Gothic, arial, sans-serif;
-      text-transform: uppercase;
-      color: $wit;
-      margin-right: 1px;
-      padding: 20px;
+      color: white;
+      tr th{
+        padding: 2rem;
+      }
     }
-    .foto{
-      width: 15%;
+    .status{
+      font-weight: bold;
     }
-    .foto-img{
-      width: 100%;
-    }
-    tbody tr td{
-      border-bottom: 2px solid black;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      font-size: 1rem;
-      font-family: Gothic, arial, sans-serif;
-      flex-direction: row;
-      vertical-align: center;
-      text-align: center;
+    tbody{
+      tr{
+        background-color: $wit;
+      }
+      tr td{
+        text-align: center;
+        padding: 1rem;
+      }
     }
   }
 }
