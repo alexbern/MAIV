@@ -216,6 +216,8 @@ p, h1, h2, h3, h4, h5, li {
   -webkit-transform: skewY(-1deg);
           transform: skewY(-1deg);
   background: url("/assets/img/groenebg.png") repeat;
+  position: relative;
+  z-index: 0;
 }
 
 .schuinonder {
@@ -284,7 +286,7 @@ h3 {
   width: 100%;
   position: fixed;
   z-index: 9999;
-  height: 50px;
+  height: 60px;
   background: url("/assets/img/pattern.jpg");
 }
 
@@ -301,16 +303,13 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .topnav .navigation-wrapper li {
-  margin-right: 2.5%;
-  margin-left: 2.5%;
+  margin: 2rem;
 }
 
 .topnav .navigation-wrapper li a {
@@ -318,12 +317,15 @@ h3 {
   color: black;
 }
 
-.topnav .navigation-wrapper .deelnemen-nav {
-  margin-left: 50%;
+.topnav .navigation-wrapper .navstart {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.topnav .navigation-wrapper .boek-nav {
-  width: 10%;
+.topnav .navigation-wrapper .logo {
+  width: 50px;
+  margin-top: 5px;
 }
 
 .mobile-nav {
@@ -925,20 +927,19 @@ h3 {
 .stappen {
   margin: 0 auto;
   width: 1024px;
-  margin-top: 3rem;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  height: 2000px;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
 }
 
 .stappen .stap article {
@@ -954,6 +955,7 @@ h3 {
   width: 60%;
   padding: 2.5rem;
   background-color: black;
+  line-height: 2.8rem;
 }
 
 .stappen .article-stap-title, .stappen .article-sub-title {
@@ -966,7 +968,6 @@ h3 {
 }
 
 .stap1 {
-  margin-top: 8rem;
   background: url("/assets/img/stap1.png") no-repeat;
   background-position: top-left;
   width: 800px;
@@ -984,6 +985,7 @@ h3 {
 
 .stap2 article {
   margin-top: 25rem;
+  width: 750px;
 }
 
 .stap2 .article-titles {
@@ -994,11 +996,13 @@ h3 {
   background: url("/assets/img/stap3.1.png") no-repeat;
   background-position: top-left;
   position: relative;
+  z-index: 100;
 }
 
 .stap3 article {
   margin-top: 19rem;
   margin-bottom: 5rem;
+  width: 750px;
 }
 
 .stap3 .varkenbg {
@@ -1013,6 +1017,11 @@ h3 {
 
 .stap3 .verstuur {
   margin-bottom: 3px;
+}
+
+.schuinhome {
+  margin-top: -100px;
+  z-index: 100;
 }
 
 .quote {
@@ -1336,12 +1345,11 @@ h3 {
   .header-home {
     width: 100%;
   }
-  .navigation-wrapper {
+  .topnav .navigation-wrapper {
     width: 100%;
   }
-  .top-nav {
+  .topnav .navigation-wrapper ul {
     width: 100%;
-    background-color: red;
   }
   .triggerhome {
     top: 180px;
