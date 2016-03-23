@@ -162,8 +162,15 @@
       font-size: 4rem;
     }
   }
+
+  //////////
+  //HOME
+  /////////
+
   .introtext{
     width: 100%;
+    margin-top:-50px;
+
   }
   .the-quote{
     font-size: 2rem;
@@ -177,6 +184,41 @@
       display: none;
     }
   }
+  .stappen{
+    .stap{
+      article{
+        display: flex;
+        flex-direction: column;
+
+        .article-titles{
+          margin-left:10%;
+        }
+
+        .tweetekst{
+          order:1;
+        }
+
+        p{
+          margin: 0 auto;
+          margin-top:-23px;
+        }
+      }
+      h2, h3{
+        @include titlepadding;
+      }
+    }
+  }
+  .stap3{
+    margin-top:100px;
+  }
+  .stappen .stap3 article .article-titles{
+    margin-top:-200px;
+  }
+
+  //////////
+  //NAV
+  /////////
+
   .bottomnav{
     flex-direction: row-reverse;
     padding-bottom: 6rem;
@@ -190,6 +232,11 @@
   .mobile-nav{
     display: inline;
   }
+
+  //////////
+  //DEELNEMER
+  /////////
+
   .main-container .login-section .login-form{
     width: 85%;
   }
