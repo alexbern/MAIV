@@ -25,7 +25,21 @@ export default class App extends React.Component{
         console.log(data);
       })
       .catch(() => {
-        console.error('failed to delete comeback');
+        console.error('failed to delete deelnemer');
+      });
+  }
+  updateDeelnemer(id){
+    fetch(`${basename}/api/${id}`, {
+      method: 'PUT'
+    })
+      .then(checkStatus)
+      .then(r => r.json())
+      .then(data => {
+        console.log('update complete');
+        console.log(data);
+      })
+      .catch(() => {
+        console.error('failed to edit deelnemer');
       });
   }
   componentDidMount(){
@@ -42,7 +56,7 @@ export default class App extends React.Component{
   }
   renderDeelnemers(deelnemers){
     return deelnemers.map(deelnemer=>{
-      return <Deelnemer {...deelnemer} deleteDeelnemer={id => this.deleteDeelnemer(id)} />;
+      return <Deelnemer {...deelnemer} deleteDeelnemer={id => this.deleteDeelnemer(id)} updateDeelnemer={id => this.updateDeelnemer(id)}/>;
     });
   }
   render() {
