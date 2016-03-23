@@ -96,7 +96,10 @@ $app->get('/api/{id}', function ($request, $response, $args) {
 });
 
 $app->delete('/api/{id}', function ($request, $response, $args) {
-
+  $deelnemersDAO = new DeelnemersDAO();
+  $deleteDeelnemer = $deelnemersDAO->delete($args['id']);
+  return $response->write(true)
+    ->withHeader('Content-Type','application/json');
 });
 
 //404

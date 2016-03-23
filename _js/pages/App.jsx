@@ -15,6 +15,19 @@ export default class App extends React.Component{
       deelnemersFetched: false
     };
   }
+  deleteDeelnemer(id){
+    fetch(`${basename}/api/${id}`, {
+      method: 'DELETE'
+    })
+      .then(checkStatus)
+      .then(r => r.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(() => {
+        console.error('failed to delete comeback');
+      });
+  }
   componentDidMount(){
     fetch(`${basename}/api`)
       .then(checkStatus)
@@ -29,7 +42,7 @@ export default class App extends React.Component{
   }
   renderDeelnemers(deelnemers){
     return deelnemers.map(deelnemer=>{
-      return <Deelnemer {...deelnemer} />;
+      return <Deelnemer {...deelnemer} deleteDeelnemer={id => this.deleteDeelnemer(id)} />;
     });
   }
   render() {
@@ -40,10 +53,10 @@ export default class App extends React.Component{
           <tr>
             <th>#Id</th>
             <th>Foto</th>
-            <th>Naam</th>
+            <th>Name</th>
             <th>School</th>
             <th>Klas</th>
-            <th>Gemeente</th>
+            <th>Location</th>
             <th>Email</th>
             <th>Status</th>
             <th>Accept</th>
