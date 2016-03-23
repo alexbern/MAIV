@@ -5,8 +5,6 @@ import {basename} from '../globals';
 
 export default () => (
   <Router history={browserHistory}>
-
+    <Route path="/cms" component={App} />
   </Router>
 );
-
-<Route path="/cms" component={App}/>

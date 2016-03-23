@@ -8,8 +8,6 @@
     //STUFF VOOR REGISTER FORM
     if ($data['type-form'] == 'register') {
       $data['is_admin'] = 0;
-      unset($_SESSION['error']);
-      unset($_SESSION['info']);
       $errors = array();
 
       if (empty($data['name'])) {
@@ -51,7 +49,7 @@
 
       if (!empty($errors)) {
         $_SESSION['error'] = 'Oops! Een foutje!';
-        return $response->withHeader('Location', '/deelnemen');
+          return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
         exit();
       }
 
@@ -68,6 +66,8 @@
         ));
         if (!empty($insertion)) {
           $_SESSION['info'] = 'Je registratie is gelukt!';
+          return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+          die();
         }
       }
 
@@ -86,8 +86,8 @@
 
       if (!empty($errors)) {
         $_SESSION['error'] = 'Oops! Een foutje!';
-        return $response->withHeader('Location', '/deelnemen');
-        exit();
+        return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        die();
       }
 
       $existingUser = $userDAO->selectByEmail($data['email']);
@@ -101,14 +101,20 @@
           }
           $_SESSION['user'] = $existingUser;
         }else{
-          $_SESSION['error'] = 'Oh jee, jouw paswoord of email is incorrect. Geen paniek, probeer eens opnieuw?';
+          $_SESSION['error'] = 'Email of passwoord is incorrect.';
+          return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+          die();
         }
       }else{
-        $_SESSION['error'] = 'Oh jee, jouw paswoord of email is incorrect. Geen paniek, probeer eens opnieuw?';
+        $_SESSION['error'] = 'Email of passwoord is incorrect.';
+          return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+          die();
       }
 
       if (empty($_SESSION['error'])) {
         $_SESSION['info'] = 'Je bent succesvol ingelogd!';
+        return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        die();
       }
 
     }
@@ -116,4 +122,3 @@
   }else{
 
   }
-  return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
