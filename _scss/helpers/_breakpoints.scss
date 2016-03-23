@@ -1,51 +1,69 @@
 @media only screen and (max-width: 1024px){
+  ////////
+  //HEADER
+  ////////
   .header-home{
     width: 100%;
   }
-  .top-nav .navigation-wrapper{
-    width: 100%;
+  ////////
+  //NAV
+  ////////
+  .topnav .navigation-wrapper{
+    width:100%;
+    ul{
+      width: 100%;
+    }
   }
-  .top-nav{
-    width: 100%;
-  }
+
   .triggerhome{
     top: 180px;
     left: 70%;
   }
+
    .introtext{
     width: 80%;
   }
+
   .stappen{
     width: 100%;
   }
+
   .stap{
     margin: 0 auto;
     width: 70%;
   }
+
   .quote{
     width: 100%;
   }
+
   .quote-wrapper{
     width: 100%;
   }
+
   .the-quote{
     width: 100%;
   }
+
   .quote-author{
     width: 100%;
   }
+
   .concurenten-wrapper li{
     margin-top: 2rem;
   }
+
   .header{
     width: 100%;
   }
+
   .deelnemerfotos{
     width: 100%;
     ul{
       justify-content: space-around;
     }
   }
+
   .deelnemersonderaan{
     width: 100%;
   }

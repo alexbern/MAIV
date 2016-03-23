@@ -51,9 +51,7 @@
         <?php
           if (empty($_SESSION['user'])) {
         ?>
-
           <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-
         <?php
           }else{
         ?>
@@ -76,24 +74,26 @@
   <nav class="topnav">
     <div class="navigation-wrapper">
       <ul>
-        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <div class="navstart">
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        </div>
+        <div class="navend">
+          <?php
+            if (empty($_SESSION['user'])) {
+          ?>
 
-        <?php
-          if (empty($_SESSION['user'])) {
-        ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
 
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-
-        <?php
-          }else{
-        ?>
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
-        <?php
-          }
-         ?>
-
+          <?php
+            }else{
+          ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
+          <?php
+            }
+           ?>
+        </div>
       </ul>
     </div>
   </nav>
@@ -117,7 +117,7 @@
 <div class="schuinboven"></div>
   <main class="main-container">
     <p class="introtext">
-      Boek.be organiseert een wedstrijd rond het boek Animal Farm.
+      Boek.be organiseert een wedstrijd: klassiekers in je klas! Deze actie draait rond het boek Animal Farm.
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
     <section class="stappen">

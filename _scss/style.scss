@@ -37,6 +37,8 @@ p, h1, h2, h3, h4, h5, li{
   height:100px;
   transform: skewY(-1deg);
   background: url('/assets/img/groenebg.png') repeat;
+  position:relative;
+  z-index: 0;
 }
 .schuinonder{
   height:200px;
@@ -110,7 +112,7 @@ h3{
   width: 100%;
   position: fixed;
   z-index: 9999;
-  height: 50px;
+  height: 60px;
   background: url('/assets/img/pattern.jpg');
   .navigation-wrapper{
     @include centerdesktop;
@@ -119,24 +121,22 @@ h3{
     font-size: 14px;
     text-transform: uppercase;
     ul{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      align-items: center;
+      display:flex;
+      justify-content:space-between;
     }
     li{
-      margin-right: 2.5%;
-      margin-left: 2.5%;
+      margin:2rem;
       a{
         text-decoration: none;
         color: black;
       }
     }
-    .deelnemen-nav{
-      margin-left: 50%;
+    .navstart{
+      display:flex;
     }
-    .boek-nav{
-      width: 10%;
+    .logo{
+      width: 50px;
+      margin-top:5px;
     }
   }
 }
