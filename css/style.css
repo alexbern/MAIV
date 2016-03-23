@@ -506,6 +506,18 @@ h3 {
   background-color: #E8C51E;
 }
 
+.checkup ul {
+  background-color: black;
+  padding: 50px;
+  color: #FEFEFE;
+}
+
+.checkup li {
+  font-family: Gothicbold, helvetica, arial;
+  line-height: 20px;
+  font-size: 1.2rem;
+}
+
 .cms-list {
   width: 1024px;
   padding-top: 100px;

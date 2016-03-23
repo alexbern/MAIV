@@ -1,6 +1,6 @@
 <?php
 
-$view = new \Slim\Views\PhpRenderer('view/');
+  $view = new \Slim\Views\PhpRenderer('view/');
   $data = $request->getParsedBody();
   $userDAO = new UserDAO();
   if (!empty($data['type-form'])) {
@@ -50,8 +50,8 @@ $view = new \Slim\Views\PhpRenderer('view/');
       }
 
       if (!empty($errors)) {
-        $_SESSION['error'] = 'Oops! Er is een foutje gebeurd!';
-        return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        $_SESSION['error'] = 'Oops! Een foutje!';
+        return $response->withHeader('Location', '/deelnemen');
         exit();
       }
 
@@ -86,8 +86,8 @@ $view = new \Slim\Views\PhpRenderer('view/');
 
       if (!empty($errors)) {
         $_SESSION['error'] = 'Oops! Een foutje!';
-        return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
-        die();
+        return $response->withHeader('Location', '/deelnemen');
+        exit();
       }
 
       $existingUser = $userDAO->selectByEmail($data['email']);
@@ -116,3 +116,4 @@ $view = new \Slim\Views\PhpRenderer('view/');
   }else{
 
   }
+  return $view->render($response, 'deelnemen.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
