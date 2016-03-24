@@ -19,7 +19,9 @@ $app = new \Slim\App(['settings' => [
 
 $app->get('/deelnemers', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
-  return $view->render($response, 'deelnemers.php', ['basepath' => $request->getUri()->getBasePath()]);
+  $deelnemersDAO = new DeelnemersDAO();
+  $deelnemers = $deelnemersDAO->selectAccepted();
+  return $view->render($response, 'deelnemers.php', ['basepath' => $request->getUri()->getBasePath(), 'deelnemers'=> $deelnemers]);
 });
 
 //UPLOAD
@@ -27,7 +29,7 @@ $app->get('/upload', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   if (empty($_SESSION['user'])) {
     $_SESSION['error'] = 'U moet inloggen om te uploaden.';
-    return $response->withHeader('Location', '/');
+    return $response->withHeader('Location', $request->getUri()->getBasePath());
   }else{
     $userDAO = new UserDAO();
     $selectUser = $userDAO->selectById($_SESSION['user']['0']['id']);
@@ -135,7 +137,7 @@ $app->put('/api/{id}', function ($request, $response, $args) {
 //404
 $app->get('/{anything:.*}', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
-  return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]   );
+  return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 
 $app->run();

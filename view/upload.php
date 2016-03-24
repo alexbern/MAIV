@@ -131,9 +131,11 @@
         <br/>
         <h3 class="upload-title title">foto en boekbespreking</h3>
       </header>
+
+
       <form enctype="multipart/form-data" name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
       ?>
-        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+        <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
         <div class="upload-field">
           <label for="">Boekbespreking</label></br>
           <input type="file" accept="*|media_type" name="upload-review" class="input-a">

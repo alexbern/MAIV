@@ -117,81 +117,25 @@
     <div class="main-container">
       <section class="deelnemerfotos">
         <ul>
+
+          <?php
+            foreach ($deelnemers as $deelnemer) {
+          ?>
+
           <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
+            <img src="<?php echo $basepath;?>/uploads/<?php echo $deelnemer['id'];?>/<?php echo $deelnemer['foto'];?>" alt="klasfoto" />
             <div class="article-titles">
-              <h2 class="article-stap-title">1MEc</h2>
-              <h3 class="article-sub-title">Gent</h3>
+              <h2 class="article-stap-title"><?php echo $deelnemer['klas']; ?></h2>
+              <h3 class="article-sub-title"><?php echo $deelnemer['gemeente']; ?></h3>
             </div>
           </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2LATa</h2>
-              <h3 class="article-sub-title">Antwerpen</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2HUWa</h2>
-              <h3 class="article-sub-title">Turnhout</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2MCTa</h2>
-              <h3 class="article-sub-title">Wijnegem</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">1OPRb</h2>
-              <h3 class="article-sub-title">Oostmalle</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2LATa</h2>
-              <h3 class="article-sub-title">Lommel</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2LATa</h2>
-              <h3 class="article-sub-title">Lommel</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2LATa</h2>
-              <h3 class="article-sub-title">Lommel</h3>
-            </div>
-          </li>
-          <li>
-            <img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto">
-            <div class="article-titles">
-              <h2 class="article-stap-title">2LATa</h2>
-              <h3 class="article-sub-title">Lommel</h3>
-            </div>
-          </li>
+
+
+          <?php
+            }
+           ?>
+
         </ul>
-      </section>
-      <section class="deelnemersonderaan">
-        <nav>
-          <ul>
-            <li><</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>></li>
-          </ul>
-        </nav>
       </section>
     </div>
   </main>
