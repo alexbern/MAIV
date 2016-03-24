@@ -82,6 +82,18 @@ $app->get('/boek', function ($request, $response, $args) {
 //CMS
 $app->get('/cms', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
+  if (empty($_SESSION['user'])) {
+    $_SESSION['error'] = "U bent niet ingelogd.";
+    return $response->withHeader('Location', '/');
+    exit();
+  }
+
+  if ($_SESSION['user']['0']['is_admin'] == 0) {
+    $_SESSION['error'] = "Uw account is geen admin";
+    return $response->withHeader('Location', '/');
+    exit();
+  }
+
   return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 
