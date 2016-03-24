@@ -119,11 +119,12 @@
         <ul>
 
           <?php
+            print_r($deelnemers);
             foreach ($deelnemers as $deelnemer) {
           ?>
 
           <li>
-            <img src="<?php echo $basepath;?>/uploads/<?php echo $deelnemer['id'];?>/<?php echo $deelnemer['foto'];?>" alt="klasfoto" />
+            <img src="<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>" alt="klasfoto" />
             <div class="article-titles">
               <h2 class="article-stap-title"><?php echo $deelnemer['klas']; ?></h2>
               <h3 class="article-sub-title"><?php echo $deelnemer['gemeente']; ?></h3>

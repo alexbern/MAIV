@@ -19,7 +19,7 @@ class DeelnemersDAO extends DAO {
   }
 
    public function selectAccepted() {
-   $sql = "SELECT deelnemers.id, deelnemers.foto, deelnemers.review, deelnemers.status, users.naam, users.school, users.klas, users.gemeente, users.email FROM `deelnemers`
+   $sql = "SELECT deelnemers.id, deelnemers.user_id, deelnemers.foto, deelnemers.review, deelnemers.status, users.naam, users.school, users.klas, users.gemeente, users.email FROM `deelnemers`
     INNER JOIN `users` ON  users.id = deelnemers.user_id WHERE `status` = 1";
    $stmt = $this->pdo->prepare($sql);
    $stmt->execute();
