@@ -8,7 +8,7 @@
   <script type="text/javascript">
     WebFontConfig = {
       custom: { families: ['Lietz', 'Gothic'],
-                urls: ['/assets/fonts/lietz.css', '/assets/fonts/gothic.css'] }
+                urls: ['<?php echo $basepath;?>/assets/fonts/lietz.css', '<?php echo $basepath;?>/assets/fonts/gothic.css'] }
     };
     (function() {
       var wf = document.createElement('script');
@@ -26,14 +26,14 @@
     if (!empty($_SESSION['error'])) {
       ?>
     <div class="error">
-      <img src="/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
+      <img src="<?php echo $basepath;?>/assets/svg/error.svg" alt="error" /><span><?php echo $_SESSION['error']; ?></span>
     </div>
   <?php
     }
     if (!empty($_SESSION['info'])) {
       ?>
       <div class="info">
-        <img src="/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
+        <img src="<?php echo $basepath;?>/assets/svg/info.svg" alt="info" /><span><?php echo $_SESSION['info']; ?></span>
       </div>
   <?php
     }
@@ -42,7 +42,7 @@
    ?>
     <nav class="burger-nav">
       <header>
-        <img src="/assets/svg/cross.svg" alt="exit" class="cross"/>
+        <img src="<?php echo $basepath;?>/assets/svg/cross.svg" alt="exit" class="cross"/>
         <ul class="burger-ul">
           <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
           <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
@@ -66,8 +66,8 @@
 
    <nav class="mobile-nav">
     <ul>
-      <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
-      <li class="burger-menu"><img class="burger-img" src="/assets/svg/hamburger.svg" alt="hamburger"></li>
+      <li class="logo"><a href="<?php echo $basepath;?>/"><img src="<?php echo $basepath;?>/assets/svg/logo.svg" alt="Logo"></a></li>
+      <li class="burger-menu"><img class="burger-img" src="<?php echo $basepath;?>/assets/svg/hamburger.svg" alt="hamburger"></li>
     </ul>
   </nav>
 
@@ -75,7 +75,7 @@
     <div class="navigation-wrapper">
       <ul>
         <div class="navstart">
-          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="<?php echo $basepath;?>/assets/svg/logo.svg" alt=""></a></li>
           <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
           <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
         </div>
@@ -125,7 +125,7 @@
       </ul>
     </section>
     <section class="upload-section">
-      <img src="/assets/img/polaroid.png" alt="fotovoorbeeld" class="pollaroid">
+      <img src="<?php echo $basepath;?>/assets/img/polaroid.png" alt="fotovoorbeeld" class="pollaroid">
       <header>
         <h2 class="upload-title title">Verstuur</h2>
         <br/>
@@ -156,9 +156,9 @@
           <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
         </ul>
         <ul >
-          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/<?php echo $basepath;?>assets/svg/logo.svg" alt="boek.be"></a></li>
           <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
-          <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
+          <li class="logo"><a href="https://twitter.com/boekbe"><img src="<?php echo $basepath;?>/assets/svg/tw.svg" alt="twitter"></a></li>
         </ul>
       </div>
   </footer>
