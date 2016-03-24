@@ -99,16 +99,18 @@
   }
   .article-stap-title, .article-sub-title{
     font-size: 2rem;
+    margin-bottom:-10px;
   }
   .article-stap-title{
     text-transform: uppercase;
+     margin-bottom:-10px;
   }
 }
 
 .stap1{
   background: url('/assets/img/stap1.png') no-repeat;
   background-position:top-left;
-  background-size:100%;
+  background-size:80%;
   width:800px;
   height:500px;
   article{
@@ -120,9 +122,11 @@
   margin-top:-9rem;
   background: url('/assets/img/stap2.png') no-repeat;
   background-position:top-left;
-  background-size:100%;
+  background-size:80%;
   article{
     margin-top:25rem;
+    width:80%;
+    margin-left:10%;
   }
   .article-titles{
     margin-top:4rem;
@@ -133,16 +137,17 @@
   background: url('/assets/img/stap3.1.png') no-repeat;
   background-position:top-left;
   position: relative;
-  background-size:100%;
+  background-size:80%;
   z-index:100;
   article{
     margin-top:19rem;
     margin-bottom:5rem;
+    margin-left:10%;
   }
   .varkenbg{
     background: url('/assets/img/stap3.2.png') no-repeat;
     background-position: center center;
-    background-size:100%;
+    background-size:80%;
     height: 300px;
     width: 60%;
     top: 2px;

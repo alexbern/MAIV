@@ -11,6 +11,7 @@
     @include titlepadding;
     font-size:1rem;
     margin-bottom:0;
+    font-size:1.2rem
   }
   h2{
     @include titlepadding;
@@ -29,8 +30,8 @@
     }
     li{
       font-family:$tekst;
-      line-height:20px;
-      font-size:1.2rem;
+      line-height:2.5rem;
+      font-size:1.5rem;
     }
   }
 
@@ -57,17 +58,23 @@
     label{
       color:#fff;
       font-family:$tekst;
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height:2.5rem;
     }
 
+    .upload-field{
+      display:flex;
+      flex-direction:row;
+    }
+
     input[type='file']{
-      padding-top:10px;
-      position:absolute;
-      right:40%;
+      padding-top:0.5rem;
+      margin-left:30%;
       color:#fff;
       font-family: $tekst;
       filter: alpha(opacity=0);
+      margin-bottom:20px;
+
     }
 
     input[type='submit']{

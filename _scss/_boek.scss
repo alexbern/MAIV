@@ -127,7 +127,7 @@
   }
 
   .reviewer{
-    @include titlepadding
+    @include titlepadding;
     color:#E9C600;
     text-align:right;
     //margin-left:65%;
@@ -136,6 +136,6 @@
 
   h3{
     margin:2rem;
-    //@include titlepadding;
+    @include titlepadding;
   }
 }

@@ -71,27 +71,29 @@
     </ul>
   </nav>
 
-   <nav class="topnav">
+ <nav class="topnav">
     <div class="navigation-wrapper">
       <ul>
-        <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
-        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-        <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        <div class="navstart">
+          <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
+          <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+        </div>
+        <div class="navend">
+          <?php
+            if (empty($_SESSION['user'])) {
+          ?>
 
-        <?php
-          if (empty($_SESSION['user'])) {
-        ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
 
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-
-        <?php
-          }else{
-        ?>
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
-        <?php
-          }
-         ?>
-
+          <?php
+            }else{
+          ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
+          <?php
+            }
+           ?>
+        </div>
       </ul>
     </div>
   </nav>
@@ -130,12 +132,12 @@
       </header>
       <form name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
       ?>
-        <div>
-          <label for="">Boekbespreking</label>
-          <input type="file" accept="image/*">
+        <div class="upload-field">
+          <label for="">Boekbespreking</label></br>
+          <input type="file" accept="image/*" class="input-a">
         </div>
-        <div>
-          <label for="">Klasfoto</label>
+        <div class="upload-field">
+          <label for="">Klasfoto</label></br>
           <input type="file" name="pic" accept="*|media_type">
         </div>
         <input type="submit" class="upload-submit" value="UPLOAD"></input>
@@ -151,7 +153,7 @@
           <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
           <li><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
         </ul>
-        <ul>
+        <ul >
           <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt="boek.be"></a></li>
           <li class="logo"><a href="https://www.facebook.com/Boekbe-301703439127/?fref=ts"><img src="/assets/svg/fb.svg" alt="facebook"></a></li>
           <li class="logo"><a href="https://twitter.com/boekbe"><img src="/assets/svg/tw.svg" alt="twitter"></a></li>
