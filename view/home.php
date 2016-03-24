@@ -90,7 +90,7 @@
           <?php
             }else{
           ?>
-            <li><a href="<?php echo $basepath;?>/upload/">Upload</a></li>
+            <li><a href="<?php echo $basepath;?>/upload">Upload</a></li>
             <li><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }
