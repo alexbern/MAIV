@@ -16,6 +16,7 @@ const init = () =>{
     );
   }
   getBurgerMenu();
+  getUploadForm();
 };
 
 const getBurgerMenu = () =>{
@@ -38,6 +39,25 @@ const flipBurger = () =>{
     $burgerNav.style.animation = outSwipe;
     active--;
   }
+}
+
+const getUploadForm = () =>{
+  let $uploadForm = document.querySelector('.upload-form');
+  if ($uploadForm){
+    uploadForm();
+  }
+}
+
+const uploadForm = () =>{
+  // let $submitButton = document.querySelector('.login-submit');
+  // let $uploadForm = document.querySelector('.upload-form');
+  // $submitButton.addEventListener('click', e=>{
+  //   e.preventDefault();
+  //   let req = new XMLHttpRequest();
+  //   req.open('POST', $uploadForm.getAttribute('action'));
+  //   console.log(req.open);
+  // });
+
 }
 
 init();

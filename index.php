@@ -23,9 +23,22 @@ $app->get('/deelnemers', function ($request, $response, $args) {
 });
 
 //UPLOAD
-$app->get('/upload', function ($request, $response, $args) {
+$app->get('/upload/', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
-  return $view->render($response, 'upload.php', ['basepath' => $request->getUri()->getBasePath()]);
+  if (empty($_SESSION['user'])) {
+    $_SESSION['error'] = 'U moet inloggen om te uploaden.';
+    return $response->withHeader('Location', '/');
+  }else{
+    $userDAO = new UserDAO();
+    $selectUser = $userDAO->selectById($_SESSION['user']['0']['id']);
+    return $view->render($response, 'upload.php', ['basepath' => $request->getUri()->getBasePath(), 'user' => $selectUser]);
+  }
+
+});
+
+$app->post('/upload/', function ($request, $response, $args) {
+    $data = $request->getParsedBody();
+
 });
 
 //DEELNEMEN
@@ -58,7 +71,6 @@ $app->post('/deelnemen', function ($request, $response, $args) {
 $app->get('/', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
   return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]   );
-
 });
 
 //ABOUT BOEK

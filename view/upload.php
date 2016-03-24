@@ -23,7 +23,6 @@
 </head>
 <body>
   <?php
-
     if (!empty($_SESSION['error'])) {
       ?>
     <div class="error">
@@ -114,10 +113,10 @@
       <h3 class=".article-stap-title">gegevens</h3>
     </header>
     <ul>
-      <li>Naam: Voornaam Achternaam</li>
-      <li>Klas: klasnaam</li>
-      <li>School: schoolnaam</li>
-      <li>Gemeente: gemeentenaam</li>
+      <li>Naam: <?php echo $user['naam']; ?></li>
+      <li>Klas: <?php echo $user['klas']; ?></li>
+      <li>School: <?php echo $user['school']; ?></li>
+      <li>Gemeente: <?php echo $user['gemeente']; ?></li>
     </ul>
   </section>
   <section class="login-section">
@@ -127,12 +126,12 @@
       <br/>
       <h3 class="upload-title title">foto en boekbespreking</h3>
     </header>
-    <form name="upload-form" class="login-form" action="<?php echo $basepath;?>/upload" method="post">
+    <form name="upload-form" class="login-form upload-form" action="<?php echo $basepath;?>/upload" method="post">
     ?>
       <label for="">Boekbespreking</label>
-      <input type="file" accept="image/*">
+      <input type="file" accept="image/*" name="image-file">
       <label for="">Klasfoto</label>
-      <input type="file" name="pic" accept="*|media_type">
+      <input type="file" name="review-file" accept="*|media_type">
       <input type="submit" class="login-submit" value="UPLOAD"></input>
     </form>
   </section>
