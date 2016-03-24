@@ -22,7 +22,7 @@ export default class App extends React.Component{
       .then(checkStatus)
       .then(r => r.json())
       .then(data => {
-        console.log(data);
+        this.refresh();
       })
       .catch(() => {
         console.error('failed to delete deelnemer');
@@ -44,7 +44,7 @@ export default class App extends React.Component{
       .then(r => r.json())
       .then(data => {
         console.log('update complete');
-        console.log(data);
+        this.refresh();
       })
       .catch(() => {
         console.error('failed to edit deelnemer');
@@ -52,6 +52,18 @@ export default class App extends React.Component{
     this.setState({deelnemers});
   }
   componentDidMount(){
+    fetch(`${basename}/api`)
+      .then(checkStatus)
+      .then(r => r.json())
+      .then(data => {
+        data.forEach(o => o.key = o.id);
+        this.setState({deelnemers: data, deelnemersFetched: true});
+      })
+      .catch(() => {
+        console.error('failed to get deelnemers');
+      });
+  }
+  refresh(){
     fetch(`${basename}/api`)
       .then(checkStatus)
       .then(r => r.json())

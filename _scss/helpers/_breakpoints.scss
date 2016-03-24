@@ -421,6 +421,26 @@
       width: 100%;
     }
   }
+
+  .stappen .stap p, .stappen .stap .tweetekst{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .stap2{
+    margin-top: 12rem;
+  }
+  .stap2 article{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .stap3{
+    margin-top: 20rem;
+  }
+
+  .stap3 article{
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 460px){

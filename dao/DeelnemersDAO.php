@@ -23,7 +23,7 @@ class DeelnemersDAO extends DAO {
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $stmt->execute();
   }
 
   public function delete($id) {

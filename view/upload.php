@@ -129,15 +129,16 @@
         <br/>
         <h3 class="upload-title title">foto en boekbespreking</h3>
       </header>
-      <form name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
+      <form enctype="multipart/form-data" name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
       ?>
+        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
         <div class="upload-field">
           <label for="">Boekbespreking</label></br>
-          <input type="file" accept="image/*" class="input-a">
+          <input type="file" accept="*|media_type" name="upload-review" class="input-a">
         </div>
         <div class="upload-field">
           <label for="">Klasfoto</label></br>
-          <input type="file" name="pic" accept="*|media_type">
+          <input type="file" name="upload-img" accept="image/*" >
         </div>
         <input type="submit" class="upload-submit" value="UPLOAD"></input>
       </form>
