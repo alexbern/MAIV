@@ -135,6 +135,27 @@
     padding:40px;
   }
 
+  //////////
+  //UPLOAD
+  /////////
+
+  .upload{
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .checkup{
+    margin-left:10%;
+  }
+
+  .upload-section{
+    margin-left:10%;
+    width:75%;
+  }
 }
 
 @media only screen and (max-width: 1000px){
@@ -144,6 +165,7 @@
   .stap{
     width: 80%;
   }
+
 }
 
 @media only screen and (max-width: 985px){
@@ -174,6 +196,14 @@
   .main-container .register-section .register-form section{
     width: 100%;
   }
+
+  ////////
+  //UPLOAD
+  ////////
+  .pollaroid{
+    margin-top:50px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 800px){
@@ -183,6 +213,24 @@
 
   .main-container .register-section .register-form .fieldsets fieldset{
     width: 100%;
+  }
+
+  ///////////
+  //UPLOAD
+  /////////
+
+  .pollaroid{
+    position: relative;
+    width:300px;
+    margin-top:-10px;
+    left:20%;
+  }
+  .checkup{
+    width:130%;
+  }
+
+  .upload-field{
+    flex-direction:column;
   }
 }
 
@@ -204,6 +252,7 @@
   }
 
 }
+
 
 @media only screen and (max-width: 740px){
   //////////
@@ -316,6 +365,7 @@
   .main-container .login-section header{
     width: 85%;
   }
+
 }
 
 @media only screen and (max-width: 630px){

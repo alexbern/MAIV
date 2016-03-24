@@ -225,6 +225,8 @@ p, h1, h2, h3, h4, h5, li {
           transform: skewY(3deg);
   background: url("/assets/img/groenebg.png") repeat;
   margin-top: -100px;
+  position: relative;
+  z-index: 0;
 }
 
 .schuinwrapperlinks {
@@ -316,6 +318,12 @@ h3 {
   color: black;
 }
 
+.topnav .navigation-wrapper li a:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
 .topnav .navigation-wrapper .navstart {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -390,8 +398,9 @@ h3 {
   width: 100%;
   margin-top: 2rem;
   font-family: Lietz, helvetica, arial;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin-left: 20%;
 }
 
 .burger-nav header ul a {
@@ -401,10 +410,8 @@ h3 {
 
 .burger-nav header ul li {
   width: 100%;
-  padding: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 4px solid black;
 }
 
 .burger-nav header .cross {
@@ -455,6 +462,12 @@ h3 {
 .bottomnav a {
   text-decoration: none;
   color: black;
+}
+
+.bottomnav .seccondnav a:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
 }
 
 .bottomnav .seccondnav {
@@ -508,16 +521,119 @@ h3 {
   background-color: #E8C51E;
 }
 
+.upload {
+  width: 1024px;
+  margin: 0 auto;
+  width: 1024px;
+  position: relative;
+  z-index: 100;
+}
+
+.upload .login-section h2 {
+  margin-top: 2rem;
+}
+
+.upload h3 {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.upload h2 {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  color: #E8C51E;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.checkup {
+  margin-left: 20%;
+}
+
 .checkup ul {
   background-color: black;
   padding: 50px;
   color: #FEFEFE;
+  width: 60%;
 }
 
 .checkup li {
   font-family: Gothicbold, helvetica, arial;
-  line-height: 20px;
-  font-size: 1.2rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.pollaroid {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+}
+
+.upload-section {
+  margin: 0 auto;
+  width: 1024px;
+  width: 60%;
+}
+
+.upload-section h2 {
+  margin-top: 40px;
+}
+
+.upload-section .upload-form {
+  background-color: #000;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.5rem;
+}
+
+.upload-section .upload-form label {
+  color: #fff;
+  font-family: Gothicbold, helvetica, arial;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.upload-section .upload-form .upload-field {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.upload-section .upload-form input[type='file'] {
+  padding-top: 0.5rem;
+  margin-left: 30%;
+  color: #fff;
+  font-family: Gothicbold, helvetica, arial;
+  filter: alpha(opacity=0);
+  margin-bottom: 20px;
+}
+
+.upload-section .upload-form input[type='submit'] {
+  background-color: #E8C51E;
+  border: none;
+  color: black;
+  font-size: 1.8rem;
+  font-family: Lietz, helvetica, arial;
+  padding: 10px;
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 .cms-container p, .cms-container h1, .cms-container h2, .cms-container h3, .cms-container h4, .cms-container h5, .cms-container li {
@@ -763,6 +879,10 @@ h3 {
   margin: 0 auto;
 }
 
+.main-container .register-section .register-form p {
+  line-height: 2.5rem;
+}
+
 .main-container .register-section .register-form section {
   width: 60%;
   color: #FEFEFE;
@@ -958,16 +1078,18 @@ h3 {
 
 .stappen .article-stap-title, .stappen .article-sub-title {
   font-size: 2rem;
+  margin-bottom: -10px;
 }
 
 .stappen .article-stap-title {
   text-transform: uppercase;
+  margin-bottom: -10px;
 }
 
 .stap1 {
   background: url("/assets/img/stap1.png") no-repeat;
   background-position: top-left;
-  background-size: 100%;
+  background-size: 80%;
   width: 800px;
   height: 500px;
 }
@@ -980,11 +1102,13 @@ h3 {
   margin-top: -9rem;
   background: url("/assets/img/stap2.png") no-repeat;
   background-position: top-left;
-  background-size: 100%;
+  background-size: 80%;
 }
 
 .stap2 article {
   margin-top: 25rem;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .stap2 .article-titles {
@@ -995,19 +1119,20 @@ h3 {
   background: url("/assets/img/stap3.1.png") no-repeat;
   background-position: top-left;
   position: relative;
-  background-size: 100%;
+  background-size: 80%;
   z-index: 100;
 }
 
 .stap3 article {
   margin-top: 19rem;
   margin-bottom: 5rem;
+  margin-left: 10%;
 }
 
 .stap3 .varkenbg {
   background: url("/assets/img/stap3.2.png") no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: 80%;
   height: 300px;
   width: 60%;
   top: 2px;
@@ -1450,6 +1575,22 @@ h3 {
     background-color: red;
     padding: 40px;
   }
+  .upload {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    padding: 2rem;
+  }
+  .checkup {
+    margin-left: 10%;
+  }
+  .upload-section {
+    margin-left: 10%;
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1491,6 +1632,10 @@ h3 {
   .main-container .register-section .register-form section {
     width: 100%;
   }
+  .pollaroid {
+    margin-top: 50px;
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1501,6 +1646,20 @@ h3 {
   }
   .main-container .register-section .register-form .fieldsets fieldset {
     width: 100%;
+  }
+  .pollaroid {
+    position: relative;
+    width: 300px;
+    margin-top: -10px;
+    left: 20%;
+  }
+  .checkup {
+    width: 130%;
+  }
+  .upload-field {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
