@@ -53,11 +53,12 @@
           if (empty($_SESSION['user'])) {
         ?>
 
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen" class="currentpage">Deelnemen</a></li>
 
         <?php
           }else{
         ?>
+          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload/">Upload</a></li>
           <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
         <?php
           }
@@ -86,11 +87,12 @@
             if (empty($_SESSION['user'])) {
           ?>
 
-            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen" class="currentpage">Deelnemen</a></li>
 
           <?php
             }else{
           ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload/">Upload</a></li>
             <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }

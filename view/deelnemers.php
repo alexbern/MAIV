@@ -52,11 +52,12 @@
         if (empty($_SESSION['user'])) {
       ?>
 
-        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
+        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen" class="currentpage">Deelnemen</a></li>
 
       <?php
         }else{
       ?>
+        <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload/">Upload</a></li>
         <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
       <?php
         }
@@ -78,7 +79,7 @@
         <div class="navstart">
           <li class="logo"><a href="<?php echo $basepath;?>/"><img src="/assets/svg/logo.svg" alt=""></a></li>
           <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
-          <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
+          <li><a href="<?php echo $basepath;?>/deelnemers" class="currentpage">Concurenten</a></li>
         </div>
         <div class="navend">
           <?php
@@ -90,6 +91,7 @@
           <?php
             }else{
           ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload/">Upload</a></li>
             <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }

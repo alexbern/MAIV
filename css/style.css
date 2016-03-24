@@ -330,6 +330,12 @@ h3 {
   display: flex;
 }
 
+.topnav .navigation-wrapper .navend {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .topnav .navigation-wrapper .logo {
   width: 50px;
   margin-top: 5px;
@@ -400,7 +406,7 @@ h3 {
   font-family: Lietz, helvetica, arial;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin-left: 20%;
+  margin-left: 5%;
 }
 
 .burger-nav header ul a {
@@ -412,6 +418,7 @@ h3 {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
 }
 
 .burger-nav header .cross {
@@ -419,6 +426,16 @@ h3 {
   padding: 10px;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+.burger-nav .currentpage {
+  color: #E8C51E;
+  border-bottom: none;
+}
+
+.currentpage {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
 }
 
 .header-wrapper {

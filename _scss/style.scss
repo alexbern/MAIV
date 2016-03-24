@@ -140,6 +140,9 @@ h3{
     .navstart{
       display:flex;
     }
+    .navend{
+      display:flex;
+    }
     .logo{
       width: 50px;
       margin-top:5px;
@@ -192,7 +195,7 @@ h3{
       font-family: $titel;
       font-size: 1.5rem;
       text-transform: uppercase;
-      margin-left:20%;
+      margin-left:5%;
       a{
         color: $wit;
         text-decoration: none;
@@ -201,6 +204,7 @@ h3{
         width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
+        border-bottom: 0.5px solid rgba(255,255,255,0.3);
       }
     }
     .cross{
@@ -210,7 +214,15 @@ h3{
       margin-top: 10px;
     }
   }
+  .currentpage{
+    color:$geel;
+    border-bottom: none;
+  }
+}
 
+.currentpage{
+  padding-bottom:5px;
+  border-bottom: 2px solid black;
 }
 
 .header-wrapper{
