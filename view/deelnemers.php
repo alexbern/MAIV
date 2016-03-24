@@ -119,20 +119,26 @@
         <ul>
 
           <?php
-            print_r($deelnemers);
+            if (empty($deelnemers)) {
+              echo 'Geen deelnemers gevonden!';
+            }else{
             foreach ($deelnemers as $deelnemer) {
           ?>
 
           <li>
-            <img src="<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>" alt="klasfoto" />
+            <div class="img-wrapper" style="background-image:url(<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>")">
+              <!-- <img class="deelnemer-image" src="<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>" alt="klasfoto" /> -->
+            </div>
             <div class="article-titles">
               <h2 class="article-stap-title"><?php echo $deelnemer['klas']; ?></h2>
+              <br/>
               <h3 class="article-sub-title"><?php echo $deelnemer['gemeente']; ?></h3>
             </div>
           </li>
 
 
           <?php
+              }
             }
            ?>
 
