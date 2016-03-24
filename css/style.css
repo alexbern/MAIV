@@ -216,7 +216,7 @@ p, h1, h2, h3, h4, h5, li {
   height: 100px;
   -webkit-transform: skewY(-1deg);
           transform: skewY(-1deg);
-  background: url("/assets/img/groenebg1.png") repeat;
+  background: url("/assets/img/groenebg.png") repeat;
   position: relative;
   z-index: 0;
 }
@@ -797,6 +797,13 @@ h3 {
 
 .badinput {
   border-bottom: #CE0000 2px solid;
+}
+
+.main-container {
+  margin-top: -1rem;
+  padding-top: 3rem;
+  width: 100%;
+  background: url("/assets/img/groenebg.png") repeat;
 }
 
 .main-container .login-section {
@@ -1440,24 +1447,59 @@ h3 {
 }
 
 .deelnemerfotos {
+<<<<<<< HEAD
   width: 900px;
   margin: 0 auto;
+=======
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+>>>>>>> 51bbb3abaf86e32e230c73821e2ce57d4f4703e9
 }
 
 .deelnemerfotos ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+=======
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 51bbb3abaf86e32e230c73821e2ce57d4f4703e9
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .deelnemerfotos li {
   margin-top: 20px;
+=======
+.deelnemerfotos ul li {
+  margin-top: 20px;
+  width: 32%;
+}
+
+.deelnemerfotos ul li .img-wrapper {
+  width: 100%;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+>>>>>>> 51bbb3abaf86e32e230c73821e2ce57d4f4703e9
 }
 
 .deelnemerfotos .article-titles {
@@ -1474,6 +1516,11 @@ h3 {
 
 .deelnemerfotos .article-stap-title {
   width: 40%;
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  text-align: left;
 }
 
 .deelnemersonderaan {
