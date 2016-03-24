@@ -55,6 +55,7 @@
           <?php
             }else{
           ?>
+            <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload/" class="currentpage">Upload</a></li>
             <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }
@@ -88,6 +89,7 @@
           <?php
             }else{
           ?>
+            <li class="deelnemen-nav" class="currentpage"><a href="<?php echo $basepath;?>/upload/" class="currentpage">Upload</a></li>
             <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }
