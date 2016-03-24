@@ -1,15 +1,86 @@
-.checkup{
-  h2{
+.upload{
+  width:1024px;
+  @include centerdesktop;
+  position:relative;
+  z-index:100;
 
+  .login-section h2{
+    margin-top:2rem;
   }
-  ul{
-    background-color:black;
-    padding:50px;
-    color:$wit;
+  h3{
+    @include titlepadding;
+    font-size:1rem;
+    margin-bottom:0;
   }
-  li{
-    font-family:$tekst;
-    line-height:20px;
-    font-size:1.2rem;
+  h2{
+    @include titlepadding;
+    color:$geel;
+    transform: rotate(-2deg);
+  }
+}
+
+.checkup{
+  margin-left:20%;
+    ul{
+      background-color:black;
+      padding:50px;
+      color:$wit;
+      width:60%;
+    }
+    li{
+      font-family:$tekst;
+      line-height:20px;
+      font-size:1.2rem;
+    }
+  }
+
+.pollaroid{
+  position:absolute;
+  right:15%;
+  top:5%;
+}
+
+.upload-section{
+  @include centerdesktop;
+  width:60%;
+
+  h2{
+    margin-top:40px;
+  }
+
+  .upload-form{
+    background-color:#000;
+    display:flex;
+    flex-direction:column;
+    padding:3.5rem;
+
+    label{
+      color:#fff;
+      font-family:$tekst;
+      font-size: 1rem;
+      line-height:2.5rem;
+    }
+
+    input[type='file']{
+      padding-top:10px;
+      position:absolute;
+      right:40%;
+      color:#fff;
+      font-family: $tekst;
+      filter: alpha(opacity=0);
+    }
+
+    input[type='submit']{
+      background-color: $geel;
+      border: none;
+      color: black;
+      font-size: 1.8rem;
+      font-family: $titel;
+      padding: 10px;
+      position: absolute;
+      left: 70%;
+      bottom: 0;
+      transform: rotate(-3deg);
+    }
   }
 }

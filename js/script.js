@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("__webpack_require__(1);\n(function webpackMissingModule() { throw new Error(\"Cannot find module \\\"./_scss/style.scss\\\"\"); }());\n\n\n/*****************\n ** WEBPACK FOOTER\n ** multi main\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///multi_main?");
+	eval("__webpack_require__(1);\nmodule.exports = __webpack_require__(226);\n\n\n/*****************\n ** WEBPACK FOOTER\n ** multi main\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///multi_main?");
 
 /***/ },
 /* 1 */
@@ -1395,6 +1395,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	eval("'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(2);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouter = __webpack_require__(161);\n\nvar _pages = __webpack_require__(159);\n\nvar _globals = __webpack_require__(220);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  return _react2.default.createElement(\n    _reactRouter.Router,\n    { history: _reactRouter.browserHistory },\n    _react2.default.createElement(_reactRouter.Route, { path: '/cms', component: _pages.App })\n  );\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./_js/routers/index.js\n ** module id = 225\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./_js/routers/index.js?");
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./_scss/style.scss\n ** module id = 226\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./_scss/style.scss?");
 
 /***/ }
 /******/ ]);

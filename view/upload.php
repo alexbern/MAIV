@@ -96,47 +96,54 @@
     </div>
   </nav>
   <div class='header-wrapper'>
-  <header class="header">
-    <div class="texts deelnementexts">
-      <h1 class="neemdeel">Upload</h1>
-      <br/>
-      <h1 class="kansop">En maak kans op</h1>
-      <br/>
-      <h1 class="stapelsboeken">stapels boeken</h1>
-    </div>
-  </header>
-</div>
+    <header class="header">
+      <div class="texts deelnementexts">
+        <h1 class="neemdeel">Upload</h1>
+        <br/>
+        <h1 class="kansop">En maak kans op</h1>
+        <br/>
+        <h1 class="stapelsboeken">stapels boeken</h1>
+      </div>
+    </header>
+  </div>
 <div class="schuinboven"></div>
 <main class="main-container">
-  <section class="checkup">
-    <header>
-      <h2 class=".article-stap-title">checkup</h2>
-      <h3 class=".article-stap-title">gegevens</h3>
-    </header>
-    <ul>
-      <li>Naam: Voornaam Achternaam</li>
-      <li>Klas: klasnaam</li>
-      <li>School: schoolnaam</li>
-      <li>Gemeente: gemeentenaam</li>
-    </ul>
-  </section>
-  <section class="login-section">
-    <img src="/assets/img/polaroid.png" alt="fotovoorbeeld" class="pollaroid">
-    <header>
-      <h2 class="login-title title">Verstuur</h2>
-      <br/>
-      <h3 class="upload-title title">foto en boekbespreking</h3>
-    </header>
-    <form name="upload-form" class="login-form" action="<?php echo $basepath;?>/upload" method="post">
-    ?>
-      <label for="">Boekbespreking</label>
-      <input type="file" accept="image/*">
-      <label for="">Klasfoto</label>
-      <input type="file" name="pic" accept="*|media_type">
-      <input type="submit" class="login-submit" value="UPLOAD"></input>
-    </form>
-  </section>
+  <div class="upload">
+    <section class="checkup">
+      <header>
+        <h2 class=".login-title title">checkup</h2></br>
+        <h3 class=".upload-title title">gegevens</h3>
+      </header>
+      <ul>
+        <li>Naam: Voornaam Achternaam</li>
+        <li>Klas: klasnaam</li>
+        <li>School: schoolnaam</li>
+        <li>Gemeente: gemeentenaam</li>
+      </ul>
+    </section>
+    <section class="upload-section">
+      <img src="/assets/img/polaroid.png" alt="fotovoorbeeld" class="pollaroid">
+      <header>
+        <h2 class="upload-title title">Verstuur</h2>
+        <br/>
+        <h3 class="upload-title title">foto en boekbespreking</h3>
+      </header>
+      <form name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
+      ?>
+        <div>
+          <label for="">Boekbespreking</label>
+          <input type="file" accept="image/*">
+        </div>
+        <div>
+          <label for="">Klasfoto</label>
+          <input type="file" name="pic" accept="*|media_type">
+        </div>
+        <input type="submit" class="upload-submit" value="UPLOAD"></input>
+      </form>
+    </section>
+  </div>
 </main>
+<div class="diagonal deelnemendiagonal"></div>
 <footer>
     <nav class="bottomnav">
         <ul class="seccondnav">

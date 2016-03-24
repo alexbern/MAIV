@@ -45,6 +45,8 @@ p, h1, h2, h3, h4, h5, li{
   transform: skewY(3deg);
   background: url('/assets/img/groenebg.png') repeat;
   margin-top:-100px;
+  position:relative;
+  z-index: 0;
 }
 .schuinwrapperlinks{
   transform: skewY(-2deg);

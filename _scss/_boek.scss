@@ -34,7 +34,7 @@
     background-color:black;
   }
   h3{
-    @include titlepadding
+    @include titlepadding;
   }
 }
 
@@ -52,6 +52,7 @@
     text-align:center;
     width: 1024px;
     transform: rotate(-1.5deg);
+  }
 
   p{
     width: 65%;
@@ -135,7 +136,6 @@
 
   h3{
     margin:2rem;
-    @include titlepadding
+    //@include titlepadding;
   }
-
 }

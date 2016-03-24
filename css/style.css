@@ -226,6 +226,8 @@ p, h1, h2, h3, h4, h5, li {
           transform: skewY(3deg);
   background: url("/assets/img/groenebg.png") repeat;
   margin-top: -100px;
+  position: relative;
+  z-index: 0;
 }
 
 .schuinwrapperlinks {
@@ -509,16 +511,109 @@ h3 {
   background-color: #E8C51E;
 }
 
+.upload {
+  width: 1024px;
+  margin: 0 auto;
+  width: 1024px;
+  position: relative;
+  z-index: 100;
+}
+
+.upload .login-section h2 {
+  margin-top: 2rem;
+}
+
+.upload h3 {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.upload h2 {
+  font-family: Lietz, helvetica, arial;
+  text-transform: uppercase;
+  padding: 1rem;
+  display: inline-block;
+  color: #E8C51E;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.checkup {
+  margin-left: 20%;
+}
+
 .checkup ul {
   background-color: black;
   padding: 50px;
   color: #FEFEFE;
+  width: 60%;
 }
 
 .checkup li {
   font-family: Gothicbold, helvetica, arial;
   line-height: 20px;
   font-size: 1.2rem;
+}
+
+.pollaroid {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+}
+
+.upload-section {
+  margin: 0 auto;
+  width: 1024px;
+  width: 60%;
+}
+
+.upload-section h2 {
+  margin-top: 40px;
+}
+
+.upload-section .upload-form {
+  background-color: #000;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.5rem;
+}
+
+.upload-section .upload-form label {
+  color: #fff;
+  font-family: Gothicbold, helvetica, arial;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.upload-section .upload-form input[type='file'] {
+  padding-top: 10px;
+  position: absolute;
+  right: 40%;
+  color: #fff;
+  font-family: Gothicbold, helvetica, arial;
+  filter: alpha(opacity=0);
+}
+
+.upload-section .upload-form input[type='submit'] {
+  background-color: #E8C51E;
+  border: none;
+  color: black;
+  font-size: 1.8rem;
+  font-family: Lietz, helvetica, arial;
+  padding: 10px;
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 .cms-container p, .cms-container h1, .cms-container h2, .cms-container h3, .cms-container h4, .cms-container h5, .cms-container li {
@@ -982,7 +1077,6 @@ h3 {
 
 .stap2 article {
   margin-top: 25rem;
-  width: 750px;
 }
 
 .stap2 .article-titles {
@@ -1000,7 +1094,6 @@ h3 {
 .stap3 article {
   margin-top: 19rem;
   margin-bottom: 5rem;
-  width: 750px;
 }
 
 .stap3 .varkenbg {
@@ -1189,14 +1282,14 @@ h3 {
           transform: rotate(-1.5deg);
 }
 
-.schrijver .quote2 p {
+.schrijver p {
   width: 65%;
   margin: 0 auto;
   background-color: black;
   padding: 10px;
 }
 
-.schrijver .quote2 .author2 {
+.schrijver .author2 {
   width: 25%;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
@@ -1205,11 +1298,11 @@ h3 {
           transform: rotate(1.5deg);
 }
 
-.schrijver .orwell-block {
+.orwell-block {
   width: 65%;
 }
 
-.schrijver .orwell {
+.orwell {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1219,7 +1312,7 @@ h3 {
   width: 1024px;
 }
 
-.schrijver h3 {
+.orwell h3 {
   margin-bottom: 2rem;
   font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
@@ -1227,25 +1320,23 @@ h3 {
   display: inline-block;
 }
 
-.schrijver p {
-  width: 90%;
+.orwell p {
   background-color: black;
 }
 
 .awards {
-  width: 35%;
   text-align: center;
 }
 
 .awards h3 {
   margin: 0 auto;
-}
-
-.awards p {
   font-family: Lietz, helvetica, arial;
   text-transform: uppercase;
   padding: 1rem;
   display: inline-block;
+}
+
+.awards p {
   margin: 0 auto;
 }
 
@@ -1289,10 +1380,6 @@ h3 {
 
 .reviews h3 {
   margin: 2rem;
-  font-family: Lietz, helvetica, arial;
-  text-transform: uppercase;
-  padding: 1rem;
-  display: inline-block;
 }
 
 .deelnemerfotos {
@@ -1448,9 +1535,6 @@ h3 {
   }
   .orwell {
     width: 100%;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     background-color: red;
     padding: 40px;
   }
