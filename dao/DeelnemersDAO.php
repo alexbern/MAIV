@@ -3,16 +3,23 @@ require_once WWW_ROOT . 'dao' . DS . 'DAO.php';
 class DeelnemersDAO extends DAO {
 
   public function selectAll() {
-    $sql = "SELECT * FROM `deelnemers`
-    INNER JOIN `users` ON deelnemers.user_id=users.id
-    ORDER BY `status` ASC";
+   $sql = "SELECT deelnemers.id, deelnemers.foto, deelnemers.review, deelnemers.status, users.naam, users.school, users.klas, users.gemeente, users.email FROM `deelnemers`
+    INNER JOIN `users` ON  users.id = deelnemers.user_id";
+   $stmt = $this->pdo->prepare($sql);
+   $stmt->execute();
+   return $stmt->fetchAll(PDO::FETCH_ASSOC);
+ }
+
+  public function selectById($id) {
+    $sql = "SELECT * FROM `deelnemers` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  public function selectById($id) {
-    $sql = "SELECT * FROM `deelnemers` WHERE `id` = :id";
+  public function updateDeelnemer($id) {
+    $sql = "UPDATE `deelnemers` SET `status`= 1 WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
