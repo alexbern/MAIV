@@ -18,13 +18,13 @@
     .neemdeel{
       color: $geel;
       @include titlepadding();
-      background-color: $groen;
+      background: url('/assets/img/groenebg1.png') repeat;
       transform: rotate(-3deg);
     }
     .kansop, .stapelsboeken{
       @include titlepadding();
       color: $wit;
-      background-color: $groen;
+      background: url('/assets/img/groenebg1.png') repeat;
     }
     .kansop{
       transform: rotate(-1deg);
@@ -80,10 +80,6 @@
 }
 
 .main-container{
-  margin-top: -1rem;
-  padding-top: 3rem;
-  width: 100%;
-  background: url('/assets/img/groenebg.png') repeat;
   .login-section{
     @include centerdesktop();
     header{

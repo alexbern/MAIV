@@ -100,6 +100,16 @@
     </div>
   </nav>
 
+  <?php
+    if (!empty($_SESSION['user'])) {
+  ?>
+    <div class="downloadbutton">
+      <a href=""><img src="/assets/img/downloadbutton.png" alt="download het boek"></a>
+    </div>
+  <?php
+    }
+  ?>
+
 <div class='header-wrapper home-wrapper'>
   <header class="header-home">
     <div class="triggerhome"><img src="<?php echo $basepath;?>/assets/img/triggerhome.png" alt="win stapels boeken"></div>
