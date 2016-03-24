@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
-import {basename} from '../globals';
-import {checkStatus} from '../util';
+import React from 'react';
 
 export default class Deelnemer extends React.Component {
-   constructor(props, context) {
+  constructor(props, context) {
     super(props, context);
     this.state = {};
   }

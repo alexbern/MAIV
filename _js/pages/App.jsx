@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router';
 import fetch from 'isomorphic-fetch';
 import {basename} from '../globals';
 import {checkStatus} from '../util';
-import {find, filter} from 'lodash';
+import {find} from 'lodash';
 import {Deelnemer} from '../components';
 
 export default class App extends React.Component{
@@ -21,7 +20,7 @@ export default class App extends React.Component{
     })
       .then(checkStatus)
       .then(r => r.json())
-      .then(data => {
+      .then(d => {
         this.refresh();
       })
       .catch(() => {
@@ -42,10 +41,10 @@ export default class App extends React.Component{
     })
       .then(checkStatus)
       .then(r => r.json())
-      .then(data => {
-        console.log('update complete');
+      .then(d=>{
         this.refresh();
-      })
+      }
+      )
       .catch(() => {
         console.error('failed to edit deelnemer');
       });

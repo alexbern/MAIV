@@ -37,38 +37,7 @@ $app->get('/upload', function ($request, $response, $args) {
 });
 
 $app->post('/upload', function ($request, $response, $args) {
-    $view = new \Slim\Views\PhpRenderer('view/');
-    $data = $request->getParsedBody();
-    $basepath = $request->getUri()->getBasePath();
-    $uploadDir = WWW_ROOT . 'uploads/';
-
-    print_r($_FILES);
-
-    $errors = array();
-
-    if (empty($_FILES['upload-img'])) {
-      $errors['upload-img'] = 'Geen afbeelding gevonden.';
-    }
-
-    // if (empty($_FILES['upload-review'])) {
-    //   $errors['upload-review'] = 'Geen review bestand gevonden.';
-    // }
-
-    if (!empty($errors)) {
-      $_SESSION['error'] = 'Upload niet geslaagd!';
-      unset($_FILES);
-      exit();
-    }
-
-    $uploadfile = $uploadDir . basename($_FILES['upload-img']['name']);
-    if (move_uploaded_file($_FILES['upload-img']['tmp_name'], $uploadfile)) {
-      $_SESSION['info'] = "Danku voor uw deelname!";
-      echo 'success';
-    } else {
-      $_SESSION['error'] = "File upload mislukt!";
-      echo 'fail';
-    }
-
+  require WWW_ROOT . 'controllers/uploadPostController.php';
 });
 
 //DEELNEMEN
@@ -94,7 +63,7 @@ $app->get('/logout', function ($request, $response, $args) {
 
 //DEELNEMEN POST
 $app->post('/deelnemen', function ($request, $response, $args) {
-  require 'controllers/deelnemenPostController.php';
+  require WWW_ROOT . 'controllers/deelnemenPostController.php';
 });
 
 //HOME
