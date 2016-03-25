@@ -23,7 +23,6 @@
 </head>
 <body>
   <?php
-
     if (!empty($_SESSION['error'])) {
       ?>
     <div class="error">

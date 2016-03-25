@@ -4,6 +4,6 @@ import {App} from '../pages';
 
 export default () => (
   <Router history={browserHistory}>
-    <Route path="/cms" component={App} />
+    <Route path="/admin" component={App} />
   </Router>
 );

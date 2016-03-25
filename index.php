@@ -81,21 +81,55 @@ $app->get('/boek', function ($request, $response, $args) {
 });
 
 //CMS
-$app->get('/cms', function ($request, $response, $args) {
+$app->get('/admin', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
-  if (empty($_SESSION['user'])) {
-    $_SESSION['error'] = "U bent niet ingelogd.";
-    return $response->withHeader('Location', '/');
-    exit();
-  }
-
-  if ($_SESSION['user']['0']['is_admin'] == 0) {
-    $_SESSION['error'] = "Uw account is geen admin";
-    return $response->withHeader('Location', '/');
-    exit();
-  }
-
   return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath()]);
+});
+
+$app->post('/admin', function ($request, $response, $args) {
+  $view = new \Slim\Views\PhpRenderer('view/');
+  $data = $request->getParsedBody();
+  $userDAO = new UserDAO();
+
+   if (empty($data['admin-name'])) {
+      $errors['admin-name'] = 'Invalid username.';
+    }
+
+    if (empty($data['admin-password'])) {
+      $errors['admin-password'] = 'Password incorrect.';
+    }
+
+    if (!empty($errors)) {
+        return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        die();
+    }
+
+    $existingUser = $userDAO->selectByEmail($data['admin-name']);
+
+     if (!empty($existingUser)) {
+      $hasher = new \Phpass\Hash;
+      if($hasher->checkPassword($data['admin-password'], $existingUser['0']['password'])){
+          if (!empty($_SESSION['user'])) {
+            unset($_SESSION['user']);
+          }
+          $_SESSION['user'] = $existingUser;
+        }else{
+          $_SESSION['error'] = 'Email of passwoord is incorrect.';
+          return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+          die();
+        }
+     }else{
+      $_SESSION['error'] = 'Email of passwoord is incorrect.';
+          return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+          die();
+     }
+
+     if (empty($_SESSION['error'])) {
+        $_SESSION['info'] = 'Login successful.';
+        return $view->render($response, 'cms.php', ['basepath' => $request->getUri()->getBasePath()]);
+        die();
+      }
+
 });
 
 $app->get('/api', function ($request, $response, $args) {

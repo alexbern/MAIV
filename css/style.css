@@ -653,6 +653,32 @@ h3 {
           transform: rotate(-3deg);
 }
 
+.admin-form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+}
+
+.admin-form label {
+  width: 30%;
+}
+
+.admin-form input[type="text"], .admin-form input[type="password"] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.admin-form input[type="submit"] {
+  width: 100%;
+  background-color: #E8C51E;
+  border: none;
+  padding: 1rem;
+}
+
 .cms-container p, .cms-container h1, .cms-container h2, .cms-container h3, .cms-container h4, .cms-container h5, .cms-container li {
   visibility: visible;
 }
