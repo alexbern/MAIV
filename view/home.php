@@ -62,6 +62,15 @@
           }else{
         ?>
           <li><a href="<?php echo $basepath;?>/upload">Upload</a></li>
+          <?php
+            if (!empty($_SESSION['user'])) {
+          ?>
+            <li><a href="#">Download</a></li>
+          <?php
+            }
+
+           ?>
+
           <li><a href="<?php echo $basepath;?>/logout">Logout</a></li>
         <?php
           }
@@ -216,7 +225,7 @@
         <?php
           foreach ($deelnemers as $deelnemer) {
         ?>
-           <li style="background-image:url(<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>)"></li>
+           <li class="home-accepted"style="background-image:url(<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>)"></li>
 
         <?php
           }

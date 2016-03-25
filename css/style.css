@@ -1981,8 +1981,8 @@ h3 {
 }
 
 @media only screen and (max-width: 740px) {
-  .concurenten-wrapper li {
-    width: 100%;
+  .concurenten .concurenten-wrapper li {
+    width: 80%;
   }
   .checkup {
     width: 100%;

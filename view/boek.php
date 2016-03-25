@@ -46,19 +46,26 @@
     <header>
       <img src="<?php echo $basepath;?>/assets/svg/cross.svg" alt="exit" class="cross"/>
       <ul class="burger-ul">
-        <li><a href="<?php echo $basepath;?>/boek" class="currentpage">Het Boek</a></li>
+        <li><a href="<?php echo $basepath;?>/boek">Het Boek</a></li>
         <li><a href="<?php echo $basepath;?>/deelnemers">Concurenten</a></li>
         <?php
           if (empty($_SESSION['user'])) {
         ?>
-
           <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/deelnemen">Deelnemen</a></li>
-
         <?php
           }else{
         ?>
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/upload">Upload</a></li>
-          <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
+          <li><a href="<?php echo $basepath;?>/upload">Upload</a></li>
+          <?php
+            if (!empty($_SESSION['user'])) {
+          ?>
+            <li><a href="#">Download</a></li>
+          <?php
+            }
+
+           ?>
+
+          <li><a href="<?php echo $basepath;?>/logout">Logout</a></li>
         <?php
           }
          ?>
