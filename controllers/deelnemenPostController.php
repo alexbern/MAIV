@@ -113,7 +113,7 @@
 
       if (empty($_SESSION['error'])) {
         $_SESSION['info'] = 'Je bent succesvol ingelogd!';
-        return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors]);
+        return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]);
         die();
       }
 
