@@ -95,11 +95,20 @@
             <li class="deelnemen-nav"><a href="<?php echo $basepath;?>/logout">Logout</a></li>
           <?php
             }
-           ?>
+          ?>
         </div>
       </ul>
     </div>
   </nav>
+  <?php
+    if (!empty($_SESSION['user'])) {
+  ?>
+    <div class="downloadbutton">
+      <a href=""><img src="/assets/img/downloadbutton.png" alt="download het boek"></a>
+    </div>
+  <?php
+    }
+  ?>
    <div class='header-wrapper'>
     <header class="header">
       <div class="texts">
