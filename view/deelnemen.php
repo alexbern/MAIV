@@ -159,7 +159,7 @@
       <img src="<?php echo $basepath;?>/assets/img/triggerregistreer.png" alt="nog niet langs geweest?" class="triggerregistreer">
       <section>
         <p>
-          Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een <strong>boekverslag over animal farm </strong>en een <strong>orginele klasfoto</strong>. Plezier verzekerd in de klas!
+          Schrijf je nu in en maak kans op 100 boeken! Maak samen met je klas een <strong>boekverslag over animal farm </strong>en een <strong>orginele klasfoto</strong>. Plezier verzekerd in de klas! in de klas! Vergeet zeker niet het boek te downloaden.
         </p>
       </section>
 

@@ -369,6 +369,7 @@ h3 {
 
 .downloadbutton:hover {
   right: -10px;
+  cursor: pointer;
 }
 
 .downloadbutton .download-icon {
@@ -1188,6 +1189,10 @@ h3 {
   z-index: 100;
 }
 
+.stappen .stap {
+  margin-left: 120px;
+}
+
 .stappen .stap article {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1269,7 +1274,7 @@ h3 {
 }
 
 .stap3 .verstuur {
-  margin-bottom: 3px;
+  margin-bottom: -10px;
 }
 
 .quote {
@@ -1391,62 +1396,56 @@ h3 {
   height: 200px;
 }
 
+.wins {
+  width: 1024px;
+}
+
 .win1, .win2, .win3, .win4, .win5, .win6, .win7, .win8, .win9 {
   position: absolute;
 }
 
 .win1 {
-  left: 100rem;
-  top: 130rem;
+  left: 80%;
+  top: 110rem;
 }
 
 .win2 {
-  left: 90rem;
-  top: 95rem;
+  left: 80%;
+  top: 50rem;
 }
 
 .win3 {
-  left: 120rem;
-  top: 100rem;
-}
-
-.win3 {
-  left: 20rem;
-  top: 250rem;
+  left: 20%;
+  top: 60rem;
 }
 
 .win4 {
-  left: 130rem;
-  top: 170rem;
+  left: 75%;
+  top: 80rem;
 }
 
 .win5 {
-  left: 120rem;
-  top: 180rem;
-}
-
-.win5 {
-  left: 30rem;
-  top: 180rem;
+  left: 5%;
+  top: 70rem;
 }
 
 .win6 {
-  left: 90rem;
+  left: 80%;
   top: 150rem;
 }
 
 .win7 {
-  left: 5rem;
+  left: 5%;
   top: 140rem;
 }
 
 .win9 {
-  left: 130rem;
+  left: 90%;
   top: 100rem;
 }
 
 .win8 {
-  left: 10rem;
+  left: 10%;
   top: 100rem;
 }
 
@@ -1490,6 +1489,7 @@ h3 {
   margin-bottom: 2rem;
   text-transform: uppercase;
   line-height: 2rem;
+  letter-spacing: 1.2px;
 }
 
 .boek p {
@@ -1530,6 +1530,7 @@ h3 {
   margin-top: 1rem;
   -webkit-transform: rotate(1.5deg);
           transform: rotate(1.5deg);
+  font-size: 1rem;
 }
 
 .orwell-block {
@@ -2010,13 +2011,16 @@ h3 {
   }
   .stappen .stap article p {
     margin: 0 auto;
-    margin-top: -23px;
+    margin-top: 0px;
   }
   .stappen .stap h2, .stappen .stap h3 {
     font-family: Lietz, helvetica, arial;
     text-transform: uppercase;
     padding: 1rem;
     display: inline-block;
+  }
+  .stap2 .article-titles {
+    margin-top: 16rem;
   }
   .stap3 {
     margin-top: 100px;
