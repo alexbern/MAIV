@@ -188,7 +188,7 @@
           <h3 class="article-sub-title verstuur">Verstuur</h3></br>
           <h3 class="article-sub-title">&amp; Win</h3>
         </div>
-          <p>Om jouw en je klas te belonen mag je natuurlijk jouw prachtwerk natuurlijk ten toon gesteld worden. Als laatste stuur je ons <strong>jouw bespreking samen met de klasfoto.</strong> Een jury van animalisten zullen deze dan beoordelen. Het beste verslag maakt kans op <strong>100 nieuwe boeken</strong> in de klas!</p>
+          <p>Om jouw en je klas te belonen mag natuurlijk jouw prachtfoto ten toon gesteld worden. Als laatste stuur je ons <strong>jouw bespreking samen met de klasfoto door.</strong> Een jury van animalisten zullen deze dan beoordelen. Het beste verslag maakt kans op <strong>100 nieuwe boeken</strong> in de klas! Vergeet zeker niet het boek te downloaden.</p>
         </article>
       </section>
     </section>
@@ -199,7 +199,7 @@
   <div class="quote">
     <section class="quote-wrapper">
       <p class="the-quote">
-        "Four legs good, two legs better! All animals are equal. But some animals are more uqual than others"
+        "Four legs good, two legs better! All animals are equal. But some animals are more equal than others"
       </p>
       <p class="quote-author">
         - George Orwell

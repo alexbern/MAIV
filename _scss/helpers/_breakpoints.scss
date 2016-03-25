@@ -375,13 +375,16 @@
 
         p{
           margin: 0 auto;
-          margin-top:-23px;
+          margin-top:0px;
         }
       }
       h2, h3{
         @include titlepadding;
       }
     }
+  }
+  .stap2 .article-titles {
+    margin-top: 16rem;
   }
   .stap3{
     margin-top:100px;

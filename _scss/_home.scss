@@ -86,6 +86,7 @@
   align-items:center;
   z-index:100;
   .stap{
+    margin-left: 120px;
     article{
       display: flex;
       flex-direction: row;
@@ -155,7 +156,7 @@
     position:absolute;
   }
   .verstuur{
-    margin-bottom:3px;
+    margin-bottom:-10px;
   }
 }
 
@@ -253,63 +254,55 @@
 /////////
 //WINS
 ////////
-
+.wins{
+  width:1024px;
+}
 .win1,.win2,.win3,.win4,.win5,.win6,.win7,.win8,.win9{
   position:absolute;
 }
 
 .win1{
-  left:100rem;
-  top:130rem;
+  left:80%;
+  top:110rem;
 }
 
 .win2{
-  left:90rem;
-  top:95rem;
+  left:80%;
+  top:50rem;
 }
 
 .win3{
-  left:120rem;
-  top:100rem;
-}
-
-.win3{
-  left:20rem;
-  top:250rem;
+  left:20%;
+  top:60rem;
 }
 
 .win4{
-  left:130rem;
-  top:170rem;
+  left:75%;
+  top:80rem;
 }
 
 .win5{
-  left:120rem;
-  top:180rem;
-}
-
-.win5{
-  left:30rem;
-  top:180rem;
+  left:5%;
+  top:70rem;
 }
 
 .win6{
-  left:90rem;
+  left:80%;
   top:150rem;
 }
 
 .win7{
-  left:5rem;
+  left:5%;
   top:140rem;
 }
 
 .win9{
-  left:130rem;
+  left:90%;
   top:100rem;
 }
 
 .win8{
-  left:10rem;
+  left:10%;
   top:100rem;
 }
 

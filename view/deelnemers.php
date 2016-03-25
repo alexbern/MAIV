@@ -103,9 +103,16 @@
   <?php
     if (!empty($_SESSION['user'])) {
   ?>
+    <a href="#">
     <div class="downloadbutton">
-      <a href=""><img src="<?php echo $basepath;?>/assets/img/downloadbutton.png" alt="download het boek"></a>
+      <div class="download-icon">
+      <img src="<?php echo $basepath;?>/assets/svg/download.svg" alt="download" />
+      </div>
+      <div class="download-text">
+        <p>DOWNLOAD HET BOEK</p>
+      </div>
     </div>
+    </a>
   <?php
     }
   ?>

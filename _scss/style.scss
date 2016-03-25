@@ -170,6 +170,7 @@ h3{
   transition: all 0.5s ease;
   &:hover{
     right: -10px;
+    cursor: pointer;
   }
   .download-icon{
     width: 50px;

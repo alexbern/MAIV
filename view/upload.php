@@ -101,7 +101,7 @@
   <?php
     if (!empty($_SESSION['user'])) {
   ?>
-   <a href="#">
+    <a href="#">
     <div class="downloadbutton">
       <div class="download-icon">
       <img src="<?php echo $basepath;?>/assets/svg/download.svg" alt="download" />
