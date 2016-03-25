@@ -1,3 +1,27 @@
+.admin-form{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  label{
+    width: 30%;
+  }
+  input[type="text"], input[type="password"]{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  input[type="submit"],{
+    width: 100%;
+    background-color: $geel;
+    border: none;
+    padding: 1rem;
+  }
+}
+
+
 .cms-container{
   p, h1, h2, h3, h4, h5, li{
     visibility: visible;

@@ -998,7 +998,7 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(2);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouter = __webpack_require__(160);\n\nvar _pages = __webpack_require__(217);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  return _react2.default.createElement(\n    _reactRouter.Router,\n    { history: _reactRouter.browserHistory },\n    _react2.default.createElement(_reactRouter.Route, { path: '/cms', component: _pages.App })\n  );\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./_js/routers/index.js\n ** module id = 159\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./_js/routers/index.js?");
+	eval("'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(2);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouter = __webpack_require__(160);\n\nvar _pages = __webpack_require__(217);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  return _react2.default.createElement(\n    _reactRouter.Router,\n    { history: _reactRouter.browserHistory },\n    _react2.default.createElement(_reactRouter.Route, { path: '/admin', component: _pages.App })\n  );\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./_js/routers/index.js\n ** module id = 159\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./_js/routers/index.js?");
 
 /***/ },
 /* 160 */

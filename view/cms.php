@@ -8,10 +8,22 @@
 </head>
 <body>
 
-  <div class="cms-container">
+  <?php
+    if (empty($_SESSION['user']) || $_SESSION['user']['0']['is_admin'] == 0) {
+  ?>
+    <form action="<?php echo $basepath;?>/admin" method="post" name="admin-form" class="admin-form">
+      <label>Username: </label><br/><input type="text" name="admin-name">
+      <br/>
+      <label>Password: </label><br/><input type="password" name="admin-password">
+      <br/>
+      <input type="submit" value="Login"></input>
+    </form>
 
-
-  </div>
+  <?php
+    }else{
+      echo '<div class="cms-container"></div>';
+    }
+  ?>
 
 
   <script>

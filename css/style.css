@@ -669,6 +669,32 @@ h3 {
           transform: rotate(-3deg);
 }
 
+.admin-form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+}
+
+.admin-form label {
+  width: 30%;
+}
+
+.admin-form input[type="text"], .admin-form input[type="password"] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.admin-form input[type="submit"] {
+  width: 100%;
+  background-color: #E8C51E;
+  border: none;
+  padding: 1rem;
+}
+
 .cms-container p, .cms-container h1, .cms-container h2, .cms-container h3, .cms-container h4, .cms-container h5, .cms-container li {
   visibility: visible;
 }
@@ -1276,6 +1302,17 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.concurenten .concurenten-wrapper li {
+  width: 32%;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
 }
 
 .boekimg {
