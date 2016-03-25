@@ -1,5 +1,9 @@
 @media only screen and (max-width: 1024px){
 
+  .upload-section{
+    width: 100%;
+  }
+
   ////////
   //HEADER
   ////////
@@ -151,7 +155,6 @@
   }
 
   .upload-section{
-    margin-left:10%;
     width:75%;
   }
 }
@@ -204,34 +207,6 @@
   }
 }
 
-@media only screen and (max-width: 800px){
-  .fieldsets{
-    flex-direction: column;
-  }
-
-  .main-container .register-section .register-form .fieldsets fieldset{
-    width: 100%;
-  }
-
-  ///////////
-  //UPLOAD
-  /////////
-
-  .pollaroid{
-    position: relative;
-    width:300px;
-    margin-top:-10px;
-    left:20%;
-  }
-  .checkup{
-    width:130%;
-  }
-
-  .upload-field{
-    flex-direction:column;
-  }
-}
-
 @media only screen and (max-width: 890px){
   /////////
   //BOEK
@@ -277,8 +252,58 @@
   }
 }
 
+@media only screen and (max-width: 800px){
+  .fieldsets{
+    flex-direction: column;
+  }
+
+  .main-container .register-section .register-form .fieldsets fieldset{
+    width: 100%;
+  }
+
+  ///////////
+  //UPLOAD
+  /////////
+
+  .pollaroid{
+    position: relative;
+    display: block;
+    width:300px;
+    margin-top:-10px;
+    margin: 0 auto;
+    margin-left: 40%;
+  }
+  .checkup{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .checkup ul{
+    width: 100%;
+  }
+
+  .checkup ul li{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .upload-field{
+    flex-direction:column;
+  }
+}
+
 
 @media only screen and (max-width: 740px){
+
+  .checkup{
+    width: 100%;
+  }
+
+  .upload-section{
+    width: 100%;
+  }
+
   //////////
   //HEADER
   /////////
@@ -400,6 +425,26 @@
 }
 
 @media only screen and (max-width: 630px){
+  .upload-section .upload-form .upload-field{
+    display: flex;
+    flex-direction: column;
+  }
+  .upload-section .upload-form .upload-field label{
+    width: 100%;
+  }
+  .upload-section .upload-form .upload-field .p-label{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .upload-section .upload-form input[type='submit']{
+    position: inherit;
+    transform: rotate(0deg);
+    padding: 2rem;
+  }
+  .pollaroid{
+    margin: 0 auto;
+  }
   .deelnementexts{
     font-size: 4rem;
   }
@@ -420,6 +465,10 @@
         width: 100%;
       }
     }
+  }
+
+  .checkup ul li{
+    font-size: 1.2rem;
   }
 
   /////////
@@ -518,6 +567,10 @@
     font-size: 2.6rem;
   }
 
+  .pollaroid{
+    display: none;
+  }
+
   ///////
   ///BOEK
   ///////
@@ -532,5 +585,17 @@
   }
   .schrijver .author2{
     width:40%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .texts{
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .texts{
+    font-size: 2.2rem;
   }
 }

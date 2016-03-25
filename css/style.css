@@ -1729,6 +1729,9 @@ h3 {
 }
 
 @media only screen and (max-width: 1024px) {
+  .upload-section {
+    width: 100%;
+  }
   .header-home {
     width: 100%;
   }
@@ -1831,7 +1834,6 @@ h3 {
     margin-left: 10%;
   }
   .upload-section {
-    margin-left: 10%;
     width: 75%;
   }
 }
@@ -1878,31 +1880,6 @@ h3 {
   .pollaroid {
     margin-top: 50px;
     width: 30%;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .fieldsets {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main-container .register-section .register-form .fieldsets fieldset {
-    width: 100%;
-  }
-  .pollaroid {
-    position: relative;
-    width: 300px;
-    margin-top: -10px;
-    left: 20%;
-  }
-  .checkup {
-    width: 130%;
-  }
-  .upload-field {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -1958,7 +1935,49 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .fieldsets {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .register-section .register-form .fieldsets fieldset {
+    width: 100%;
+  }
+  .pollaroid {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin-top: -10px;
+    margin: 0 auto;
+    margin-left: 40%;
+  }
+  .checkup {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .checkup ul {
+    width: 100%;
+  }
+  .checkup ul li {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .upload-field {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 740px) {
+  .checkup {
+    width: 100%;
+  }
+  .upload-section {
+    width: 100%;
+  }
   .home-wrapper {
     height: 400px;
   }
@@ -2060,6 +2079,30 @@ h3 {
 }
 
 @media only screen and (max-width: 630px) {
+  .upload-section .upload-form .upload-field {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upload-section .upload-form .upload-field label {
+    width: 100%;
+  }
+  .upload-section .upload-form .upload-field .p-label {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .upload-section .upload-form input[type='submit'] {
+    position: inherit;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    padding: 2rem;
+  }
+  .pollaroid {
+    margin: 0 auto;
+  }
   .deelnementexts {
     font-size: 4rem;
   }
@@ -2080,6 +2123,9 @@ h3 {
   }
   .concurenten-wrapper li img {
     width: 100%;
+  }
+  .checkup ul li {
+    font-size: 1.2rem;
   }
   .boek {
     margin: 0 0;
@@ -2167,6 +2213,9 @@ h3 {
     padding-top: 5.5rem;
     font-size: 2.6rem;
   }
+  .pollaroid {
+    display: none;
+  }
   .boek .tekst {
     margin: 0 0;
   }
@@ -2175,5 +2224,17 @@ h3 {
   }
   .schrijver .author2 {
     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .texts {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .texts {
+    font-size: 2.2rem;
   }
 }

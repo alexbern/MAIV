@@ -115,7 +115,7 @@
     }
   ?>
   <div class='header-wrapper'>
-    <header class="header">
+    <header class="header upload-header">
       <div class="texts deelnementexts">
         <h1 class="neemdeel">Upload</h1>
         <br/>
@@ -150,7 +150,6 @@
 
 
       <form enctype="multipart/form-data" name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
-      ?>
         <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
         <div class="upload-field">
           <p class="p-label">BOEKBESPREKING</p>
