@@ -102,7 +102,7 @@
     if (!empty($_SESSION['user'])) {
   ?>
     <div class="downloadbutton">
-      <a href=""><img src="/assets/img/downloadbutton.png" alt="download het boek"></a>
+      <a href=""><img src="<?php echo $basepath;?>/assets/img/downloadbutton.png" alt="download het boek"></a>
     </div>
   <?php
     }

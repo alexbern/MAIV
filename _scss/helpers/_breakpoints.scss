@@ -337,14 +337,24 @@
     flex-direction: row-reverse;
     padding-bottom: 6rem;
   }
+
   .bottomnav .seccondnav{
     display: none;
   }
+
   .topnav{
     display: none;
   }
+
   .mobile-nav{
     display: inline;
+  }
+
+  .downloadbutton{
+    position:fixed;
+    z-index:999999;
+    top:-5px;
+    left:40%;
   }
 
   //////////
