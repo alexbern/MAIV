@@ -2021,6 +2021,13 @@ h3 {
   .button .arrow {
     display: none;
   }
+  .stappen .stap {
+    margin: 0 auto;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+  }
   .stappen .stap article {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2028,9 +2035,6 @@ h3 {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .stappen .stap article .article-titles {
-    margin-left: 10%;
   }
   .stappen .stap article .tweetekst {
     -webkit-order: 1;
@@ -2040,6 +2044,7 @@ h3 {
   .stappen .stap article p {
     margin: 0 auto;
     margin-top: 0px;
+    width: 100%;
   }
   .stappen .stap h2, .stappen .stap h3 {
     font-family: Lietz, helvetica, arial;
@@ -2079,6 +2084,12 @@ h3 {
   }
   .main-container .login-section header {
     width: 85%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .stappen .stap article p {
+    width: 100%;
   }
 }
 
