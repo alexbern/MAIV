@@ -216,6 +216,14 @@
 }
 
 @media only screen and (max-width: 890px){
+  ////////
+  //HOME
+  //////
+  .stappen .stap {
+    margin-left: auto;
+  }
+
+
   /////////
   //BOEK
   ////////
@@ -366,8 +374,8 @@
       article{
         display: flex;
         flex-direction: column;
-        .article-titles{
-        }
+        width: 100%;
+        margin-left:0;
 
         .tweetekst{
           order:1;
@@ -384,8 +392,10 @@
       }
     }
   }
-  .stap2 .article-titles {
-    margin-top: 16rem;
+  .stap2{
+    .article-titles{
+      margin-top: 0rem;
+    }
   }
   .stap3{
     margin-top:100px;
@@ -535,6 +545,26 @@
   .header-wrapper{
     background-size: 80%;
   }
+  ///////
+  //HOME
+  //////
+  .stap1, .stap2{
+    background-image: none;
+  }
+
+  .stap3 .varkenbg{
+    background-image: none;
+  }
+
+  .stap1{
+    article{
+      width:100%;
+    }
+  }
+
+  .stappen .stap{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -546,30 +576,6 @@
       width: 100%;
     }
   }
-
-  .stappen .stap p, .stappen .stap .tweetekst{
-    width: 95%;
-    margin: 0 auto;
-  }
-  .stap2{
-    margin-top: 12rem;
-  }
-  .stap2 article{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .stap3{
-    margin-top: 20rem;
-  }
-
-  .stap3 article{
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .schrijver .author2{
-    width:40%;
-  }
 }
 
 @media only screen and (max-width: 460px){
@@ -579,7 +585,7 @@
   }
 
   .pollaroid{
-    display: none;
+    display: no-background;
   }
 
   ///////

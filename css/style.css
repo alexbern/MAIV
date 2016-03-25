@@ -1232,9 +1232,8 @@ h3 {
 }
 
 .stap2 {
-  margin-top: -9rem;
   background: url("/assets/img/stap2.png") no-repeat;
-  background-position: top-left;
+  background-position: top-right;
   background-size: 80%;
 }
 
@@ -1891,6 +1890,9 @@ h3 {
 }
 
 @media only screen and (max-width: 890px) {
+  .stappen .stap {
+    margin-left: auto;
+  }
   .boek {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -2035,6 +2037,8 @@ h3 {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    margin-left: 0;
   }
   .stappen .stap article .tweetekst {
     -webkit-order: 1;
@@ -2053,7 +2057,7 @@ h3 {
     display: inline-block;
   }
   .stap2 .article-titles {
-    margin-top: 16rem;
+    margin-top: 0rem;
   }
   .stap3 {
     margin-top: 100px;
@@ -2188,6 +2192,18 @@ h3 {
   .header-wrapper {
     background-size: 80%;
   }
+  .stap1, .stap2 {
+    background-image: none;
+  }
+  .stap3 .varkenbg {
+    background-image: none;
+  }
+  .stap1 article {
+    width: 100%;
+  }
+  .stappen .stap {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -2197,27 +2213,6 @@ h3 {
   .concurenten-wrapper li {
     width: 100%;
   }
-  .stappen .stap p, .stappen .stap .tweetekst {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .stap2 {
-    margin-top: 12rem;
-  }
-  .stap2 article {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .stap3 {
-    margin-top: 20rem;
-  }
-  .stap3 article {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .schrijver .author2 {
-    width: 40%;
-  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -2226,7 +2221,7 @@ h3 {
     font-size: 2.6rem;
   }
   .pollaroid {
-    display: none;
+    display: no-background;
   }
   .boek .tekst {
     margin: 0 0;
