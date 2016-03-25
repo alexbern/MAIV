@@ -101,9 +101,16 @@
   <?php
     if (!empty($_SESSION['user'])) {
   ?>
+   <a href="#">
     <div class="downloadbutton">
-      <a href=""><img src="<?php echo $basepath;?>/assets/img/downloadbutton.png" alt="download het boek"></a>
+      <div class="download-icon">
+      <img src="<?php echo $basepath;?>/assets/svg/download.svg" alt="download" />
+      </div>
+      <div class="download-text">
+        <p>DOWNLOAD HET BOEK</p>
+      </div>
     </div>
+    </a>
   <?php
     }
   ?>
@@ -144,14 +151,16 @@
 
       <form enctype="multipart/form-data" name="upload-form" class="upload-form" action="<?php echo $basepath;?>/upload" method="post">
       ?>
-        <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+        <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
         <div class="upload-field">
-          <label for="">Boekbespreking</label></br>
-          <input type="file" accept="*|media_type" name="upload-review" class="input-a">
+          <p class="p-label">BOEKBESPREKING</p>
+          <label for="review-upload">+ Boekbespreking</label></br>
+          <input type="file" id="review-upload" accept="*|media_type" name="upload-review" class="input-a upload-input">
         </div>
         <div class="upload-field">
-          <label for="">Klasfoto</label></br>
-          <input type="file" name="upload-img" accept="image/*" >
+          <p class="p-label">KLASFOTO</p>
+          <label for="image-upload">+ Klasfoto</label></br>
+          <input class="upload-input" id="image-upload" type="file" name="upload-img" accept="image/*" >
         </div>
         <input type="submit" class="upload-submit" value="UPLOAD"></input>
       </form>

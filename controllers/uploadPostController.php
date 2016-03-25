@@ -17,7 +17,6 @@
 
     if (empty($_FILES['upload-img']['name'])) {
       $errors['upload-img'] = 'Geen afbeelding gevonden.';
-      print_r('derp');
     }
 
     if (empty($_FILES['upload-review']['name'])) {
