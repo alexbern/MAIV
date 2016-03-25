@@ -1981,6 +1981,9 @@ h3 {
 }
 
 @media only screen and (max-width: 740px) {
+  .concurenten-wrapper li {
+    width: 100%;
+  }
   .checkup {
     width: 100%;
   }
@@ -2120,9 +2123,6 @@ h3 {
   .concurenten-wrapper li {
     width: 100%;
     margin-top: 0;
-  }
-  .concurenten-wrapper li img {
-    width: 100%;
   }
   .checkup ul li {
     font-size: 1.2rem;
