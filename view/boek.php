@@ -155,9 +155,11 @@
               <p><strong>George Orwell</strong> was een Brits schrijver, journalist en literair criticus. Rond de 20e eeuw en zelfs nu nog is hij een van de meest bewonderde auteurs. Door zijn werken <strong>Animal Farm </strong>en de dystopische roman heeft hij vooral naambekendheid verworven. Vele van zijn werken zijn satirisch getint met een scherpe argumenten tegen het <strong>stalinisme en totalitarisme</strong>.</p>
             </div>
             <div class="awards">
-              <h3>Awards</h3>
-              <p>Prometheus hall of fame</p>
-              <p>Retro Hugo Award</p>
+              <div>
+                <h3>Awards</h3>
+                <p class="prometheus">Prometheus hall of fame</p>
+                <p class="retro">Retro Hugo Award</p>
+              </div>
               <img src="<?php echo $basepath;?>/assets/img/medal.png" alt="medal" class="medal">
             </div>
           </section>

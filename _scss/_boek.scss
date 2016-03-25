@@ -18,6 +18,7 @@
   ul{
     display:flex;
     flex-direction:row;
+    flex-wrap: wrap;
   }
   ul li{
     font-family: $titel;
@@ -82,11 +83,14 @@
   h3{
     margin-bottom: 2rem;
     @include titlepadding;
+    margin-left:18%;
   }
 
   p{
-    //width:90%;
+    padding:1.5rem;
     background-color:black;
+    position:relative;
+    z-index:10;
   }
 }
 
@@ -98,7 +102,24 @@
     @include titlepadding;
   }
   p{
+    padding:1rem;
     margin: 0 auto;
+    width:100%;
+    margin-top:5px;
+    position:relative;
+    z-index:10;
+    text-transform: uppercase;
+  }
+  .prometheus{
+    transform: rotate(1.5deg);
+  }
+  .retro{
+    transform: rotate(-1.5deg);
+  }
+  img{
+    position:relative;
+    z-index:5;
+    margin-top:-1rem;
   }
 }
 

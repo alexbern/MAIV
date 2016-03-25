@@ -1315,6 +1315,65 @@ h3 {
   height: 200px;
 }
 
+.win1, .win2, .win3, .win4, .win5, .win6, .win7, .win8, .win9 {
+  position: absolute;
+}
+
+.win1 {
+  left: 100rem;
+  top: 130rem;
+}
+
+.win2 {
+  left: 90rem;
+  top: 95rem;
+}
+
+.win3 {
+  left: 120rem;
+  top: 100rem;
+}
+
+.win3 {
+  left: 20rem;
+  top: 250rem;
+}
+
+.win4 {
+  left: 130rem;
+  top: 170rem;
+}
+
+.win5 {
+  left: 120rem;
+  top: 180rem;
+}
+
+.win5 {
+  left: 30rem;
+  top: 180rem;
+}
+
+.win6 {
+  left: 90rem;
+  top: 150rem;
+}
+
+.win7 {
+  left: 5rem;
+  top: 140rem;
+}
+
+.win9 {
+  left: 130rem;
+  top: 100rem;
+}
+
+.win8 {
+  left: 10rem;
+  top: 100rem;
+}
+
 .boekimg {
   position: absolute;
 }
@@ -1341,6 +1400,9 @@ h3 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .boek ul li {
@@ -1414,10 +1476,14 @@ h3 {
   text-transform: uppercase;
   padding: 1rem;
   display: inline-block;
+  margin-left: 18%;
 }
 
 .orwell p {
+  padding: 1.5rem;
   background-color: black;
+  position: relative;
+  z-index: 10;
 }
 
 .awards {
@@ -1433,7 +1499,29 @@ h3 {
 }
 
 .awards p {
+  padding: 1rem;
   margin: 0 auto;
+  width: 100%;
+  margin-top: 5px;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+.awards .prometheus {
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+}
+
+.awards .retro {
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+.awards img {
+  position: relative;
+  z-index: 5;
+  margin-top: -1rem;
 }
 
 .medal {
@@ -1652,7 +1740,6 @@ h3 {
   }
   .orwell {
     width: 100%;
-    background-color: red;
     padding: 40px;
   }
   .upload {
@@ -1757,6 +1844,41 @@ h3 {
         -ms-flex-order: 1;
             order: 1;
     display: none;
+  }
+  .orwell {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .orwell .orwell-block {
+    width: 80%;
+  }
+  .orwell .orwell-block h3 {
+    margin-left: 0;
+  }
+  .orwell .orwell-block p {
+    width: 100%;
+  }
+  .orwell .awards {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .orwell .awards h3 {
+    margin-top: 20px;
+  }
+  .orwell .awards p {
+    width: 100%;
+  }
+  .orwell .awards img {
+    margin-left: 50px;
   }
 }
 
@@ -1886,6 +2008,36 @@ h3 {
   .concurenten-wrapper li img {
     width: 100%;
   }
+  .boek {
+    margin: 0 0;
+  }
+  .boek h3 {
+    margin-left: 2rem;
+  }
+  .boek ul {
+    margin-left: 2rem;
+  }
+  .orwell .orwell-block {
+    width: 100%;
+  }
+  .orwell .orwell-block h3 {
+    margin-left: 2rem;
+  }
+  .orwell {
+    width: 100%;
+    padding: 0px;
+  }
+  .awards {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .awards img {
+    margin-top: -3rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1932,11 +2084,23 @@ h3 {
     width: 100%;
     margin: 0 auto;
   }
+  .schrijver .author2 {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 460px) {
   .texts {
     padding-top: 5.5rem;
     font-size: 2.6rem;
+  }
+  .boek .tekst {
+    margin: 0 0;
+  }
+  .boek .tekst p {
+    width: 100%;
+  }
+  .schrijver .author2 {
+    width: 40%;
   }
 }

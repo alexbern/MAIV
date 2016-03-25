@@ -130,8 +130,6 @@
 
   .orwell{
     width: 100%;
-    //flex-direction:column;
-    background-color:red;
     padding:40px;
   }
 
@@ -250,7 +248,33 @@
       display:none;
     }
   }
-
+  .orwell{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    .orwell-block{
+      width:80%;
+      h3{
+        margin-left:0;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    .awards{
+      display:flex;
+      h3{
+        margin-top:20px;
+      }
+      p{
+        width:100%;
+      }
+      img{
+        margin-left:50px;
+      }
+    }
+  }
 }
 
 
@@ -400,6 +424,40 @@
       }
     }
   }
+
+  /////////
+  //BOEK
+  /////////
+  .boek{
+    margin: 0 0;
+
+    h3{
+      margin-left:2rem;
+    }
+    ul{
+      margin-left:2rem;
+    }
+  }
+
+  .orwell .orwell-block{
+    width: 100%;
+
+    h3{
+      margin-left:2rem;
+    }
+  }
+
+  .orwell{
+    width: 100%;
+    padding:0px;
+  }
+  .awards{
+    display:flex;
+    flex-direction:column;
+    img{
+      margin-top:-3rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -451,11 +509,31 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .schrijver .author2{
+    width:40%;
+  }
 }
 
 @media only screen and (max-width: 460px){
   .texts{
     padding-top: 5.5rem;
     font-size: 2.6rem;
+  }
+
+  ///////
+  ///BOEK
+  ///////
+
+  .boek{
+    .tekst{
+      margin:0 0;
+      p{
+        width:100%;
+      }
+    }
+  }
+  .schrijver .author2{
+    width:40%;
   }
 }

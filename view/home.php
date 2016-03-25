@@ -138,6 +138,17 @@
       Boek.be organiseert een wedstrijd: klassiekers in je klas! Deze actie draait rond het boek Animal Farm.
       Slaag jij erin om het beste verslag te schrijven en samen met je klas de tofste foto te maken? Dan maak je kans op 100 prachtige boeken!
     </p>
+    <div class="wins">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win1">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win2">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win3">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win4">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win5">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win6">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win7">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win8">
+      <img src="<?php echo $basepath;?>/assets/img/win-trigger.png"" alt=""" class="win9">
+    </div>
     <section class="stappen">
       <section class="stap1 stap">
         <article>
