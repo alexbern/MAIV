@@ -102,6 +102,15 @@
     padding: 2rem;
   }
 
+  .main-container .login-section .login-form .login-submit{
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    padding: 2rem;
+    width: 100%;
+  }
+
   .bottomnav{
     width: 100%;
   }
@@ -409,14 +418,6 @@
 
   .main-container .login-section .login-form{
     width: 85%;
-  }
-  .main-container .login-section .login-form .login-submit{
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    padding: 2rem;
-    width: 100%;
   }
   .main-container .login-section header{
     width: 85%;
