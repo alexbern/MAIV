@@ -8,9 +8,9 @@ error_reporting(E_ALL);
 
 require_once WWW_ROOT . 'phpass' . DS . 'Phpass.php';
 
-require 'dao/UserDAO.php';
-require 'dao/DeelnemersDAO.php';
-require 'vendor/autoload.php';
+require WWW_ROOT . 'dao' . DS . 'UserDAO.php';
+require WWW_ROOT . 'dao'. DS .'DeelnemersDAO.php';
+require WWW_ROOT . 'vendor'. DS .'autoload.php';
 
 $app = new \Slim\App(['settings' => [
   'displayErrorDetails' => true
@@ -71,7 +71,7 @@ $app->post('/deelnemen', function ($request, $response, $args) {
 //HOME
 $app->get('/', function ($request, $response, $args) {
   $view = new \Slim\Views\PhpRenderer('view/');
-  return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]   );
+  return $view->render($response, 'home.php', ['basepath' => $request->getUri()->getBasePath()]);
 });
 
 //ABOUT BOEK

@@ -239,6 +239,14 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
+      li{
+        width: 32%;
+        filter: grayscale(100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 200px;
+      }
     }
 }
 

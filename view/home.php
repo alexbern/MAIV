@@ -23,6 +23,13 @@
 </head>
 <body>
   <?php
+    $deelnemersDAO = new DeelnemersDAO();
+    $deelnemers = $deelnemersDAO->selectAcceptedLast();
+
+
+
+
+
     if (!empty($_SESSION['error'])) {
       ?>
     <div class="error">
@@ -188,9 +195,17 @@
     <section class="concurenten">
       <h4>NIEUWSTE CONCURENTEN</h4>
       <ul class="concurenten-wrapper">
-        <li><img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto"></li>
-        <li><img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto"></li>
-        <li><img src="<?php echo $basepath;?>/assets/img/klasfoto.png" alt="klasfoto"></li>
+        <?php
+          foreach ($deelnemers as $deelnemer) {
+        ?>
+           <li style="background-image:url(<?php echo $basepath;?>/uploads/<?php echo $deelnemer['user_id'];?>/<?php echo $deelnemer['foto'];?>)"></li>
+
+        <?php
+          }
+         ?>
+
+
+
       </ul>
       <a href="<?php echo $basepath;?>/deelnemers" class="button concurenten-button">MEER CONCURENTEN
       <img src="<?php echo $basepath;?>/assets/svg/arrow.svg" alt="arrow" class="arrow">
