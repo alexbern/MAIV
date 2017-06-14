@@ -72,5 +72,4 @@
     $_SESSION['info'] = 'Joepie! Je maakt nu kans op stapels boeken.';
     unset($_FILES);
     return $view->render($response, 'upload.php', ['basepath' => $request->getUri()->getBasePath(), 'errors' => $errors, 'user' => $user]);
-    print_r('derp');
 
